@@ -5,11 +5,11 @@
 	<key>info</key>
 	<dict>
         <key>author</key>
-		<string>YOUR NAME</string>
+		<string>Dan MacKinlay</string>
 		<key>description</key>
-        <string>PLEASE DESCRIBE YOUR SCENE HERE!</string>
+        <string>A bone-simple scene that is only for playing with friends. Get a bunch of RDjdevices with this app on and yo ahve your own freqency tracking swarm</string>
 		<key>name</key>
-		<string>SCENE TEMPLATE</string>
+		<string>SantaFeSwarm</string>
 		<key>category</key>
 		<string>Shake</string>
 	</dict>
