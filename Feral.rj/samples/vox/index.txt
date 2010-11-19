@@ -3,3 +3,14 @@ wongan_galah_038.aif 1
 swan_view_carol.aif 2
 swan_view_chirp.aif 3
 swan_view_high_chirp.aif 4
+silence.aif 5
+silence.aif 6
+silence.aif 7
+silence.aif 8
+silence.aif 9
+silence.aif 10
+silence.aif 11
+silence.aif 12
+silence.aif 13
+silence.aif 14
+silence.aif 15
