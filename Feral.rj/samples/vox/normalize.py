@@ -21,7 +21,7 @@ def flen(f):
     """length of soundfile"""
     return float(run_process('soxi', '-D', f))
 
-def fpad(f, dur=2):
+def fpad(f, dur=3):
     """pad file to `dur` seconds"""
     f = path(f)
     curr_dur = flen(f)
@@ -35,13 +35,9 @@ def fpad(f, dur=2):
     f.move(orig)
     return run_process('sox', orig, f, 'pad', '0', str(dur-curr_dur))
 
-    
-    
 def pad_files(*files):
     for f in files:
         print fpad(f)
-        
-    
     
 if __name__=='__main__':
     # parser = argparse.ArgumentParser()
