@@ -22,8 +22,8 @@ def flen(f):
     return float(run_process('soxi', '-D', f))
 
 def fpad(f, dur=3):
-    """pad file to `dur` seconds"""
-    f = path(f)
+    """pad file to `dur` seconds at boht supported sample rates"""
+    f = path(f).realpath().abspath()
     curr_dur = flen(f)
     if curr_dur>dur:
         raise ValueError(
@@ -33,7 +33,12 @@ def fpad(f, dur=3):
     orig.insert(1, '.orig')
     orig = path(''.join(orig))
     f.move(orig)
-    return run_process('sox', orig, f, 'pad', '0', str(dur-curr_dur))
+    
+    f_hi = (((f.parent)/ '../44100')/f.basename()).realpath()
+    print run_process('sox', orig, '-r', '22050', '-c', '1', f,
+       'pad', '0', str(dur-curr_dur))
+    print run_process('sox', orig, '-r', '44100', '-c', '1', f_hi,
+      'pad', '0', str(dur-curr_dur))
 
 def pad_files(*files):
     for f in files:
