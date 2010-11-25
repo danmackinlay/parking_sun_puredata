@@ -2,6 +2,7 @@
 from paver.easy import *
 from paver.setuputils import setup
 from setuptools import find_packages
+from paver.path import path
 
 version = '0.0'
 
@@ -48,8 +49,16 @@ options(
         
 @task
 def strip_feral():
+    """strip 44kHz and source files out of the Feral_Dev project to create Feral"""
     try:
         sh("mkdir Feral.rj")
     except Exception:
         pass
     sh("rsync --archive --delete --exclude=source --exclude=44100 Feral_Dev.rj/* Feral.rj/")
+    
+@task
+def update_rjlib():
+    rj_checkout = path("~/Web/src/rjlib/").expanduser()
+    with pushd(rj_checkout):
+        sh("git pull")
+    sh("rsync -v --archive --delete --exclude=.git %s* SceneTemplate.rj/rj/" % rj_checkout)
