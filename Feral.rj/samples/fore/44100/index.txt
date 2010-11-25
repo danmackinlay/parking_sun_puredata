@@ -1,2 +1,4 @@
 NS_Wind_Chimes.aif 0
-lombok_cowbell_motorbikes_orig.aif 1
+jimbot_suling_narcosis.aif 1
+rebab_jam_exerpt_00.aif 2
+thumb_piano_in_the_kitchen.aif 3
