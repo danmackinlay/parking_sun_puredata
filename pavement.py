@@ -61,4 +61,4 @@ def update_rjlib():
     rj_checkout = path("~/Web/src/rjlib/").expanduser()
     with pushd(rj_checkout):
         sh("git pull")
-    sh("rsync -v --archive --delete --exclude=.git %s* SceneTemplate.rj/rj/" % rj_checkout)
+    sh("rsync -v --archive --delete --exclude=.git %s/rj/* SceneTemplate.rj/rj/" % rj_checkout)
