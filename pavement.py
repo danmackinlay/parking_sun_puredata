@@ -54,7 +54,7 @@ def strip_feral():
         sh("mkdir Feral.rj")
     except Exception:
         pass
-    sh("rsync -v --archive --delete --exclude=source --exclude=44100 Feral_Dev.rj/* Feral.rj/")
+    sh("rsync -v --archive --delete --delete-excluded --exclude=source --exclude=.DS_Store --exclude=44100 Feral_Dev.rj/* Feral.rj/")
     
 @task
 def update_rjlib():
