@@ -1,13 +1,19 @@
 #N canvas 300 369 721 432 10;
 #N canvas 521 364 759 580 guts 0;
+<<<<<<< HEAD
 #X floatatom 230 85 0 0 0 0 - - -;
+=======
+>>>>>>> 190b0134d2103c02e419d7d7e60b13c7bfa3c2fd
 #X obj 286 395 *~;
 #X obj 383 272 line~;
 #X floatatom 340 86 0 0 0 0 - - -;
 #X text 68 9 PITCH SHIFTER;
 #X obj 383 246 pack 0 200;
 #X obj 223 139 exp;
+<<<<<<< HEAD
 #X floatatom 223 160 6 0 0 0 - - -;
+=======
+>>>>>>> 190b0134d2103c02e419d7d7e60b13c7bfa3c2fd
 #X obj 224 238 /;
 #X obj 276 183 * 0.001;
 #X obj 518 361 line~;
@@ -24,7 +30,10 @@
 #X obj 382 481 *~;
 #X obj 423 38 loadbang;
 #X obj 277 204 t b f;
+<<<<<<< HEAD
 #X floatatom 224 259 6 0 0 0 - - -;
+=======
+>>>>>>> 190b0134d2103c02e419d7d7e60b13c7bfa3c2fd
 #X obj 382 346 +~ 0.5;
 #X obj 223 395 -~ 0.5;
 #X obj 223 421 *~ 0.5;
@@ -57,6 +66,7 @@
 #X msg 554 199 1.5;
 #X obj 223 294 line~;
 #X msg 224 275 \$1 30;
+<<<<<<< HEAD
 #X connect 0 0 31 0;
 #X connect 1 0 13 0;
 #X connect 2 0 1 1;
@@ -110,6 +120,58 @@
 #X connect 54 0 12 0;
 #X connect 55 0 37 0;
 #X connect 56 0 55 0;
+=======
+#X connect 0 0 11 0;
+#X connect 1 0 0 1;
+#X connect 1 0 16 1;
+#X connect 2 0 38 0;
+#X connect 4 0 1 0;
+#X connect 5 0 27 0;
+#X connect 6 0 53 0;
+#X connect 7 0 21 0;
+#X connect 8 0 11 1;
+#X connect 8 0 17 1;
+#X connect 9 0 8 0;
+#X connect 10 0 35 0;
+#X connect 11 0 45 0;
+#X connect 12 0 13 0;
+#X connect 13 0 14 0;
+#X connect 14 0 47 0;
+#X connect 15 0 16 0;
+#X connect 15 0 25 0;
+#X connect 16 0 17 0;
+#X connect 17 0 46 0;
+#X connect 18 0 19 0;
+#X connect 19 0 14 1;
+#X connect 20 0 50 0;
+#X connect 20 0 51 0;
+#X connect 21 0 6 0;
+#X connect 21 1 6 1;
+#X connect 22 0 15 0;
+#X connect 23 0 24 0;
+#X connect 24 0 12 0;
+#X connect 25 0 26 0;
+#X connect 26 0 18 0;
+#X connect 27 0 29 0;
+#X connect 28 0 5 0;
+#X connect 29 0 6 0;
+#X connect 34 0 0 0;
+#X connect 34 0 23 0;
+#X connect 34 0 22 0;
+#X connect 35 0 9 0;
+#X connect 38 0 7 0;
+#X connect 38 0 4 0;
+#X connect 40 0 28 0;
+#X connect 42 0 2 0;
+#X connect 45 0 13 1;
+#X connect 46 0 19 1;
+#X connect 48 0 44 0;
+#X connect 49 0 10 0;
+#X connect 50 0 2 0;
+#X connect 51 0 10 0;
+#X connect 52 0 34 0;
+#X connect 53 0 52 0;
+>>>>>>> 190b0134d2103c02e419d7d7e60b13c7bfa3c2fd
 #X restore 78 148 pd guts;
 #X obj 78 46 inlet~;
 #X obj 79 201 outlet~;

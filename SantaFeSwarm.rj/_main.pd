@@ -1,14 +1,23 @@
+<<<<<<< HEAD
 #N canvas 47 23 1263 735 10;
 #X declare -path .;
 #X declare -path rj;
 #X obj 75 23 soundinput;
 #X obj 73 544 soundoutput;
+=======
+#N canvas 36 58 1284 784 10;
+#X declare -path .;
+#X declare -path rj;
+#X obj 75 31 soundinput;
+#X obj 73 627 soundoutput;
+>>>>>>> 190b0134d2103c02e419d7d7e60b13c7bfa3c2fd
 #X obj 571 79 OVERVIEW;
 #X obj 571 24 declare -path .;
 #X obj 571 52 declare -path rj;
 #X obj 75 80 +~;
 #X obj 219 186 < 1;
 #X floatatom 219 207 0 0 0 0 - - -;
+<<<<<<< HEAD
 #X msg 172 230 auto \$1;
 #X obj 73 509 e_dynproc sunlimiter -10;
 #X obj 188 544 loadbang;
@@ -27,6 +36,21 @@
 #X obj 219 160 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 291 316 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+=======
+#X obj 73 592 e_dynproc sunlimiter -10;
+#X obj 188 627 loadbang;
+#X obj 73 497 *~;
+#X obj 90 255 lop~ 5;
+#X obj 90 232 sig~ 0;
+#X text 238 154 0 for listen 1 for speak;
+#X msg 396 32 \; pd dsp 1;
+#X floatatom 172 331 8 40 100 1 detected - -;
+#X obj 172 304 fiddle~ 1024 1 20 3;
+#X msg 396 67 \; pd dsp 0;
+#X obj 219 160 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 280 331 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+>>>>>>> 190b0134d2103c02e419d7d7e60b13c7bfa3c2fd
 -1 -1;
 #X obj 219 131 metro 1000;
 #X obj 539 132 loadbang;
@@ -45,6 +69,7 @@
 #X msg 539 153 bang;
 #X msg 590 293 1;
 #X obj 544 342 - 0;
+<<<<<<< HEAD
 #X obj 387 270 expr 1000*pow(10. \, $f1);
 #X floatatom 219 102 10 0 0 0 - - -;
 #X obj 387 201 c_frand 0 1;
@@ -124,3 +149,103 @@ sychronised chords w/ neighbours?;
 #X connect 57 0 44 0;
 #X connect 57 1 30 0;
 #X connect 57 2 40 0;
+=======
+#X floatatom 280 98 10 0 0 0 - - -;
+#X obj 387 201 c_frand 0 1;
+#X floatatom 172 418 8 40 100 1 output - -;
+#X text 245 572 should I give everything a fundamental pitch that it
+wishes to synchronise to? How about filtering out self and forming
+sychronised chords w/ neighbours?;
+#X obj 172 397 + 0;
+#X obj 143 560 e_agc;
+#X obj 102 678 s~ \$0-env~;
+#X obj 73 523 hip~ 100;
+#X text 112 123 poss too low for AGC;
+#X msg 188 651 comp2 1 \, comp1 100 \, rel 200 \, att 20 \, thresh
+94 \, makeup 100;
+#X obj 540 175 t b b b;
+#X obj 183 445 mtof;
+#X obj 73 469 bp~ 500 10;
+#X obj 387 270 expr 1000*pow(10. \, $f1);
+#X obj 75 130 *~ 10;
+#X obj 297 -39 loadbang;
+#X msg 222 0 comp2 100 \, comp1 1 \, rel 50 \, att 20 \, thresh 35
+\, makeup 100;
+#X obj 73 444 e_forcepitch poo;
+#X obj 75 105 e_dynproc sunlimiterb -10;
+#X obj 75 154 e_agc sungaina;
+#X msg 191 281 auto \$1;
+#X obj 319 373 maximum;
+#X obj 391 373 f;
+#X obj 358 428 moses 0.5;
+#X obj 359 406 > 0;
+#X connect 0 0 5 0;
+#X connect 0 1 5 1;
+#X connect 5 0 55 0;
+#X connect 5 0 55 1;
+#X connect 6 0 7 0;
+#X connect 7 0 57 0;
+#X connect 8 0 1 0;
+#X connect 8 0 1 1;
+#X connect 8 0 43 0;
+#X connect 9 0 46 0;
+#X connect 10 0 44 0;
+#X connect 11 0 10 1;
+#X connect 12 0 11 0;
+#X connect 15 0 41 0;
+#X connect 16 0 15 0;
+#X connect 16 1 19 0;
+#X connect 18 0 12 0;
+#X connect 18 0 6 0;
+#X connect 20 0 18 0;
+#X connect 20 0 38 0;
+#X connect 21 0 34 0;
+#X connect 21 0 57 0;
+#X connect 22 0 23 0;
+#X connect 23 0 29 1;
+#X connect 24 0 32 0;
+#X connect 25 0 22 0;
+#X connect 26 0 27 0;
+#X connect 27 0 28 0;
+#X connect 28 0 29 0;
+#X connect 29 0 24 0;
+#X connect 30 0 41 1;
+#X connect 31 0 50 0;
+#X connect 32 0 36 0;
+#X connect 33 0 36 1;
+#X connect 34 0 47 0;
+#X connect 35 0 33 0;
+#X connect 36 0 30 0;
+#X connect 37 0 20 1;
+#X connect 38 0 31 0;
+#X connect 39 0 48 0;
+#X connect 39 0 54 1;
+#X connect 41 0 39 0;
+#X connect 42 0 8 0;
+#X connect 42 0 8 1;
+#X connect 44 0 42 0;
+#X connect 44 0 8 0;
+#X connect 44 0 8 1;
+#X connect 46 0 8 2;
+#X connect 47 0 26 0;
+#X connect 47 0 38 0;
+#X connect 47 1 25 0;
+#X connect 47 2 35 0;
+#X connect 48 0 49 1;
+#X connect 49 0 10 0;
+#X connect 50 0 37 0;
+#X connect 51 0 56 0;
+#X connect 52 0 53 0;
+#X connect 52 0 20 0;
+#X connect 53 0 55 2;
+#X connect 54 0 49 0;
+#X connect 55 0 51 0;
+#X connect 56 0 16 0;
+#X connect 56 0 54 0;
+#X connect 57 0 16 0;
+#X connect 58 0 59 0;
+#X connect 58 0 61 0;
+#X connect 59 0 58 1;
+#X connect 59 0 61 1;
+#X connect 61 0 60 0;
+>>>>>>> 190b0134d2103c02e419d7d7e60b13c7bfa3c2fd

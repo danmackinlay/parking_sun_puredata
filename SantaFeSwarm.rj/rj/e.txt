@@ -27,5 +27,9 @@ e_reverb - simple reverb
 e_scompress - compressor with sidechain (can be used without as well)
 e_sdelay - static delay line
 e_softclip - tube-like distortion (tanh)
+<<<<<<< HEAD
+=======
+e_stereowidener - widens the sound field of a stereo signal
+>>>>>>> 190b0134d2103c02e419d7d7e60b13c7bfa3c2fd
 e_tremolo - simple tremolo
 e_vocoder - FFT vocoder
