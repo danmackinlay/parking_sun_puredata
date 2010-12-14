@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>editorViewerWindow</key>
-	<string>-858 65 512 430 -1680 0 1680 1050 </string>
+	<string>-822 132 512 430 -1680 0 1680 1050 </string>
 	<key>frameworkVersion</key>
 	<string>{156.28}</string>
 	<key>portAttributes</key>
@@ -153,12 +153,56 @@
 								<key>sourcePort</key>
 								<string>outputObjects</string>
 							</dict>
+							<key>connection_10</key>
+							<dict>
+								<key>destinationNode</key>
+								<string>Iterator_2</string>
+								<key>destinationPort</key>
+								<string>fx_2</string>
+								<key>sourceNode</key>
+								<string>JavaScript_2</string>
+								<key>sourcePort</key>
+								<string>fx2</string>
+							</dict>
+							<key>connection_11</key>
+							<dict>
+								<key>destinationNode</key>
+								<string>Iterator_2</string>
+								<key>destinationPort</key>
+								<string>fx_3</string>
+								<key>sourceNode</key>
+								<string>JavaScript_2</string>
+								<key>sourcePort</key>
+								<string>fx3</string>
+							</dict>
+							<key>connection_12</key>
+							<dict>
+								<key>destinationNode</key>
+								<string>Iterator_2</string>
+								<key>destinationPort</key>
+								<string>fx_4</string>
+								<key>sourceNode</key>
+								<string>JavaScript_2</string>
+								<key>sourcePort</key>
+								<string>fx4</string>
+							</dict>
+							<key>connection_13</key>
+							<dict>
+								<key>destinationNode</key>
+								<string>Iterator_2</string>
+								<key>destinationPort</key>
+								<string>fx_5</string>
+								<key>sourceNode</key>
+								<string>JavaScript_2</string>
+								<key>sourcePort</key>
+								<string>fx5</string>
+							</dict>
 							<key>connection_2</key>
 							<dict>
 								<key>destinationNode</key>
-								<string>Iterator_1</string>
+								<string>Iterator_2</string>
 								<key>destinationPort</key>
-								<string>Structure</string>
+								<string>voice_0</string>
 								<key>sourceNode</key>
 								<string>JavaScript_2</string>
 								<key>sourcePort</key>
@@ -167,24 +211,79 @@
 							<key>connection_3</key>
 							<dict>
 								<key>destinationNode</key>
-								<string>StructureCount_2</string>
+								<string>Iterator_2</string>
 								<key>destinationPort</key>
-								<string>inputStructure</string>
+								<string>voice_1</string>
 								<key>sourceNode</key>
 								<string>JavaScript_2</string>
 								<key>sourcePort</key>
-								<string>voice0</string>
+								<string>voice1</string>
+							</dict>
+							<key>connection_4</key>
+							<dict>
+								<key>destinationNode</key>
+								<string>Iterator_2</string>
+								<key>destinationPort</key>
+								<string>voice_2</string>
+								<key>sourceNode</key>
+								<string>JavaScript_2</string>
+								<key>sourcePort</key>
+								<string>voice2</string>
 							</dict>
 							<key>connection_5</key>
 							<dict>
 								<key>destinationNode</key>
-								<string>Iterator_1</string>
+								<string>Iterator_2</string>
 								<key>destinationPort</key>
-								<string>inputCount</string>
+								<string>voice_3</string>
 								<key>sourceNode</key>
-								<string>StructureCount_2</string>
+								<string>JavaScript_2</string>
 								<key>sourcePort</key>
-								<string>outputCount</string>
+								<string>voice3</string>
+							</dict>
+							<key>connection_6</key>
+							<dict>
+								<key>destinationNode</key>
+								<string>Iterator_2</string>
+								<key>destinationPort</key>
+								<string>voice_4</string>
+								<key>sourceNode</key>
+								<string>JavaScript_2</string>
+								<key>sourcePort</key>
+								<string>voice4</string>
+							</dict>
+							<key>connection_7</key>
+							<dict>
+								<key>destinationNode</key>
+								<string>Iterator_2</string>
+								<key>destinationPort</key>
+								<string>voice_5</string>
+								<key>sourceNode</key>
+								<string>JavaScript_2</string>
+								<key>sourcePort</key>
+								<string>voice5</string>
+							</dict>
+							<key>connection_8</key>
+							<dict>
+								<key>destinationNode</key>
+								<string>Iterator_2</string>
+								<key>destinationPort</key>
+								<string>fx_0</string>
+								<key>sourceNode</key>
+								<string>JavaScript_2</string>
+								<key>sourcePort</key>
+								<string>fx0</string>
+							</dict>
+							<key>connection_9</key>
+							<dict>
+								<key>destinationNode</key>
+								<string>Iterator_2</string>
+								<key>destinationPort</key>
+								<string>fx_1</string>
+								<key>sourceNode</key>
+								<string>JavaScript_2</string>
+								<key>sourcePort</key>
+								<string>fx1</string>
 							</dict>
 						</dict>
 						<key>customInputPortStates</key>
@@ -283,34 +382,6 @@
 						<array>
 							<dict>
 								<key>class</key>
-								<string>QCStructureCount</string>
-								<key>key</key>
-								<string>StructureCount_2</string>
-								<key>state</key>
-								<dict>
-									<key>userInfo</key>
-									<data>
-								BAtzdHJlYW10
-								eXBlZIHoA4QB
-								QISEhBNOU011
-								dGFibGVEaWN0
-								aW9uYXJ5AISE
-								DE5TRGljdGlv
-								bmFyeQCEhAhO
-								U09iamVjdACF
-								hAFpAZKEhIQI
-								TlNTdHJpbmcB
-								lYQBKwhwb3Np
-								dGlvboaShISE
-								B05TVmFsdWUA
-								lYQBKoSEDHtD
-								R1BvaW50PWRk
-								fZthxYaG
-									</data>
-								</dict>
-							</dict>
-							<dict>
-								<key>class</key>
 								<string>QCJavaScript</string>
 								<key>key</key>
 								<string>JavaScript_2</string>
@@ -335,11 +406,12 @@ Note that the function input arguments are read-only.
 var state = new Object();
 state.firstTime = true;
 
-function (__structure voice0, __structure voice1, __structure voice2, __structure voice3, __structure voice4, __structure voice5, __structure voice6, __string debug) main (__structure inputTuios) {
+function (__structure voice0, __structure voice1, __structure voice2, __structure voice3, __structure voice4, __structure voice5, __structure fx0, __structure fx1, __structure fx2, __structure fx3, __structure fx4, __structure fx5, __string debug) main (__structure inputTuios) {
 	var result = new Object();
 	var voice = null;
 	var to_copy = null;
-	var outvoice = null;
+	var outchan = null;
+	var outvoicenum = null;
 	var _debugstring = "l " + Math.random() ;
 	if (!_testMode){
 		Log("nontest");
@@ -349,11 +421,17 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 			for (j in to_copy) {
                   voice[j] = to_copy[j];
               }
-              outvoice = 'voice' + Math.floor(to_copy.c_id/6);
-              if (!result[outvoice]) {
-                  result[outvoice] = [voice];
-              } else {
-                  result[outvoice].push(voice);
+              outvoicenum = Math.floor(to_copy.c_id/6);
+              if (outvoicenum&lt;=4) { //'voice info' in low voice #s
+                outchan = 'voice' + Math.floor(to_copy.c_id/6);
+                if (!result[outchan]) {
+                    result[outchan] = [voice];
+                } else {
+                    result[outchan].push(voice);
+                }
+              } else { //'fx info' in higher voice #s
+                outchan = 'fx' + (to_copy.c_id-30);
+                result[outchan] = voice;
               }
         }
 	}
@@ -427,7 +505,7 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								<key>class</key>
 								<string>QCIterator</string>
 								<key>key</key>
-								<string>Iterator_1</string>
+								<string>Iterator_2</string>
 								<key>state</key>
 								<dict>
 									<key>connections</key>
@@ -435,7 +513,7 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 										<key>connection_1</key>
 										<dict>
 											<key>destinationNode</key>
-											<string>StructureMember_index_1</string>
+											<string>Multiplexer_1</string>
 											<key>destinationPort</key>
 											<string>inputIndex</string>
 											<key>sourceNode</key>
@@ -443,284 +521,108 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 											<key>sourcePort</key>
 											<string>outputIndex</string>
 										</dict>
-										<key>connection_10</key>
-										<dict>
-											<key>destinationNode</key>
-											<string>Camera_1</string>
-											<key>destinationPort</key>
-											<string>Y_Position</string>
-											<key>sourceNode</key>
-											<string>StructureMember_key_2</string>
-											<key>sourcePort</key>
-											<string>outputMember</string>
-										</dict>
-										<key>connection_11</key>
-										<dict>
-											<key>destinationNode</key>
-											<string>Math_6</string>
-											<key>destinationPort</key>
-											<string>inputValue</string>
-											<key>sourceNode</key>
-											<string>Math_1</string>
-											<key>sourcePort</key>
-											<string>outputValue</string>
-										</dict>
-										<key>connection_12</key>
-										<dict>
-											<key>destinationNode</key>
-											<string>Math_3</string>
-											<key>destinationPort</key>
-											<string>inputValue</string>
-											<key>sourceNode</key>
-											<string>Math_2</string>
-											<key>sourcePort</key>
-											<string>outputValue</string>
-										</dict>
-										<key>connection_13</key>
-										<dict>
-											<key>destinationNode</key>
-											<string>Math_4</string>
-											<key>destinationPort</key>
-											<string>inputValue</string>
-											<key>sourceNode</key>
-											<string>Math_3</string>
-											<key>sourcePort</key>
-											<string>outputValue</string>
-										</dict>
-										<key>connection_14</key>
-										<dict>
-											<key>destinationNode</key>
-											<string>Camera_1</string>
-											<key>destinationPort</key>
-											<string>inputRotateX</string>
-											<key>sourceNode</key>
-											<string>Math_6</string>
-											<key>sourcePort</key>
-											<string>outputValue</string>
-										</dict>
-										<key>connection_15</key>
-										<dict>
-											<key>destinationNode</key>
-											<string>Camera_1</string>
-											<key>destinationPort</key>
-											<string>inputRotateY</string>
-											<key>sourceNode</key>
-											<string>Math_7</string>
-											<key>sourcePort</key>
-											<string>outputValue</string>
-										</dict>
-										<key>connection_16</key>
-										<dict>
-											<key>destinationNode</key>
-											<string>Math_7</string>
-											<key>destinationPort</key>
-											<string>inputValue</string>
-											<key>sourceNode</key>
-											<string>Math_2</string>
-											<key>sourcePort</key>
-											<string>outputValue</string>
-										</dict>
-										<key>connection_17</key>
-										<dict>
-											<key>destinationNode</key>
-											<string>Math_8</string>
-											<key>destinationPort</key>
-											<string>inputValue</string>
-											<key>sourceNode</key>
-											<string>Math_3</string>
-											<key>sourcePort</key>
-											<string>outputValue</string>
-										</dict>
-										<key>connection_18</key>
-										<dict>
-											<key>destinationNode</key>
-											<string>Camera_1</string>
-											<key>destinationPort</key>
-											<string>inputRotateZ</string>
-											<key>sourceNode</key>
-											<string>Math_8</string>
-											<key>sourcePort</key>
-											<string>outputValue</string>
-										</dict>
-										<key>connection_19</key>
-										<dict>
-											<key>destinationNode</key>
-											<string>Camera_1</string>
-											<key>destinationPort</key>
-											<string>Width</string>
-											<key>sourceNode</key>
-											<string>Math_3</string>
-											<key>sourcePort</key>
-											<string>outputValue</string>
-										</dict>
 										<key>connection_2</key>
 										<dict>
 											<key>destinationNode</key>
-											<string>StructureMember_key_1</string>
+											<string>Multiplexer_2</string>
 											<key>destinationPort</key>
-											<string>inputStructure</string>
+											<string>inputIndex</string>
 											<key>sourceNode</key>
-											<string>StructureMember_index_1</string>
+											<string>IteratorVariables_1</string>
 											<key>sourcePort</key>
-											<string>outputMember</string>
-										</dict>
-										<key>connection_20</key>
-										<dict>
-											<key>destinationNode</key>
-											<string>Camera_1</string>
-											<key>destinationPort</key>
-											<string>Height</string>
-											<key>sourceNode</key>
-											<string>Math_9</string>
-											<key>sourcePort</key>
-											<string>outputValue</string>
-										</dict>
-										<key>connection_21</key>
-										<dict>
-											<key>destinationNode</key>
-											<string>Camera_1</string>
-											<key>destinationPort</key>
-											<string>Depth</string>
-											<key>sourceNode</key>
-											<string>Math_10</string>
-											<key>sourcePort</key>
-											<string>outputValue</string>
-										</dict>
-										<key>connection_22</key>
-										<dict>
-											<key>destinationNode</key>
-											<string>Math_9</string>
-											<key>destinationPort</key>
-											<string>inputValue</string>
-											<key>sourceNode</key>
-											<string>Math_4</string>
-											<key>sourcePort</key>
-											<string>outputValue</string>
-										</dict>
-										<key>connection_24</key>
-										<dict>
-											<key>destinationNode</key>
-											<string>ColorFromComponents_hsl_1</string>
-											<key>destinationPort</key>
-											<string>input1</string>
-											<key>sourceNode</key>
-											<string>Math_2</string>
-											<key>sourcePort</key>
-											<string>outputValue</string>
-										</dict>
-										<key>connection_25</key>
-										<dict>
-											<key>destinationNode</key>
-											<string>ColorFromComponents_hsl_1</string>
-											<key>destinationPort</key>
-											<string>input2</string>
-											<key>sourceNode</key>
-											<string>Math_3</string>
-											<key>sourcePort</key>
-											<string>outputValue</string>
-										</dict>
-										<key>connection_26</key>
-										<dict>
-											<key>destinationNode</key>
-											<string>ColorFromComponents_hsl_1</string>
-											<key>destinationPort</key>
-											<string>input3</string>
-											<key>sourceNode</key>
-											<string>Math_4</string>
-											<key>sourcePort</key>
-											<string>outputValue</string>
-										</dict>
-										<key>connection_27</key>
-										<dict>
-											<key>destinationNode</key>
-											<string>Math_10</string>
-											<key>destinationPort</key>
-											<string>operand_1</string>
-											<key>sourceNode</key>
-											<string>Math_9</string>
-											<key>sourcePort</key>
-											<string>outputValue</string>
+											<string>outputIndex</string>
 										</dict>
 										<key>connection_3</key>
 										<dict>
 											<key>destinationNode</key>
-											<string>Camera_1</string>
+											<string>StructureCount_2</string>
 											<key>destinationPort</key>
-											<string>color</string>
+											<string>inputStructure</string>
 											<key>sourceNode</key>
-											<string>ColorFromComponents_hsl_1</string>
+											<string>Multiplexer_1</string>
 											<key>sourcePort</key>
-											<string>outputColor</string>
+											<string>output</string>
 										</dict>
 										<key>connection_4</key>
 										<dict>
 											<key>destinationNode</key>
-											<string>StructureMember_key_2</string>
+											<string>Iterator_1</string>
 											<key>destinationPort</key>
-											<string>inputStructure</string>
+											<string>Structure</string>
 											<key>sourceNode</key>
-											<string>StructureMember_index_1</string>
+											<string>Multiplexer_1</string>
 											<key>sourcePort</key>
-											<string>outputMember</string>
+											<string>output</string>
 										</dict>
 										<key>connection_5</key>
 										<dict>
 											<key>destinationNode</key>
-											<string>Math_5</string>
+											<string>Iterator_1</string>
 											<key>destinationPort</key>
-											<string>inputValue</string>
+											<string>inputCount</string>
 											<key>sourceNode</key>
-											<string>Math_4</string>
+											<string>StructureCount_2</string>
 											<key>sourcePort</key>
-											<string>outputValue</string>
+											<string>outputCount</string>
 										</dict>
 										<key>connection_6</key>
 										<dict>
 											<key>destinationNode</key>
-											<string>StructureMember_key_3</string>
+											<string>Iterator_1</string>
 											<key>destinationPort</key>
-											<string>inputStructure</string>
+											<string>voice_number</string>
 											<key>sourceNode</key>
-											<string>StructureMember_index_1</string>
+											<string>IteratorVariables_1</string>
 											<key>sourcePort</key>
-											<string>outputMember</string>
+											<string>outputIndex</string>
 										</dict>
-										<key>connection_7</key>
+									</dict>
+									<key>ivarInputPortStates</key>
+									<dict>
+										<key>inputCount</key>
 										<dict>
-											<key>destinationNode</key>
-											<string>Math_1</string>
-											<key>destinationPort</key>
-											<string>inputValue</string>
-											<key>sourceNode</key>
-											<string>StructureMember_key_3</string>
-											<key>sourcePort</key>
-											<string>outputMember</string>
-										</dict>
-										<key>connection_8</key>
-										<dict>
-											<key>destinationNode</key>
-											<string>Camera_1</string>
-											<key>destinationPort</key>
-											<string>X_Position</string>
-											<key>sourceNode</key>
-											<string>StructureMember_key_1</string>
-											<key>sourcePort</key>
-											<string>outputMember</string>
-										</dict>
-										<key>connection_9</key>
-										<dict>
-											<key>destinationNode</key>
-											<string>Math_2</string>
-											<key>destinationPort</key>
-											<string>inputValue</string>
-											<key>sourceNode</key>
-											<string>Math_1</string>
-											<key>sourcePort</key>
-											<string>outputValue</string>
+											<key>value</key>
+											<integer>6</integer>
 										</dict>
 									</dict>
 									<key>nodes</key>
 									<array>
+										<dict>
+											<key>class</key>
+											<string>QCMultiplexer</string>
+											<key>key</key>
+											<string>Multiplexer_1</string>
+											<key>state</key>
+											<dict>
+												<key>inputCount</key>
+												<integer>6</integer>
+												<key>portClass</key>
+												<string>QCStructurePort</string>
+												<key>userInfo</key>
+												<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpApKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gMdm9p
+								Y2Ugc2VsZWN0
+								hpKEl5gIcG9z
+								aXRpb26GkoSE
+								hAdOU1ZhbHVl
+								AJWEASqEhAx7
+								Q0dQb2ludD1k
+								ZH2bgTj/gTX/
+								hoY=
+												</data>
+											</dict>
+										</dict>
 										<dict>
 											<key>class</key>
 											<string>QCIteratorVariables</string>
@@ -745,18 +647,51 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZuB9/6Bff+G
+								fZuBef6Bvf6G
 								hg==
 												</data>
 											</dict>
 										</dict>
 										<dict>
 											<key>class</key>
-											<string>QCStructureMember</string>
-											<key>identifier</key>
-											<string>index</string>
+											<string>QCMultiplexer</string>
 											<key>key</key>
-											<string>StructureMember_index_1</string>
+											<string>Multiplexer_2</string>
+											<key>state</key>
+											<dict>
+												<key>inputCount</key>
+												<integer>6</integer>
+												<key>portClass</key>
+												<string>QCStructurePort</string>
+												<key>userInfo</key>
+												<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpApKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gJZngg
+								c2VsZWN0hpKE
+								l5gIcG9zaXRp
+								b26GkoSEhAdO
+								U1ZhbHVlAJWE
+								ASqEhAx7Q0dQ
+								b2ludD1kZH2b
+								gTv/rYaG
+												</data>
+											</dict>
+										</dict>
+										<dict>
+											<key>class</key>
+											<string>QCStructureCount</string>
+											<key>key</key>
+											<string>StructureCount_2</string>
 											<key>state</key>
 											<dict>
 												<key>userInfo</key>
@@ -776,29 +711,328 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZuB9f7RhoY=
+								fZvLgdX+hoY=
 												</data>
 											</dict>
 										</dict>
 										<dict>
 											<key>class</key>
-											<string>QCStructureMember</string>
-											<key>identifier</key>
-											<string>key</string>
+											<string>QCIterator</string>
 											<key>key</key>
-											<string>StructureMember_key_1</string>
+											<string>Iterator_1</string>
 											<key>state</key>
 											<dict>
-												<key>customInputPortStates</key>
+												<key>connections</key>
 												<dict>
-													<key>inputKey</key>
+													<key>connection_1</key>
 													<dict>
-														<key>value</key>
-														<string>xpos</string>
+														<key>destinationNode</key>
+														<string>Expression_1</string>
+														<key>destinationPort</key>
+														<string>b</string>
+														<key>sourceNode</key>
+														<string>StructureMember_key_3</string>
+														<key>sourcePort</key>
+														<string>outputMember</string>
+													</dict>
+													<key>connection_10</key>
+													<dict>
+														<key>destinationNode</key>
+														<string>Camera_1</string>
+														<key>destinationPort</key>
+														<string>Y_Position</string>
+														<key>sourceNode</key>
+														<string>StructureMember_key_2</string>
+														<key>sourcePort</key>
+														<string>outputMember</string>
+													</dict>
+													<key>connection_11</key>
+													<dict>
+														<key>destinationNode</key>
+														<string>Math_6</string>
+														<key>destinationPort</key>
+														<string>inputValue</string>
+														<key>sourceNode</key>
+														<string>Math_1</string>
+														<key>sourcePort</key>
+														<string>outputValue</string>
+													</dict>
+													<key>connection_12</key>
+													<dict>
+														<key>destinationNode</key>
+														<string>Math_3</string>
+														<key>destinationPort</key>
+														<string>inputValue</string>
+														<key>sourceNode</key>
+														<string>Math_2</string>
+														<key>sourcePort</key>
+														<string>outputValue</string>
+													</dict>
+													<key>connection_13</key>
+													<dict>
+														<key>destinationNode</key>
+														<string>Math_4</string>
+														<key>destinationPort</key>
+														<string>inputValue</string>
+														<key>sourceNode</key>
+														<string>Math_3</string>
+														<key>sourcePort</key>
+														<string>outputValue</string>
+													</dict>
+													<key>connection_14</key>
+													<dict>
+														<key>destinationNode</key>
+														<string>Camera_1</string>
+														<key>destinationPort</key>
+														<string>inputRotateX</string>
+														<key>sourceNode</key>
+														<string>Math_6</string>
+														<key>sourcePort</key>
+														<string>outputValue</string>
+													</dict>
+													<key>connection_15</key>
+													<dict>
+														<key>destinationNode</key>
+														<string>Camera_1</string>
+														<key>destinationPort</key>
+														<string>inputRotateY</string>
+														<key>sourceNode</key>
+														<string>Math_7</string>
+														<key>sourcePort</key>
+														<string>outputValue</string>
+													</dict>
+													<key>connection_16</key>
+													<dict>
+														<key>destinationNode</key>
+														<string>Math_7</string>
+														<key>destinationPort</key>
+														<string>inputValue</string>
+														<key>sourceNode</key>
+														<string>Math_2</string>
+														<key>sourcePort</key>
+														<string>outputValue</string>
+													</dict>
+													<key>connection_17</key>
+													<dict>
+														<key>destinationNode</key>
+														<string>Math_8</string>
+														<key>destinationPort</key>
+														<string>inputValue</string>
+														<key>sourceNode</key>
+														<string>Math_3</string>
+														<key>sourcePort</key>
+														<string>outputValue</string>
+													</dict>
+													<key>connection_18</key>
+													<dict>
+														<key>destinationNode</key>
+														<string>Camera_1</string>
+														<key>destinationPort</key>
+														<string>inputRotateZ</string>
+														<key>sourceNode</key>
+														<string>Math_8</string>
+														<key>sourcePort</key>
+														<string>outputValue</string>
+													</dict>
+													<key>connection_19</key>
+													<dict>
+														<key>destinationNode</key>
+														<string>Camera_1</string>
+														<key>destinationPort</key>
+														<string>Width</string>
+														<key>sourceNode</key>
+														<string>Math_3</string>
+														<key>sourcePort</key>
+														<string>outputValue</string>
+													</dict>
+													<key>connection_2</key>
+													<dict>
+														<key>destinationNode</key>
+														<string>StructureMember_key_1</string>
+														<key>destinationPort</key>
+														<string>inputStructure</string>
+														<key>sourceNode</key>
+														<string>StructureMember_index_1</string>
+														<key>sourcePort</key>
+														<string>outputMember</string>
+													</dict>
+													<key>connection_20</key>
+													<dict>
+														<key>destinationNode</key>
+														<string>Camera_1</string>
+														<key>destinationPort</key>
+														<string>Height</string>
+														<key>sourceNode</key>
+														<string>Math_9</string>
+														<key>sourcePort</key>
+														<string>outputValue</string>
+													</dict>
+													<key>connection_21</key>
+													<dict>
+														<key>destinationNode</key>
+														<string>Camera_1</string>
+														<key>destinationPort</key>
+														<string>Depth</string>
+														<key>sourceNode</key>
+														<string>Math_10</string>
+														<key>sourcePort</key>
+														<string>outputValue</string>
+													</dict>
+													<key>connection_22</key>
+													<dict>
+														<key>destinationNode</key>
+														<string>Math_9</string>
+														<key>destinationPort</key>
+														<string>inputValue</string>
+														<key>sourceNode</key>
+														<string>Math_4</string>
+														<key>sourcePort</key>
+														<string>outputValue</string>
+													</dict>
+													<key>connection_23</key>
+													<dict>
+														<key>destinationNode</key>
+														<string>Expression_1</string>
+														<key>destinationPort</key>
+														<string>a</string>
+														<key>sourceNode</key>
+														<string>Splitter_1</string>
+														<key>sourcePort</key>
+														<string>output</string>
+													</dict>
+													<key>connection_24</key>
+													<dict>
+														<key>destinationNode</key>
+														<string>ColorFromComponents_hsl_1</string>
+														<key>destinationPort</key>
+														<string>input1</string>
+														<key>sourceNode</key>
+														<string>Math_2</string>
+														<key>sourcePort</key>
+														<string>outputValue</string>
+													</dict>
+													<key>connection_25</key>
+													<dict>
+														<key>destinationNode</key>
+														<string>ColorFromComponents_hsl_1</string>
+														<key>destinationPort</key>
+														<string>input2</string>
+														<key>sourceNode</key>
+														<string>Math_3</string>
+														<key>sourcePort</key>
+														<string>outputValue</string>
+													</dict>
+													<key>connection_26</key>
+													<dict>
+														<key>destinationNode</key>
+														<string>ColorFromComponents_hsl_1</string>
+														<key>destinationPort</key>
+														<string>input3</string>
+														<key>sourceNode</key>
+														<string>Math_4</string>
+														<key>sourcePort</key>
+														<string>outputValue</string>
+													</dict>
+													<key>connection_27</key>
+													<dict>
+														<key>destinationNode</key>
+														<string>Math_10</string>
+														<key>destinationPort</key>
+														<string>operand_1</string>
+														<key>sourceNode</key>
+														<string>Math_9</string>
+														<key>sourcePort</key>
+														<string>outputValue</string>
+													</dict>
+													<key>connection_3</key>
+													<dict>
+														<key>destinationNode</key>
+														<string>Camera_1</string>
+														<key>destinationPort</key>
+														<string>color</string>
+														<key>sourceNode</key>
+														<string>ColorFromComponents_hsl_1</string>
+														<key>sourcePort</key>
+														<string>outputColor</string>
+													</dict>
+													<key>connection_4</key>
+													<dict>
+														<key>destinationNode</key>
+														<string>StructureMember_key_2</string>
+														<key>destinationPort</key>
+														<string>inputStructure</string>
+														<key>sourceNode</key>
+														<string>StructureMember_index_1</string>
+														<key>sourcePort</key>
+														<string>outputMember</string>
+													</dict>
+													<key>connection_5</key>
+													<dict>
+														<key>destinationNode</key>
+														<string>Math_5</string>
+														<key>destinationPort</key>
+														<string>inputValue</string>
+														<key>sourceNode</key>
+														<string>Math_4</string>
+														<key>sourcePort</key>
+														<string>outputValue</string>
+													</dict>
+													<key>connection_6</key>
+													<dict>
+														<key>destinationNode</key>
+														<string>StructureMember_key_3</string>
+														<key>destinationPort</key>
+														<string>inputStructure</string>
+														<key>sourceNode</key>
+														<string>StructureMember_index_1</string>
+														<key>sourcePort</key>
+														<string>outputMember</string>
+													</dict>
+													<key>connection_7</key>
+													<dict>
+														<key>destinationNode</key>
+														<string>Math_1</string>
+														<key>destinationPort</key>
+														<string>inputValue</string>
+														<key>sourceNode</key>
+														<string>Expression_1</string>
+														<key>sourcePort</key>
+														<string>outputResult</string>
+													</dict>
+													<key>connection_8</key>
+													<dict>
+														<key>destinationNode</key>
+														<string>Camera_1</string>
+														<key>destinationPort</key>
+														<string>X_Position</string>
+														<key>sourceNode</key>
+														<string>StructureMember_key_1</string>
+														<key>sourcePort</key>
+														<string>outputMember</string>
+													</dict>
+													<key>connection_9</key>
+													<dict>
+														<key>destinationNode</key>
+														<string>Math_2</string>
+														<key>destinationPort</key>
+														<string>inputValue</string>
+														<key>sourceNode</key>
+														<string>Math_1</string>
+														<key>sourcePort</key>
+														<string>outputValue</string>
 													</dict>
 												</dict>
-												<key>userInfo</key>
-												<data>
+												<key>nodes</key>
+												<array>
+													<dict>
+														<key>class</key>
+														<string>QCIteratorVariables</string>
+														<key>key</key>
+														<string>IteratorVariables_1</string>
+														<key>state</key>
+														<dict>
+															<key>userInfo</key>
+															<data>
 								BAtzdHJlYW10
 								eXBlZIHoA4QB
 								QISEhBNOU011
@@ -814,29 +1048,29 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZuugXH/hoY=
-												</data>
-											</dict>
-										</dict>
-										<dict>
-											<key>class</key>
-											<string>QCStructureMember</string>
-											<key>identifier</key>
-											<string>key</string>
-											<key>key</key>
-											<string>StructureMember_key_2</string>
-											<key>state</key>
-											<dict>
-												<key>customInputPortStates</key>
-												<dict>
-													<key>inputKey</key>
-													<dict>
-														<key>value</key>
-														<string>ypos</string>
+								fZuBWP7dhoY=
+															</data>
+														</dict>
 													</dict>
-												</dict>
-												<key>userInfo</key>
-												<data>
+													<dict>
+														<key>class</key>
+														<string>QCStructureMember</string>
+														<key>identifier</key>
+														<string>index</string>
+														<key>key</key>
+														<string>StructureMember_index_1</string>
+														<key>state</key>
+														<dict>
+															<key>customInputPortStates</key>
+															<dict>
+																<key>inputIndex</key>
+																<dict>
+																	<key>value</key>
+																	<integer>2</integer>
+																</dict>
+															</dict>
+															<key>userInfo</key>
+															<data>
 								BAtzdHJlYW10
 								eXBlZIHoA4QB
 								QISEhBNOU011
@@ -852,29 +1086,29 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZu0rYaG
-												</data>
-											</dict>
-										</dict>
-										<dict>
-											<key>class</key>
-											<string>QCStructureMember</string>
-											<key>identifier</key>
-											<string>key</string>
-											<key>key</key>
-											<string>StructureMember_key_3</string>
-											<key>state</key>
-											<dict>
-												<key>customInputPortStates</key>
-												<dict>
-													<key>inputKey</key>
-													<dict>
-														<key>value</key>
-														<string>c_id</string>
+								fZuBU/6hhoY=
+															</data>
+														</dict>
 													</dict>
-												</dict>
-												<key>userInfo</key>
-												<data>
+													<dict>
+														<key>class</key>
+														<string>QCStructureMember</string>
+														<key>identifier</key>
+														<string>key</string>
+														<key>key</key>
+														<string>StructureMember_key_1</string>
+														<key>state</key>
+														<dict>
+															<key>customInputPortStates</key>
+															<dict>
+																<key>inputKey</key>
+																<dict>
+																	<key>value</key>
+																	<string>xpos</string>
+																</dict>
+															</dict>
+															<key>userInfo</key>
+															<data>
 								BAtzdHJlYW10
 								eXBlZIHoA4QB
 								QISEhBNOU011
@@ -890,56 +1124,134 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZu/6YaG
-												</data>
-											</dict>
-										</dict>
-										<dict>
-											<key>class</key>
-											<string>QCMath</string>
-											<key>key</key>
-											<string>Math_1</string>
-											<key>state</key>
-											<dict>
-												<key>customInputPortStates</key>
-												<dict>
-													<key>operand_1</key>
-													<dict>
-														<key>value</key>
-														<real>4.3179999999999996</real>
+								fZuBHP+BQf+G
+								hg==
+															</data>
+														</dict>
 													</dict>
-													<key>operand_2</key>
 													<dict>
-														<key>value</key>
-														<real>876.10000000000002</real>
+														<key>class</key>
+														<string>QCStructureMember</string>
+														<key>identifier</key>
+														<string>key</string>
+														<key>key</key>
+														<string>StructureMember_key_2</string>
+														<key>state</key>
+														<dict>
+															<key>customInputPortStates</key>
+															<dict>
+																<key>inputKey</key>
+																<dict>
+																	<key>value</key>
+																	<string>ypos</string>
+																</dict>
+															</dict>
+															<key>userInfo</key>
+															<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwhwb3Np
+								dGlvboaShISE
+								B05TVmFsdWUA
+								lYQBKoSEDHtD
+								R1BvaW50PWRk
+								fZuBIv+Bff+G
+								hg==
+															</data>
+														</dict>
 													</dict>
-													<key>operand_3</key>
 													<dict>
-														<key>value</key>
-														<real>1</real>
+														<key>class</key>
+														<string>QCStructureMember</string>
+														<key>identifier</key>
+														<string>key</string>
+														<key>key</key>
+														<string>StructureMember_key_3</string>
+														<key>state</key>
+														<dict>
+															<key>customInputPortStates</key>
+															<dict>
+																<key>inputKey</key>
+																<dict>
+																	<key>value</key>
+																	<string>c_id</string>
+																</dict>
+															</dict>
+															<key>userInfo</key>
+															<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwhwb3Np
+								dGlvboaShISE
+								B05TVmFsdWUA
+								lYQBKoSEDHtD
+								R1BvaW50PWRk
+								fZuBI/+5hoY=
+															</data>
+														</dict>
 													</dict>
-													<key>operation_1</key>
 													<dict>
-														<key>value</key>
-														<integer>0</integer>
-													</dict>
-													<key>operation_2</key>
-													<dict>
-														<key>value</key>
-														<integer>2</integer>
-													</dict>
-													<key>operation_3</key>
-													<dict>
-														<key>value</key>
-														<integer>4</integer>
-													</dict>
-												</dict>
-												<key>numberOfOperations</key>
-												<integer>3</integer>
-												<key>operationCount</key>
-												<integer>3</integer>
-												<key>userInfo</key>
-												<data>
+														<key>class</key>
+														<string>QCMath</string>
+														<key>key</key>
+														<string>Math_1</string>
+														<key>state</key>
+														<dict>
+															<key>customInputPortStates</key>
+															<dict>
+																<key>operand_1</key>
+																<dict>
+																	<key>value</key>
+																	<real>4.3179999999999996</real>
+																</dict>
+																<key>operand_2</key>
+																<dict>
+																	<key>value</key>
+																	<real>876.10000000000002</real>
+																</dict>
+																<key>operand_3</key>
+																<dict>
+																	<key>value</key>
+																	<real>1</real>
+																</dict>
+																<key>operation_1</key>
+																<dict>
+																	<key>value</key>
+																	<integer>0</integer>
+																</dict>
+																<key>operation_2</key>
+																<dict>
+																	<key>value</key>
+																	<integer>2</integer>
+																</dict>
+																<key>operation_3</key>
+																<dict>
+																	<key>value</key>
+																	<integer>4</integer>
+																</dict>
+															</dict>
+															<key>numberOfOperations</key>
+															<integer>3</integer>
+															<key>operationCount</key>
+															<integer>3</integer>
+															<key>userInfo</key>
+															<data>
 								BAtzdHJlYW10
 								eXBlZIHoA4QB
 								QISEhBNOU011
@@ -956,57 +1268,57 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
 								fZtpBoaG
-												</data>
-												<key>version</key>
-												<integer>1</integer>
-											</dict>
-										</dict>
-										<dict>
-											<key>class</key>
-											<string>QCMath</string>
-											<key>key</key>
-											<string>Math_2</string>
-											<key>state</key>
-											<dict>
-												<key>customInputPortStates</key>
-												<dict>
-													<key>operand_1</key>
-													<dict>
-														<key>value</key>
-														<real>4.3179999999999996</real>
+															</data>
+															<key>version</key>
+															<integer>1</integer>
+														</dict>
 													</dict>
-													<key>operand_2</key>
 													<dict>
-														<key>value</key>
-														<real>876.10000000000002</real>
-													</dict>
-													<key>operand_3</key>
-													<dict>
-														<key>value</key>
-														<real>1</real>
-													</dict>
-													<key>operation_1</key>
-													<dict>
-														<key>value</key>
-														<integer>0</integer>
-													</dict>
-													<key>operation_2</key>
-													<dict>
-														<key>value</key>
-														<integer>2</integer>
-													</dict>
-													<key>operation_3</key>
-													<dict>
-														<key>value</key>
-														<integer>4</integer>
-													</dict>
-												</dict>
-												<key>numberOfOperations</key>
-												<integer>3</integer>
-												<key>operationCount</key>
-												<integer>3</integer>
-												<key>userInfo</key>
-												<data>
+														<key>class</key>
+														<string>QCMath</string>
+														<key>key</key>
+														<string>Math_2</string>
+														<key>state</key>
+														<dict>
+															<key>customInputPortStates</key>
+															<dict>
+																<key>operand_1</key>
+																<dict>
+																	<key>value</key>
+																	<real>4.3179999999999996</real>
+																</dict>
+																<key>operand_2</key>
+																<dict>
+																	<key>value</key>
+																	<real>876.10000000000002</real>
+																</dict>
+																<key>operand_3</key>
+																<dict>
+																	<key>value</key>
+																	<real>1</real>
+																</dict>
+																<key>operation_1</key>
+																<dict>
+																	<key>value</key>
+																	<integer>0</integer>
+																</dict>
+																<key>operation_2</key>
+																<dict>
+																	<key>value</key>
+																	<integer>2</integer>
+																</dict>
+																<key>operation_3</key>
+																<dict>
+																	<key>value</key>
+																	<integer>4</integer>
+																</dict>
+															</dict>
+															<key>numberOfOperations</key>
+															<integer>3</integer>
+															<key>operationCount</key>
+															<integer>3</integer>
+															<key>userInfo</key>
+															<data>
 								BAtzdHJlYW10
 								eXBlZIHoA4QB
 								QISEhBNOU011
@@ -1023,57 +1335,57 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
 								fZuBgwBChoY=
-												</data>
-												<key>version</key>
-												<integer>1</integer>
-											</dict>
-										</dict>
-										<dict>
-											<key>class</key>
-											<string>QCMath</string>
-											<key>key</key>
-											<string>Math_3</string>
-											<key>state</key>
-											<dict>
-												<key>customInputPortStates</key>
-												<dict>
-													<key>operand_1</key>
-													<dict>
-														<key>value</key>
-														<real>4.3179999999999996</real>
+															</data>
+															<key>version</key>
+															<integer>1</integer>
+														</dict>
 													</dict>
-													<key>operand_2</key>
 													<dict>
-														<key>value</key>
-														<real>876.10000000000002</real>
-													</dict>
-													<key>operand_3</key>
-													<dict>
-														<key>value</key>
-														<real>1</real>
-													</dict>
-													<key>operation_1</key>
-													<dict>
-														<key>value</key>
-														<integer>0</integer>
-													</dict>
-													<key>operation_2</key>
-													<dict>
-														<key>value</key>
-														<integer>2</integer>
-													</dict>
-													<key>operation_3</key>
-													<dict>
-														<key>value</key>
-														<integer>4</integer>
-													</dict>
-												</dict>
-												<key>numberOfOperations</key>
-												<integer>3</integer>
-												<key>operationCount</key>
-												<integer>3</integer>
-												<key>userInfo</key>
-												<data>
+														<key>class</key>
+														<string>QCMath</string>
+														<key>key</key>
+														<string>Math_3</string>
+														<key>state</key>
+														<dict>
+															<key>customInputPortStates</key>
+															<dict>
+																<key>operand_1</key>
+																<dict>
+																	<key>value</key>
+																	<real>4.3179999999999996</real>
+																</dict>
+																<key>operand_2</key>
+																<dict>
+																	<key>value</key>
+																	<real>876.10000000000002</real>
+																</dict>
+																<key>operand_3</key>
+																<dict>
+																	<key>value</key>
+																	<real>1</real>
+																</dict>
+																<key>operation_1</key>
+																<dict>
+																	<key>value</key>
+																	<integer>0</integer>
+																</dict>
+																<key>operation_2</key>
+																<dict>
+																	<key>value</key>
+																	<integer>2</integer>
+																</dict>
+																<key>operation_3</key>
+																<dict>
+																	<key>value</key>
+																	<integer>4</integer>
+																</dict>
+															</dict>
+															<key>numberOfOperations</key>
+															<integer>3</integer>
+															<key>operationCount</key>
+															<integer>3</integer>
+															<key>userInfo</key>
+															<data>
 								BAtzdHJlYW10
 								eXBlZIHoA4QB
 								QISEhBNOU011
@@ -1090,57 +1402,57 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
 								fZuBngB+hoY=
-												</data>
-												<key>version</key>
-												<integer>1</integer>
-											</dict>
-										</dict>
-										<dict>
-											<key>class</key>
-											<string>QCMath</string>
-											<key>key</key>
-											<string>Math_4</string>
-											<key>state</key>
-											<dict>
-												<key>customInputPortStates</key>
-												<dict>
-													<key>operand_1</key>
-													<dict>
-														<key>value</key>
-														<real>4.3179999999999996</real>
+															</data>
+															<key>version</key>
+															<integer>1</integer>
+														</dict>
 													</dict>
-													<key>operand_2</key>
 													<dict>
-														<key>value</key>
-														<real>876.10000000000002</real>
-													</dict>
-													<key>operand_3</key>
-													<dict>
-														<key>value</key>
-														<real>1</real>
-													</dict>
-													<key>operation_1</key>
-													<dict>
-														<key>value</key>
-														<integer>0</integer>
-													</dict>
-													<key>operation_2</key>
-													<dict>
-														<key>value</key>
-														<integer>2</integer>
-													</dict>
-													<key>operation_3</key>
-													<dict>
-														<key>value</key>
-														<integer>4</integer>
-													</dict>
-												</dict>
-												<key>numberOfOperations</key>
-												<integer>3</integer>
-												<key>operationCount</key>
-												<integer>3</integer>
-												<key>userInfo</key>
-												<data>
+														<key>class</key>
+														<string>QCMath</string>
+														<key>key</key>
+														<string>Math_4</string>
+														<key>state</key>
+														<dict>
+															<key>customInputPortStates</key>
+															<dict>
+																<key>operand_1</key>
+																<dict>
+																	<key>value</key>
+																	<real>4.3179999999999996</real>
+																</dict>
+																<key>operand_2</key>
+																<dict>
+																	<key>value</key>
+																	<real>876.10000000000002</real>
+																</dict>
+																<key>operand_3</key>
+																<dict>
+																	<key>value</key>
+																	<real>1</real>
+																</dict>
+																<key>operation_1</key>
+																<dict>
+																	<key>value</key>
+																	<integer>0</integer>
+																</dict>
+																<key>operation_2</key>
+																<dict>
+																	<key>value</key>
+																	<integer>2</integer>
+																</dict>
+																<key>operation_3</key>
+																<dict>
+																	<key>value</key>
+																	<integer>4</integer>
+																</dict>
+															</dict>
+															<key>numberOfOperations</key>
+															<integer>3</integer>
+															<key>operationCount</key>
+															<integer>3</integer>
+															<key>userInfo</key>
+															<data>
 								BAtzdHJlYW10
 								eXBlZIHoA4QB
 								QISEhBNOU011
@@ -1158,30 +1470,30 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								R1BvaW50PWRk
 								fZuBqQCBugCG
 								hg==
-												</data>
-												<key>version</key>
-												<integer>1</integer>
-											</dict>
-										</dict>
-										<dict>
-											<key>class</key>
-											<string>QCColorFromComponents</string>
-											<key>identifier</key>
-											<string>hsl</string>
-											<key>key</key>
-											<string>ColorFromComponents_hsl_1</string>
-											<key>state</key>
-											<dict>
-												<key>ivarInputPortStates</key>
-												<dict>
-													<key>inputAlpha</key>
-													<dict>
-														<key>value</key>
-														<real>0.4485294117647059</real>
+															</data>
+															<key>version</key>
+															<integer>1</integer>
+														</dict>
 													</dict>
-												</dict>
-												<key>userInfo</key>
-												<data>
+													<dict>
+														<key>class</key>
+														<string>QCColorFromComponents</string>
+														<key>identifier</key>
+														<string>hsl</string>
+														<key>key</key>
+														<string>ColorFromComponents_hsl_1</string>
+														<key>state</key>
+														<dict>
+															<key>ivarInputPortStates</key>
+															<dict>
+																<key>inputAlpha</key>
+																<dict>
+																	<key>value</key>
+																	<real>0.4485294117647059</real>
+																</dict>
+															</dict>
+															<key>userInfo</key>
+															<data>
 								BAtzdHJlYW10
 								eXBlZIHoA4QB
 								QISEhBNOU011
@@ -1199,190 +1511,190 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								R1BvaW50PWRk
 								fZuBVgGBzQCG
 								hg==
-												</data>
-											</dict>
-										</dict>
-										<dict>
-											<key>class</key>
-											<string>QCCamera</string>
-											<key>key</key>
-											<string>Camera_1</string>
-											<key>state</key>
-											<dict>
-												<key>connections</key>
-												<dict>
-													<key>connection_1</key>
-													<dict>
-														<key>destinationNode</key>
-														<string>Cube_1</string>
-														<key>destinationPort</key>
-														<string>inputColorRight</string>
-														<key>sourceNode</key>
-														<string>Splitter_1</string>
-														<key>sourcePort</key>
-														<string>output</string>
+															</data>
+														</dict>
 													</dict>
-													<key>connection_2</key>
-													<dict>
-														<key>destinationNode</key>
-														<string>Cube_1</string>
-														<key>destinationPort</key>
-														<string>inputColorBack</string>
-														<key>sourceNode</key>
-														<string>Splitter_1</string>
-														<key>sourcePort</key>
-														<string>output</string>
-													</dict>
-													<key>connection_3</key>
-													<dict>
-														<key>destinationNode</key>
-														<string>Cube_1</string>
-														<key>destinationPort</key>
-														<string>inputColorLeft</string>
-														<key>sourceNode</key>
-														<string>Splitter_1</string>
-														<key>sourcePort</key>
-														<string>output</string>
-													</dict>
-													<key>connection_4</key>
-													<dict>
-														<key>destinationNode</key>
-														<string>Cube_1</string>
-														<key>destinationPort</key>
-														<string>inputColorFront</string>
-														<key>sourceNode</key>
-														<string>Splitter_1</string>
-														<key>sourcePort</key>
-														<string>output</string>
-													</dict>
-													<key>connection_5</key>
-													<dict>
-														<key>destinationNode</key>
-														<string>Cube_1</string>
-														<key>destinationPort</key>
-														<string>inputColorBottom</string>
-														<key>sourceNode</key>
-														<string>Splitter_1</string>
-														<key>sourcePort</key>
-														<string>output</string>
-													</dict>
-													<key>connection_6</key>
-													<dict>
-														<key>destinationNode</key>
-														<string>Cube_1</string>
-														<key>destinationPort</key>
-														<string>inputColorTop</string>
-														<key>sourceNode</key>
-														<string>Splitter_1</string>
-														<key>sourcePort</key>
-														<string>output</string>
-													</dict>
-												</dict>
-												<key>ivarInputPortStates</key>
-												<dict>
-													<key>inputOriginX</key>
-													<dict>
-														<key>value</key>
-														<real>0.0</real>
-													</dict>
-													<key>inputOriginY</key>
-													<dict>
-														<key>value</key>
-														<real>0.0</real>
-													</dict>
-													<key>inputOriginZ</key>
-													<dict>
-														<key>value</key>
-														<real>0.0</real>
-													</dict>
-													<key>inputScaleX</key>
-													<dict>
-														<key>value</key>
-														<real>1</real>
-													</dict>
-													<key>inputScaleY</key>
-													<dict>
-														<key>value</key>
-														<real>1</real>
-													</dict>
-													<key>inputScaleZ</key>
-													<dict>
-														<key>value</key>
-														<real>1</real>
-													</dict>
-													<key>inputTranslateX</key>
-													<dict>
-														<key>value</key>
-														<real>0.0</real>
-													</dict>
-													<key>inputTranslateY</key>
-													<dict>
-														<key>value</key>
-														<real>0.0</real>
-													</dict>
-													<key>inputTranslateZ</key>
-													<dict>
-														<key>value</key>
-														<real>0.0</real>
-													</dict>
-												</dict>
-												<key>nodes</key>
-												<array>
 													<dict>
 														<key>class</key>
-														<string>QCCube</string>
+														<string>QCCamera</string>
 														<key>key</key>
-														<string>Cube_1</string>
+														<string>Camera_1</string>
 														<key>state</key>
 														<dict>
+															<key>connections</key>
+															<dict>
+																<key>connection_1</key>
+																<dict>
+																	<key>destinationNode</key>
+																	<string>Cube_1</string>
+																	<key>destinationPort</key>
+																	<string>inputColorRight</string>
+																	<key>sourceNode</key>
+																	<string>Splitter_1</string>
+																	<key>sourcePort</key>
+																	<string>output</string>
+																</dict>
+																<key>connection_2</key>
+																<dict>
+																	<key>destinationNode</key>
+																	<string>Cube_1</string>
+																	<key>destinationPort</key>
+																	<string>inputColorBack</string>
+																	<key>sourceNode</key>
+																	<string>Splitter_1</string>
+																	<key>sourcePort</key>
+																	<string>output</string>
+																</dict>
+																<key>connection_3</key>
+																<dict>
+																	<key>destinationNode</key>
+																	<string>Cube_1</string>
+																	<key>destinationPort</key>
+																	<string>inputColorLeft</string>
+																	<key>sourceNode</key>
+																	<string>Splitter_1</string>
+																	<key>sourcePort</key>
+																	<string>output</string>
+																</dict>
+																<key>connection_4</key>
+																<dict>
+																	<key>destinationNode</key>
+																	<string>Cube_1</string>
+																	<key>destinationPort</key>
+																	<string>inputColorFront</string>
+																	<key>sourceNode</key>
+																	<string>Splitter_1</string>
+																	<key>sourcePort</key>
+																	<string>output</string>
+																</dict>
+																<key>connection_5</key>
+																<dict>
+																	<key>destinationNode</key>
+																	<string>Cube_1</string>
+																	<key>destinationPort</key>
+																	<string>inputColorBottom</string>
+																	<key>sourceNode</key>
+																	<string>Splitter_1</string>
+																	<key>sourcePort</key>
+																	<string>output</string>
+																</dict>
+																<key>connection_6</key>
+																<dict>
+																	<key>destinationNode</key>
+																	<string>Cube_1</string>
+																	<key>destinationPort</key>
+																	<string>inputColorTop</string>
+																	<key>sourceNode</key>
+																	<string>Splitter_1</string>
+																	<key>sourcePort</key>
+																	<string>output</string>
+																</dict>
+															</dict>
 															<key>ivarInputPortStates</key>
 															<dict>
-																<key>inputBlending</key>
-																<dict>
-																	<key>value</key>
-																	<integer>1</integer>
-																</dict>
-																<key>inputCulling</key>
-																<dict>
-																	<key>value</key>
-																	<integer>1</integer>
-																</dict>
-																<key>inputRX</key>
+																<key>inputOriginX</key>
 																<dict>
 																	<key>value</key>
 																	<real>0.0</real>
 																</dict>
-																<key>inputRY</key>
+																<key>inputOriginY</key>
 																<dict>
 																	<key>value</key>
 																	<real>0.0</real>
 																</dict>
-																<key>inputRZ</key>
+																<key>inputOriginZ</key>
 																<dict>
 																	<key>value</key>
 																	<real>0.0</real>
 																</dict>
-																<key>inputZ</key>
+																<key>inputScaleX</key>
+																<dict>
+																	<key>value</key>
+																	<real>1</real>
+																</dict>
+																<key>inputScaleY</key>
+																<dict>
+																	<key>value</key>
+																	<real>1</real>
+																</dict>
+																<key>inputScaleZ</key>
+																<dict>
+																	<key>value</key>
+																	<real>1</real>
+																</dict>
+																<key>inputTranslateX</key>
 																<dict>
 																	<key>value</key>
 																	<real>0.0</real>
 																</dict>
-																<key>inputZBuffer</key>
+																<key>inputTranslateY</key>
 																<dict>
 																	<key>value</key>
-																	<integer>1</integer>
+																	<real>0.0</real>
+																</dict>
+																<key>inputTranslateZ</key>
+																<dict>
+																	<key>value</key>
+																	<real>0.0</real>
 																</dict>
 															</dict>
-															<key>systemInputPortStates</key>
-															<dict>
-																<key>_enable</key>
+															<key>nodes</key>
+															<array>
 																<dict>
-																	<key>value</key>
-																	<true/>
-																</dict>
-															</dict>
-															<key>userInfo</key>
-															<data>
+																	<key>class</key>
+																	<string>QCCube</string>
+																	<key>key</key>
+																	<string>Cube_1</string>
+																	<key>state</key>
+																	<dict>
+																		<key>ivarInputPortStates</key>
+																		<dict>
+																			<key>inputBlending</key>
+																			<dict>
+																				<key>value</key>
+																				<integer>2</integer>
+																			</dict>
+																			<key>inputCulling</key>
+																			<dict>
+																				<key>value</key>
+																				<integer>1</integer>
+																			</dict>
+																			<key>inputRX</key>
+																			<dict>
+																				<key>value</key>
+																				<real>0.0</real>
+																			</dict>
+																			<key>inputRY</key>
+																			<dict>
+																				<key>value</key>
+																				<real>0.0</real>
+																			</dict>
+																			<key>inputRZ</key>
+																			<dict>
+																				<key>value</key>
+																				<real>0.0</real>
+																			</dict>
+																			<key>inputZ</key>
+																			<dict>
+																				<key>value</key>
+																				<real>0.0</real>
+																			</dict>
+																			<key>inputZBuffer</key>
+																			<dict>
+																				<key>value</key>
+																				<integer>1</integer>
+																			</dict>
+																		</dict>
+																		<key>systemInputPortStates</key>
+																		<dict>
+																			<key>_enable</key>
+																			<dict>
+																				<key>value</key>
+																				<true/>
+																			</dict>
+																		</dict>
+																		<key>userInfo</key>
+																		<data>
 								BAtzdHJlYW10
 								eXBlZIHoA4QB
 								QISEhBNOU011
@@ -1399,20 +1711,20 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
 								fZuBmAEBhoY=
-															</data>
-														</dict>
-													</dict>
-													<dict>
-														<key>class</key>
-														<string>QCSplitter</string>
-														<key>key</key>
-														<string>Splitter_1</string>
-														<key>state</key>
-														<dict>
-															<key>portClass</key>
-															<string>QCColorPort</string>
-															<key>userInfo</key>
-															<data>
+																		</data>
+																	</dict>
+																</dict>
+																<dict>
+																	<key>class</key>
+																	<string>QCSplitter</string>
+																	<key>key</key>
+																	<string>Splitter_1</string>
+																	<key>state</key>
+																	<dict>
+																		<key>portClass</key>
+																		<string>QCColorPort</string>
+																		<key>userInfo</key>
+																		<data>
 								BAtzdHJlYW10
 								eXBlZIHoA4QB
 								QISEhBNOU011
@@ -1433,25 +1745,25 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								hIQMe0NHUG9p
 								bnQ9ZGR9m4G5
 								AIG4AIaG
-															</data>
-															<key>version</key>
-															<integer>1</integer>
-														</dict>
-													</dict>
-												</array>
-												<key>publishedInputPorts</key>
-												<array>
-													<dict>
-														<key>key</key>
-														<string>color</string>
-														<key>node</key>
-														<string>Splitter_1</string>
-														<key>port</key>
-														<string>input</string>
-														<key>state</key>
-														<dict>
-															<key>userInfo</key>
-															<data>
+																		</data>
+																		<key>version</key>
+																		<integer>1</integer>
+																	</dict>
+																</dict>
+															</array>
+															<key>publishedInputPorts</key>
+															<array>
+																<dict>
+																	<key>key</key>
+																	<string>color</string>
+																	<key>node</key>
+																	<string>Splitter_1</string>
+																	<key>port</key>
+																	<string>input</string>
+																	<key>state</key>
+																	<dict>
+																		<key>userInfo</key>
+																		<data>
 								BAtzdHJlYW10
 								eXBlZIHoA4QB
 								QISEhBNOU011
@@ -1465,73 +1777,73 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								lYQBKwRuYW1l
 								hpKEl5gFY29s
 								b3KGhg==
-															</data>
-														</dict>
-													</dict>
-													<dict>
-														<key>key</key>
-														<string>X_Position</string>
-														<key>node</key>
-														<string>Cube_1</string>
-														<key>port</key>
-														<string>inputX</string>
-													</dict>
-													<dict>
-														<key>key</key>
-														<string>Y_Position</string>
-														<key>node</key>
-														<string>Cube_1</string>
-														<key>port</key>
-														<string>inputY</string>
-													</dict>
-													<dict>
-														<key>key</key>
-														<string>Z_Position</string>
-														<key>node</key>
-														<string>Cube_1</string>
-														<key>port</key>
-														<string>inputZ</string>
-														<key>state</key>
-														<dict>
-															<key>value</key>
-															<real>0.0</real>
-														</dict>
-													</dict>
-													<dict>
-														<key>key</key>
-														<string>Width</string>
-														<key>node</key>
-														<string>Cube_1</string>
-														<key>port</key>
-														<string>inputWidth</string>
-													</dict>
-													<dict>
-														<key>key</key>
-														<string>Height</string>
-														<key>node</key>
-														<string>Cube_1</string>
-														<key>port</key>
-														<string>inputHeight</string>
-													</dict>
-													<dict>
-														<key>key</key>
-														<string>Depth</string>
-														<key>node</key>
-														<string>Cube_1</string>
-														<key>port</key>
-														<string>inputDepth</string>
-													</dict>
-												</array>
-												<key>systemInputPortStates</key>
-												<dict>
-													<key>_enable</key>
-													<dict>
-														<key>value</key>
-														<true/>
-													</dict>
-												</dict>
-												<key>userInfo</key>
-												<data>
+																		</data>
+																	</dict>
+																</dict>
+																<dict>
+																	<key>key</key>
+																	<string>X_Position</string>
+																	<key>node</key>
+																	<string>Cube_1</string>
+																	<key>port</key>
+																	<string>inputX</string>
+																</dict>
+																<dict>
+																	<key>key</key>
+																	<string>Y_Position</string>
+																	<key>node</key>
+																	<string>Cube_1</string>
+																	<key>port</key>
+																	<string>inputY</string>
+																</dict>
+																<dict>
+																	<key>key</key>
+																	<string>Z_Position</string>
+																	<key>node</key>
+																	<string>Cube_1</string>
+																	<key>port</key>
+																	<string>inputZ</string>
+																	<key>state</key>
+																	<dict>
+																		<key>value</key>
+																		<real>0.0</real>
+																	</dict>
+																</dict>
+																<dict>
+																	<key>key</key>
+																	<string>Width</string>
+																	<key>node</key>
+																	<string>Cube_1</string>
+																	<key>port</key>
+																	<string>inputWidth</string>
+																</dict>
+																<dict>
+																	<key>key</key>
+																	<string>Height</string>
+																	<key>node</key>
+																	<string>Cube_1</string>
+																	<key>port</key>
+																	<string>inputHeight</string>
+																</dict>
+																<dict>
+																	<key>key</key>
+																	<string>Depth</string>
+																	<key>node</key>
+																	<string>Cube_1</string>
+																	<key>port</key>
+																	<string>inputDepth</string>
+																</dict>
+															</array>
+															<key>systemInputPortStates</key>
+															<dict>
+																<key>_enable</key>
+																<dict>
+																	<key>value</key>
+																	<true/>
+																</dict>
+															</dict>
+															<key>userInfo</key>
+															<data>
 								BAtzdHJlYW10
 								eXBlZIHoA4QB
 								QISEhBNOU011
@@ -1556,55 +1868,55 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								b3KGkoSEhAhO
 								U051bWJlcgCZ
 								moSEAWadAYaG
-												</data>
-											</dict>
-										</dict>
-										<dict>
-											<key>class</key>
-											<string>QCMath</string>
-											<key>key</key>
-											<string>Math_5</string>
-											<key>state</key>
-											<dict>
-												<key>customInputPortStates</key>
-												<dict>
-													<key>operand_1</key>
-													<dict>
-														<key>value</key>
-														<real>4.3179999999999996</real>
+															</data>
+														</dict>
 													</dict>
-													<key>operand_2</key>
 													<dict>
-														<key>value</key>
-														<real>876.10000000000002</real>
-													</dict>
-													<key>operand_3</key>
-													<dict>
-														<key>value</key>
-														<real>1</real>
-													</dict>
-													<key>operation_1</key>
-													<dict>
-														<key>value</key>
-														<integer>0</integer>
-													</dict>
-													<key>operation_2</key>
-													<dict>
-														<key>value</key>
-														<integer>2</integer>
-													</dict>
-													<key>operation_3</key>
-													<dict>
-														<key>value</key>
-														<integer>4</integer>
-													</dict>
-												</dict>
-												<key>numberOfOperations</key>
-												<integer>3</integer>
-												<key>operationCount</key>
-												<integer>3</integer>
-												<key>userInfo</key>
-												<data>
+														<key>class</key>
+														<string>QCMath</string>
+														<key>key</key>
+														<string>Math_5</string>
+														<key>state</key>
+														<dict>
+															<key>customInputPortStates</key>
+															<dict>
+																<key>operand_1</key>
+																<dict>
+																	<key>value</key>
+																	<real>4.3179999999999996</real>
+																</dict>
+																<key>operand_2</key>
+																<dict>
+																	<key>value</key>
+																	<real>876.10000000000002</real>
+																</dict>
+																<key>operand_3</key>
+																<dict>
+																	<key>value</key>
+																	<real>1</real>
+																</dict>
+																<key>operation_1</key>
+																<dict>
+																	<key>value</key>
+																	<integer>0</integer>
+																</dict>
+																<key>operation_2</key>
+																<dict>
+																	<key>value</key>
+																	<integer>2</integer>
+																</dict>
+																<key>operation_3</key>
+																<dict>
+																	<key>value</key>
+																	<integer>4</integer>
+																</dict>
+															</dict>
+															<key>numberOfOperations</key>
+															<integer>3</integer>
+															<key>operationCount</key>
+															<integer>3</integer>
+															<key>userInfo</key>
+															<data>
 								BAtzdHJlYW10
 								eXBlZIHoA4QB
 								QISEhBNOU011
@@ -1622,37 +1934,37 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								R1BvaW50PWRk
 								fZuBtACB9gCG
 								hg==
-												</data>
-												<key>version</key>
-												<integer>1</integer>
-											</dict>
-										</dict>
-										<dict>
-											<key>class</key>
-											<string>QCMath</string>
-											<key>key</key>
-											<string>Math_6</string>
-											<key>state</key>
-											<dict>
-												<key>customInputPortStates</key>
-												<dict>
-													<key>operand_1</key>
-													<dict>
-														<key>value</key>
-														<real>360</real>
+															</data>
+															<key>version</key>
+															<integer>1</integer>
+														</dict>
 													</dict>
-													<key>operation_1</key>
 													<dict>
-														<key>value</key>
-														<integer>2</integer>
-													</dict>
-												</dict>
-												<key>numberOfOperations</key>
-												<integer>1</integer>
-												<key>operationCount</key>
-												<integer>1</integer>
-												<key>userInfo</key>
-												<data>
+														<key>class</key>
+														<string>QCMath</string>
+														<key>key</key>
+														<string>Math_6</string>
+														<key>state</key>
+														<dict>
+															<key>customInputPortStates</key>
+															<dict>
+																<key>operand_1</key>
+																<dict>
+																	<key>value</key>
+																	<real>360</real>
+																</dict>
+																<key>operation_1</key>
+																<dict>
+																	<key>value</key>
+																	<integer>2</integer>
+																</dict>
+															</dict>
+															<key>numberOfOperations</key>
+															<integer>1</integer>
+															<key>operationCount</key>
+															<integer>1</integer>
+															<key>userInfo</key>
+															<data>
 								BAtzdHJlYW10
 								eXBlZIHoA4QB
 								QISEhBNOU011
@@ -1669,37 +1981,37 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
 								fZuBjQHKhoY=
-												</data>
-												<key>version</key>
-												<integer>1</integer>
-											</dict>
-										</dict>
-										<dict>
-											<key>class</key>
-											<string>QCMath</string>
-											<key>key</key>
-											<string>Math_7</string>
-											<key>state</key>
-											<dict>
-												<key>customInputPortStates</key>
-												<dict>
-													<key>operand_1</key>
-													<dict>
-														<key>value</key>
-														<real>360</real>
+															</data>
+															<key>version</key>
+															<integer>1</integer>
+														</dict>
 													</dict>
-													<key>operation_1</key>
 													<dict>
-														<key>value</key>
-														<integer>2</integer>
-													</dict>
-												</dict>
-												<key>numberOfOperations</key>
-												<integer>1</integer>
-												<key>operationCount</key>
-												<integer>1</integer>
-												<key>userInfo</key>
-												<data>
+														<key>class</key>
+														<string>QCMath</string>
+														<key>key</key>
+														<string>Math_7</string>
+														<key>state</key>
+														<dict>
+															<key>customInputPortStates</key>
+															<dict>
+																<key>operand_1</key>
+																<dict>
+																	<key>value</key>
+																	<real>360</real>
+																</dict>
+																<key>operation_1</key>
+																<dict>
+																	<key>value</key>
+																	<integer>2</integer>
+																</dict>
+															</dict>
+															<key>numberOfOperations</key>
+															<integer>1</integer>
+															<key>operationCount</key>
+															<integer>1</integer>
+															<key>userInfo</key>
+															<data>
 								BAtzdHJlYW10
 								eXBlZIHoA4QB
 								QISEhBNOU011
@@ -1716,37 +2028,37 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
 								fZuBjgHuhoY=
-												</data>
-												<key>version</key>
-												<integer>1</integer>
-											</dict>
-										</dict>
-										<dict>
-											<key>class</key>
-											<string>QCMath</string>
-											<key>key</key>
-											<string>Math_8</string>
-											<key>state</key>
-											<dict>
-												<key>customInputPortStates</key>
-												<dict>
-													<key>operand_1</key>
-													<dict>
-														<key>value</key>
-														<real>360</real>
+															</data>
+															<key>version</key>
+															<integer>1</integer>
+														</dict>
 													</dict>
-													<key>operation_1</key>
 													<dict>
-														<key>value</key>
-														<integer>2</integer>
-													</dict>
-												</dict>
-												<key>numberOfOperations</key>
-												<integer>1</integer>
-												<key>operationCount</key>
-												<integer>1</integer>
-												<key>userInfo</key>
-												<data>
+														<key>class</key>
+														<string>QCMath</string>
+														<key>key</key>
+														<string>Math_8</string>
+														<key>state</key>
+														<dict>
+															<key>customInputPortStates</key>
+															<dict>
+																<key>operand_1</key>
+																<dict>
+																	<key>value</key>
+																	<real>360</real>
+																</dict>
+																<key>operation_1</key>
+																<dict>
+																	<key>value</key>
+																	<integer>2</integer>
+																</dict>
+															</dict>
+															<key>numberOfOperations</key>
+															<integer>1</integer>
+															<key>operationCount</key>
+															<integer>1</integer>
+															<key>userInfo</key>
+															<data>
 								BAtzdHJlYW10
 								eXBlZIHoA4QB
 								QISEhBNOU011
@@ -1763,37 +2075,37 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
 								fZuBjgEShoY=
-												</data>
-												<key>version</key>
-												<integer>1</integer>
-											</dict>
-										</dict>
-										<dict>
-											<key>class</key>
-											<string>QCMath</string>
-											<key>key</key>
-											<string>Math_9</string>
-											<key>state</key>
-											<dict>
-												<key>customInputPortStates</key>
-												<dict>
-													<key>operand_1</key>
-													<dict>
-														<key>value</key>
-														<real>2</real>
+															</data>
+															<key>version</key>
+															<integer>1</integer>
+														</dict>
 													</dict>
-													<key>operation_1</key>
 													<dict>
-														<key>value</key>
-														<integer>2</integer>
-													</dict>
-												</dict>
-												<key>numberOfOperations</key>
-												<integer>1</integer>
-												<key>operationCount</key>
-												<integer>1</integer>
-												<key>userInfo</key>
-												<data>
+														<key>class</key>
+														<string>QCMath</string>
+														<key>key</key>
+														<string>Math_9</string>
+														<key>state</key>
+														<dict>
+															<key>customInputPortStates</key>
+															<dict>
+																<key>operand_1</key>
+																<dict>
+																	<key>value</key>
+																	<real>2</real>
+																</dict>
+																<key>operation_1</key>
+																<dict>
+																	<key>value</key>
+																	<integer>2</integer>
+																</dict>
+															</dict>
+															<key>numberOfOperations</key>
+															<integer>1</integer>
+															<key>operationCount</key>
+															<integer>1</integer>
+															<key>userInfo</key>
+															<data>
 								BAtzdHJlYW10
 								eXBlZIHoA4QB
 								QISEhBNOU011
@@ -1810,40 +2122,40 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
 								fZuBmAF+hoY=
-												</data>
-												<key>version</key>
-												<integer>1</integer>
-											</dict>
-										</dict>
-										<dict>
-											<key>class</key>
-											<string>QCMath</string>
-											<key>key</key>
-											<string>Math_10</string>
-											<key>state</key>
-											<dict>
-												<key>customInputPortStates</key>
-												<dict>
-													<key>operation_1</key>
-													<dict>
-														<key>value</key>
-														<integer>3</integer>
+															</data>
+															<key>version</key>
+															<integer>1</integer>
+														</dict>
 													</dict>
-												</dict>
-												<key>ivarInputPortStates</key>
-												<dict>
-													<key>inputValue</key>
 													<dict>
-														<key>value</key>
-														<real>0.5</real>
-													</dict>
-												</dict>
-												<key>numberOfOperations</key>
-												<integer>1</integer>
-												<key>operationCount</key>
-												<integer>1</integer>
-												<key>userInfo</key>
-												<data>
+														<key>class</key>
+														<string>QCMath</string>
+														<key>key</key>
+														<string>Math_10</string>
+														<key>state</key>
+														<dict>
+															<key>customInputPortStates</key>
+															<dict>
+																<key>operation_1</key>
+																<dict>
+																	<key>value</key>
+																	<integer>3</integer>
+																</dict>
+															</dict>
+															<key>ivarInputPortStates</key>
+															<dict>
+																<key>inputValue</key>
+																<dict>
+																	<key>value</key>
+																	<real>0.5</real>
+																</dict>
+															</dict>
+															<key>numberOfOperations</key>
+															<integer>1</integer>
+															<key>operationCount</key>
+															<integer>1</integer>
+															<key>userInfo</key>
+															<data>
 								BAtzdHJlYW10
 								eXBlZIHoA4QB
 								QISEhBNOU011
@@ -1861,58 +2173,58 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								R1BvaW50PWRk
 								fZuBsAGBogCG
 								hg==
-												</data>
-												<key>version</key>
-												<integer>1</integer>
-											</dict>
-										</dict>
-										<dict>
-											<key>class</key>
-											<string>QCInterpolation</string>
-											<key>key</key>
-											<string>Interpolation_1</string>
-											<key>state</key>
-											<dict>
-												<key>customInputPortStates</key>
-												<dict>
-													<key>inputInterpolation</key>
-													<dict>
-														<key>value</key>
-														<integer>0</integer>
+															</data>
+															<key>version</key>
+															<integer>1</integer>
+														</dict>
 													</dict>
-												</dict>
-												<key>ivarInputPortStates</key>
-												<dict>
-													<key>inputDuration</key>
 													<dict>
-														<key>value</key>
-														<real>1</real>
-													</dict>
-													<key>inputRepeat</key>
-													<dict>
-														<key>value</key>
-														<integer>1</integer>
-													</dict>
-													<key>inputTension</key>
-													<dict>
-														<key>value</key>
-														<real>0.0</real>
-													</dict>
-													<key>inputValue1</key>
-													<dict>
-														<key>value</key>
-														<real>0.0</real>
-													</dict>
-													<key>inputValue2</key>
-													<dict>
-														<key>value</key>
-														<real>1</real>
-													</dict>
-												</dict>
-												<key>timebase</key>
-												<string>parent</string>
-												<key>userInfo</key>
-												<data>
+														<key>class</key>
+														<string>QCInterpolation</string>
+														<key>key</key>
+														<string>Interpolation_1</string>
+														<key>state</key>
+														<dict>
+															<key>customInputPortStates</key>
+															<dict>
+																<key>inputInterpolation</key>
+																<dict>
+																	<key>value</key>
+																	<integer>0</integer>
+																</dict>
+															</dict>
+															<key>ivarInputPortStates</key>
+															<dict>
+																<key>inputDuration</key>
+																<dict>
+																	<key>value</key>
+																	<real>1</real>
+																</dict>
+																<key>inputRepeat</key>
+																<dict>
+																	<key>value</key>
+																	<integer>1</integer>
+																</dict>
+																<key>inputTension</key>
+																<dict>
+																	<key>value</key>
+																	<real>0.0</real>
+																</dict>
+																<key>inputValue1</key>
+																<dict>
+																	<key>value</key>
+																	<real>0.0</real>
+																</dict>
+																<key>inputValue2</key>
+																<dict>
+																	<key>value</key>
+																	<real>1</real>
+																</dict>
+															</dict>
+															<key>timebase</key>
+															<string>parent</string>
+															<key>userInfo</key>
+															<data>
 								BAtzdHJlYW10
 								eXBlZIHoA4QB
 								QISEhBNOU011
@@ -1930,57 +2242,57 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								R1BvaW50PWRk
 								fZuBGwGB+f6G
 								hg==
-												</data>
-												<key>version</key>
-												<integer>1</integer>
-											</dict>
-										</dict>
-										<dict>
-											<key>class</key>
-											<string>QCLFO</string>
-											<key>key</key>
-											<string>LFO_1</string>
-											<key>state</key>
-											<dict>
-												<key>ivarInputPortStates</key>
-												<dict>
-													<key>inputAmplitude</key>
-													<dict>
-														<key>value</key>
-														<real>0.5</real>
+															</data>
+															<key>version</key>
+															<integer>1</integer>
+														</dict>
 													</dict>
-													<key>inputOffset</key>
 													<dict>
-														<key>value</key>
-														<real>0.5</real>
-													</dict>
-													<key>inputPWMRatio</key>
-													<dict>
-														<key>value</key>
-														<real>0.25</real>
-													</dict>
-													<key>inputPeriod</key>
-													<dict>
-														<key>value</key>
-														<real>1</real>
-													</dict>
-													<key>inputPhase</key>
-													<dict>
-														<key>value</key>
-														<real>0.0</real>
-													</dict>
-													<key>inputType</key>
-													<dict>
-														<key>value</key>
-														<integer>0</integer>
-													</dict>
-												</dict>
-												<key>randomSeed</key>
-												<integer>1877918886</integer>
-												<key>timebase</key>
-												<string>parent</string>
-												<key>userInfo</key>
-												<data>
+														<key>class</key>
+														<string>QCLFO</string>
+														<key>key</key>
+														<string>LFO_1</string>
+														<key>state</key>
+														<dict>
+															<key>ivarInputPortStates</key>
+															<dict>
+																<key>inputAmplitude</key>
+																<dict>
+																	<key>value</key>
+																	<real>0.5</real>
+																</dict>
+																<key>inputOffset</key>
+																<dict>
+																	<key>value</key>
+																	<real>0.5</real>
+																</dict>
+																<key>inputPWMRatio</key>
+																<dict>
+																	<key>value</key>
+																	<real>0.25</real>
+																</dict>
+																<key>inputPeriod</key>
+																<dict>
+																	<key>value</key>
+																	<real>1</real>
+																</dict>
+																<key>inputPhase</key>
+																<dict>
+																	<key>value</key>
+																	<real>0.0</real>
+																</dict>
+																<key>inputType</key>
+																<dict>
+																	<key>value</key>
+																	<integer>0</integer>
+																</dict>
+															</dict>
+															<key>randomSeed</key>
+															<integer>1877918886</integer>
+															<key>timebase</key>
+															<string>parent</string>
+															<key>userInfo</key>
+															<data>
 								BAtzdHJlYW10
 								eXBlZIHoA4QB
 								QISEhBNOU011
@@ -1998,6 +2310,200 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								R1BvaW50PWRk
 								fZuBhQGBHf+G
 								hg==
+															</data>
+														</dict>
+													</dict>
+													<dict>
+														<key>class</key>
+														<string>QCSplitter</string>
+														<key>key</key>
+														<string>Splitter_1</string>
+														<key>state</key>
+														<dict>
+															<key>customInputPortStates</key>
+															<dict>
+																<key>input</key>
+																<dict>
+																	<key>userInfo</key>
+																	<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gMdm9p
+								Y2UgbnVtYmVy
+								hoY=
+																	</data>
+																</dict>
+															</dict>
+															<key>customOutputPortStates</key>
+															<dict>
+																<key>output</key>
+																<dict>
+																	<key>userInfo</key>
+																	<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gMdm9p
+								Y2UgbnVtYmVy
+								hoY=
+																	</data>
+																</dict>
+															</dict>
+															<key>portClass</key>
+															<string>QCIndexPort</string>
+															<key>userInfo</key>
+															<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpApKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gMdm9p
+								Y2UgbnVtYmVy
+								hpKEl5gIcG9z
+								aXRpb26GkoSE
+								hAdOU1ZhbHVl
+								AJWEASqEhAx7
+								Q0dQb2ludD1k
+								ZH2bgV7+NIaG
+															</data>
+															<key>version</key>
+															<integer>1</integer>
+														</dict>
+													</dict>
+													<dict>
+														<key>class</key>
+														<string>QCExpression</string>
+														<key>key</key>
+														<string>Expression_1</string>
+														<key>state</key>
+														<dict>
+															<key>expression</key>
+															<string>a*88.7 +b</string>
+															<key>userInfo</key>
+															<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpApKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gLImEq
+								ODguNyArYiKG
+								koSXmAhwb3Np
+								dGlvboaShISE
+								B05TVmFsdWUA
+								lYQBKoSEDHtD
+								R1BvaW50PWRk
+								fZvLAYaG
+															</data>
+														</dict>
+													</dict>
+												</array>
+												<key>publishedInputPorts</key>
+												<array>
+													<dict>
+														<key>key</key>
+														<string>Structure</string>
+														<key>node</key>
+														<string>StructureMember_index_1</string>
+														<key>port</key>
+														<string>inputStructure</string>
+													</dict>
+													<dict>
+														<key>key</key>
+														<string>voice_number</string>
+														<key>node</key>
+														<string>Splitter_1</string>
+														<key>port</key>
+														<string>input</string>
+														<key>state</key>
+														<dict>
+															<key>userInfo</key>
+															<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gMdm9p
+								Y2UgbnVtYmVy
+								hoY=
+															</data>
+														</dict>
+													</dict>
+												</array>
+												<key>systemInputPortStates</key>
+												<dict>
+													<key>_enable</key>
+													<dict>
+														<key>value</key>
+														<true/>
+													</dict>
+												</dict>
+												<key>userInfo</key>
+												<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpBJKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwp6b29t
+								RmFjdG9yhpKE
+								hIQITlNOdW1i
+								ZXIAhIQHTlNW
+								YWx1ZQCVhAEq
+								hIQBZpwBhpKE
+								l5gEbmFtZYaS
+								hJeYBWN1YmVz
+								hpKEl5gJc2Ny
+								b2xsaW5nhpKE
+								mpuEhAx7Q0dQ
+								b2ludD1kZH2d
+								gwAAAAAAEGFA
+								O4aShJeYCHBv
+								c2l0aW9uhpKE
+								mpugnYGKAIHJ
+								/oaG
 												</data>
 											</dict>
 										</dict>
@@ -2006,11 +2512,327 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 									<array>
 										<dict>
 											<key>key</key>
-											<string>Structure</string>
+											<string>voice_0</string>
 											<key>node</key>
-											<string>StructureMember_index_1</string>
+											<string>Multiplexer_1</string>
 											<key>port</key>
-											<string>inputStructure</string>
+											<string>source_0</string>
+											<key>state</key>
+											<dict>
+												<key>userInfo</key>
+												<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gHdm9p
+								Y2UgMIaG
+												</data>
+											</dict>
+										</dict>
+										<dict>
+											<key>key</key>
+											<string>voice_1</string>
+											<key>node</key>
+											<string>Multiplexer_1</string>
+											<key>port</key>
+											<string>source_1</string>
+											<key>state</key>
+											<dict>
+												<key>userInfo</key>
+												<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gHdm9p
+								Y2UgMYaG
+												</data>
+											</dict>
+										</dict>
+										<dict>
+											<key>key</key>
+											<string>voice_2</string>
+											<key>node</key>
+											<string>Multiplexer_1</string>
+											<key>port</key>
+											<string>source_2</string>
+											<key>state</key>
+											<dict>
+												<key>userInfo</key>
+												<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gHdm9p
+								Y2UgMoaG
+												</data>
+											</dict>
+										</dict>
+										<dict>
+											<key>key</key>
+											<string>voice_3</string>
+											<key>node</key>
+											<string>Multiplexer_1</string>
+											<key>port</key>
+											<string>source_3</string>
+											<key>state</key>
+											<dict>
+												<key>userInfo</key>
+												<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gHdm9p
+								Y2UgM4aG
+												</data>
+											</dict>
+										</dict>
+										<dict>
+											<key>key</key>
+											<string>voice_4</string>
+											<key>node</key>
+											<string>Multiplexer_1</string>
+											<key>port</key>
+											<string>source_4</string>
+											<key>state</key>
+											<dict>
+												<key>userInfo</key>
+												<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gHdm9p
+								Y2UgNIaG
+												</data>
+											</dict>
+										</dict>
+										<dict>
+											<key>key</key>
+											<string>voice_5</string>
+											<key>node</key>
+											<string>Multiplexer_1</string>
+											<key>port</key>
+											<string>source_5</string>
+											<key>state</key>
+											<dict>
+												<key>userInfo</key>
+												<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gHdm9p
+								Y2UgNYaG
+												</data>
+											</dict>
+										</dict>
+										<dict>
+											<key>key</key>
+											<string>fx_0</string>
+											<key>node</key>
+											<string>Multiplexer_2</string>
+											<key>port</key>
+											<string>source_0</string>
+											<key>state</key>
+											<dict>
+												<key>userInfo</key>
+												<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gEZngg
+								MIaG
+												</data>
+											</dict>
+										</dict>
+										<dict>
+											<key>key</key>
+											<string>fx_1</string>
+											<key>node</key>
+											<string>Multiplexer_2</string>
+											<key>port</key>
+											<string>source_1</string>
+											<key>state</key>
+											<dict>
+												<key>userInfo</key>
+												<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gEZngg
+								MYaG
+												</data>
+											</dict>
+										</dict>
+										<dict>
+											<key>key</key>
+											<string>fx_2</string>
+											<key>node</key>
+											<string>Multiplexer_2</string>
+											<key>port</key>
+											<string>source_2</string>
+											<key>state</key>
+											<dict>
+												<key>userInfo</key>
+												<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gEZngg
+								MoaG
+												</data>
+											</dict>
+										</dict>
+										<dict>
+											<key>key</key>
+											<string>fx_3</string>
+											<key>node</key>
+											<string>Multiplexer_2</string>
+											<key>port</key>
+											<string>source_3</string>
+											<key>state</key>
+											<dict>
+												<key>userInfo</key>
+												<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gEZngg
+								M4aG
+												</data>
+											</dict>
+										</dict>
+										<dict>
+											<key>key</key>
+											<string>fx_4</string>
+											<key>node</key>
+											<string>Multiplexer_2</string>
+											<key>port</key>
+											<string>source_4</string>
+											<key>state</key>
+											<dict>
+												<key>userInfo</key>
+												<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gEZngg
+								NIaG
+												</data>
+											</dict>
+										</dict>
+										<dict>
+											<key>key</key>
+											<string>fx_5</string>
+											<key>node</key>
+											<string>Multiplexer_2</string>
+											<key>port</key>
+											<string>source_5</string>
+											<key>state</key>
+											<dict>
+												<key>userInfo</key>
+												<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gEZngg
+								NYaG
+												</data>
+											</dict>
 										</dict>
 									</array>
 									<key>systemInputPortStates</key>
@@ -2039,17 +2861,16 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								ZXIAhIQHTlNW
 								YWx1ZQCVhAEq
 								hIQBZpwBhpKE
-								l5gEbmFtZYaS
-								hJeYBWN1YmVz
-								hpKEl5gJc2Ny
-								b2xsaW5nhpKE
-								mpuEhAx7Q0dQ
-								b2ludD1kZH2d
-								gwAAAAAAsG5A
-								ZoaShJeYCHBv
-								c2l0aW9uhpKE
-								mpugnYE5AcWG
-								hg==
+								l5gJc2Nyb2xs
+								aW5nhpKEmpuE
+								hAx7Q0dQb2lu
+								dD1kZH2dgwAA
+								AAAAAAzA/4aS
+								hJeYBG5hbWWG
+								koSXmAZ2b2lj
+								ZXOGkoSXmAhw
+								b3NpdGlvboaS
+								hJqbnp1qxYaG
 									</data>
 								</dict>
 							</dict>
