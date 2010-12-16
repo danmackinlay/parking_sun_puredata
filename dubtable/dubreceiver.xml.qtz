@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>editorViewerWindow</key>
-	<string>-968 620 512 430 -1680 0 1680 1050 </string>
+	<string>-691 611 512 430 -1680 0 1680 1050 </string>
 	<key>frameworkVersion</key>
 	<string>{156.28}</string>
 	<key>portAttributes</key>
@@ -515,6 +515,17 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								<key>sourcePort</key>
 								<string>outputIndex</string>
 							</dict>
+							<key>connection_10</key>
+							<dict>
+								<key>destinationNode</key>
+								<string>RenderInImage_1</string>
+								<key>destinationPort</key>
+								<string>inputHeight</string>
+								<key>sourceNode</key>
+								<string>ScreenInfo_1</string>
+								<key>sourcePort</key>
+								<string>outputPixelsHigh</string>
+							</dict>
 							<key>connection_2</key>
 							<dict>
 								<key>destinationNode</key>
@@ -591,6 +602,17 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								<string>IteratorVariables_1</string>
 								<key>sourcePort</key>
 								<string>outputIndex</string>
+							</dict>
+							<key>connection_9</key>
+							<dict>
+								<key>destinationNode</key>
+								<string>RenderInImage_1</string>
+								<key>destinationPort</key>
+								<string>inputWidth</string>
+								<key>sourceNode</key>
+								<string>ScreenInfo_1</string>
+								<key>sourcePort</key>
+								<string>outputPixelsWide</string>
 							</dict>
 						</dict>
 						<key>ivarInputPortStates</key>
@@ -699,7 +721,7 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								U1ZhbHVlAJWE
 								ASqEhAx7Q0dQ
 								b2ludD1kZH2b
-								UqGGhg==
+								gTn/oYaG
 									</data>
 								</dict>
 							</dict>
@@ -727,7 +749,7 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZvLgeH+hoY=
+								fZvDgfn+hoY=
 									</data>
 								</dict>
 							</dict>
@@ -740,13 +762,10 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								<dict>
 									<key>colorCorrection</key>
 									<integer>1</integer>
+									<key>height</key>
+									<integer>384</integer>
 									<key>ivarInputPortStates</key>
 									<dict>
-										<key>inputHeight</key>
-										<dict>
-											<key>value</key>
-											<integer>0</integer>
-										</dict>
 										<key>inputMipmaps</key>
 										<dict>
 											<key>value</key>
@@ -762,18 +781,13 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 											<key>value</key>
 											<integer>0</integer>
 										</dict>
-										<key>inputWidth</key>
-										<dict>
-											<key>value</key>
-											<integer>0</integer>
-										</dict>
 									</dict>
 									<key>mipmapLevels</key>
 									<integer>0</integer>
 									<key>noDepthBuffer</key>
 									<false/>
 									<key>noFeedback</key>
-									<true/>
+									<false/>
 									<key>nodes</key>
 									<array>
 										<dict>
@@ -877,6 +891,63 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 												<false/>
 												<key>nodes</key>
 												<array>
+													<dict>
+														<key>class</key>
+														<string>QCClear</string>
+														<key>key</key>
+														<string>Clear_1</string>
+														<key>state</key>
+														<dict>
+															<key>clearColorBuffer</key>
+															<true/>
+															<key>clearDepthBuffer</key>
+															<true/>
+															<key>ivarInputPortStates</key>
+															<dict>
+																<key>inputColor</key>
+																<dict>
+																	<key>value</key>
+																	<dict>
+																		<key>alpha</key>
+																		<real>1</real>
+																		<key>blue</key>
+																		<real>0.0</real>
+																		<key>green</key>
+																		<real>0.0</real>
+																		<key>red</key>
+																		<real>0.0</real>
+																	</dict>
+																</dict>
+															</dict>
+															<key>systemInputPortStates</key>
+															<dict>
+																<key>_enable</key>
+																<dict>
+																	<key>value</key>
+																	<true/>
+																</dict>
+															</dict>
+															<key>userInfo</key>
+															<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwhwb3Np
+								dGlvboaShISE
+								B05TVmFsdWUA
+								lYQBKoSEDHtD
+								R1BvaW50PWRk
+								fZsCgQX/hoY=
+															</data>
+														</dict>
+													</dict>
 													<dict>
 														<key>class</key>
 														<string>QCIterator</string>
@@ -2402,8 +2473,7 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZuBGwGB+f6G
-								hg==
+								fZs6gR3/hoY=
 																		</data>
 																		<key>version</key>
 																		<integer>1</integer>
@@ -2470,7 +2540,7 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZuBhQGBHf+G
+								fZuB2ACBWf+G
 								hg==
 																		</data>
 																	</dict>
@@ -2844,6 +2914,8 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 									</data>
 									<key>version</key>
 									<integer>1</integer>
+									<key>width</key>
+									<integer>512</integer>
 								</dict>
 							</dict>
 							<dict>
@@ -2882,6 +2954,37 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								Q0dQb2ludD1k
 								ZH2bgUYBgXX+
 								hoY=
+									</data>
+								</dict>
+							</dict>
+							<dict>
+								<key>class</key>
+								<string>QCScreenInfo</string>
+								<key>key</key>
+								<string>ScreenInfo_1</string>
+								<key>state</key>
+								<dict>
+									<key>cleanAperture</key>
+									<true/>
+									<key>userInfo</key>
+									<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwhwb3Np
+								dGlvboaShISE
+								B05TVmFsdWUA
+								lYQBKoSEDHtD
+								R1BvaW50PWRk
+								fZuBZv+Baf6G
+								hg==
 									</data>
 								</dict>
 							</dict>
@@ -3732,6 +3835,39 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 						</data>
 					</dict>
 				</dict>
+				<dict>
+					<key>class</key>
+					<string>QCPatchRenderer</string>
+					<key>key</key>
+					<string>PatchRenderer_1</string>
+					<key>state</key>
+					<dict>
+						<key>compositionMode</key>
+						<string>processor</string>
+						<key>hasTimebase</key>
+						<true/>
+						<key>ivarInputPortStates</key>
+						<dict>
+							<key>inputPath</key>
+							<dict>
+								<key>value</key>
+								<string></string>
+							</dict>
+						</dict>
+						<key>timebase</key>
+						<string>parent</string>
+						<key>userInfo</key>
+						<data>
+						BAtzdHJlYW10eXBlZIHoA4QBQISE
+						hBNOU011dGFibGVEaWN0aW9uYXJ5
+						AISEDE5TRGljdGlvbmFyeQCEhAhO
+						U09iamVjdACFhAFpAZKEhIQITlNT
+						dHJpbmcBlYQBKwhwb3NpdGlvboaS
+						hISEB05TVmFsdWUAlYQBKoSEDHtD
+						R1BvaW50PWRkfZuBBP+hhoY=
+						</data>
+					</dict>
+				</dict>
 			</array>
 			<key>userInfo</key>
 			<data>
@@ -3739,7 +3875,7 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 			YXJ5AISEDE5TRGljdGlvbmFyeQCEhAhOU09iamVjdACFhAFpA5KE
 			hIQITlNTdHJpbmcBlYQBKwhwb3NpdGlvboaShISEB05TVmFsdWUA
 			lYQBKoSEDHtDR1BvaW50PWRkfZsAAYaShJeYCXNjcm9sbGluZ4aS
-			hJmampuDAAAAAABgWECBygCGkoSXmAp6b29tRmFjdG9yhpKEhIQI
+			hJmampuDAAAAAAAABMCBpwCGkoSXmAp6b29tRmFjdG9yhpKEhIQI
 			TlNOdW1iZXIAmZqEhAFmnQGGhg==
 			</data>
 		</dict>
