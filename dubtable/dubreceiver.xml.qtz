@@ -27,7 +27,7 @@
 				<key>connection_1</key>
 				<dict>
 					<key>destinationNode</key>
-					<string>JavaScript_2</string>
+					<string>JavaScript_1</string>
 					<key>destinationPort</key>
 					<string>inputTuios</string>
 					<key>sourceNode</key>
@@ -332,6 +332,17 @@
 					<key>sourcePort</key>
 					<string>Image_1</string>
 				</dict>
+				<key>connection_35</key>
+				<dict>
+					<key>destinationNode</key>
+					<string>JavaScript_2</string>
+					<key>destinationPort</key>
+					<string>inputTuios</string>
+					<key>sourceNode</key>
+					<string>JavaScript_1</string>
+					<key>sourcePort</key>
+					<string>outputTuios</string>
+				</dict>
 				<key>connection_4</key>
 				<dict>
 					<key>destinationNode</key>
@@ -518,7 +529,7 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 						dHJpbmcBlYQBKwRuYW1lhpKEl5gG
 						cm91dGVyhpKEl5gIcG9zaXRpb26G
 						koSEhAdOU1ZhbHVlAJWEASqEhAx7
-						Q0dQb2ludD1kZH2bgVf+eYaG
+						Q0dQb2ludD1kZH2bgUT+oYaG
 						</data>
 						<key>version</key>
 						<integer>1</integer>
@@ -546,7 +557,7 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 						U09iamVjdACFhAFpAZKEhIQITlNT
 						dHJpbmcBlYQBKwhwb3NpdGlvboaS
 						hISEB05TVmFsdWUAlYQBKoSEDHtD
-						R1BvaW50PWRkfZuBzP2BhQCGhg==
+						R1BvaW50PWRkfZuByPwBhoY=
 						</data>
 					</dict>
 				</dict>
@@ -3549,7 +3560,7 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 						CXNjcm9sbGluZ4aShJqbhIQMe0NH
 						UG9pbnQ9ZGR9nYMAAAAAAAAMwIH8
 						/oaShJeYCHBvc2l0aW9uhpKEmpug
-						nYHo/m2Ghg==
+						nYEh/62Ghg==
 						</data>
 					</dict>
 				</dict>
@@ -3740,10 +3751,10 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 						U09iamVjdACFhAFpA5KEhIQITlNT
 						dHJpbmcBlYQBKwhwb3NpdGlvboaS
 						hISEB05TVmFsdWUAlYQBKoSEDHtD
-						R1BvaW50PWRkfZverYaShJeYCXNj
-						cm9sbGluZ4aShJmampuB4gHyhpKE
-						l5gKem9vbUZhY3RvcoaShISECE5T
-						TnVtYmVyAJmahIQBZp0BhoY=
+						R1BvaW50PWRkfZuBuQDFhpKEl5gJ
+						c2Nyb2xsaW5nhpKEmZqam4HiAfKG
+						koSXmAp6b29tRmFjdG9yhpKEhIQI
+						TlNOdW1iZXIAmZqEhAFmnQGGhg==
 						</data>
 					</dict>
 				</dict>
@@ -3801,7 +3812,7 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 						Q29tcG9zaXRlIE9wZXJhdG9yhpKE
 						l5gIcG9zaXRpb26GkoSEhAdOU1Zh
 						bHVlAJWEASqEhAx7Q0dQb2ludD1k
-						ZH2bgQz/yIaG
+						ZH2b5+CGhg==
 						</data>
 						<key>version</key>
 						<integer>1</integer>
@@ -3825,7 +3836,7 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 						YWx1ZQCVhAEqhIQBZpwBhpKEl5gJ
 						c2Nyb2xsaW5nhpKEmpuEhAx7Q0dQ
 						b2ludD1kZH2dgeIB8oaShJeYCHBv
-						c2l0aW9uhpKEmpuend/phoY=
+						c2l0aW9uhpKEmpuenYG6AAGGhg==
 						</data>
 					</dict>
 				</dict>
@@ -3847,7 +3858,7 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 						YWx1ZQCVhAEqhIQBZpwBhpKEl5gJ
 						c2Nyb2xsaW5nhpKEmpuEhAx7Q0dQ
 						b2ludD1kZH2dgeIB8oaShJeYCHBv
-						c2l0aW9uhpKEmpueneAlhoY=
+						c2l0aW9uhpKEmpuenYG7AD2Ghg==
 						</data>
 					</dict>
 				</dict>
@@ -3869,7 +3880,7 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 						YWx1ZQCVhAEqhIQBZpwBhpKEl5gJ
 						c2Nyb2xsaW5nhpKEmpuEhAx7Q0dQ
 						b2ludD1kZH2dgeIB8oaShJeYCHBv
-						c2l0aW9uhpKEmpueneBhhoY=
+						c2l0aW9uhpKEmpuenYG7AHmGhg==
 						</data>
 					</dict>
 				</dict>
@@ -3891,19 +3902,95 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 						YWx1ZQCVhAEqhIQBZpwBhpKEl5gJ
 						c2Nyb2xsaW5nhpKEmpuEhAx7Q0dQ
 						b2ludD1kZH2dgeIB8oaShJeYCHBv
-						c2l0aW9uhpKEmpueneGBnQCGhg==
+						c2l0aW9uhpKEmpuenYG8AIG1AIaG
 						</data>
+					</dict>
+				</dict>
+				<dict>
+					<key>class</key>
+					<string>QCJavaScript</string>
+					<key>key</key>
+					<string>JavaScript_1</string>
+					<key>state</key>
+					<dict>
+						<key>newMode</key>
+						<integer>1</integer>
+						<key>numberOfInputs</key>
+						<integer>0</integer>
+						<key>numberOfOutputs</key>
+						<integer>0</integer>
+						<key>script</key>
+						<string>/*
+A simple script that takes two input values, sums them and returns the result.
+
+Special keywords for defining input and output key types:
+__boolean, __index, __number, __string, __image, __structure, __virtual
+
+Note that the function input arguments are read-only.
+*/
+
+var state = new Object();
+state.firstTime = true;
+
+function (__structure outputTuios) main (__structure inputTuios) {
+	var result = new Object();
+	var iTuios = new Array();
+	var outvoice = null;
+	var invoice = null;
+	var attrval = null;
+	var base = 0;
+	
+	if (!_testMode){
+		Log("nontest");
+		for (i in inputTuios) {
+			invoice = inputTuios[i];
+		   	outvoice = new Object();
+			for (j in invoice) {
+				attrval =  invoice [j];
+				if (j=='c_id') {
+					base = Math.floor(attrval/5);
+					attrval = 6*base + attrval-5*base;
+				}
+				outvoice[j] = attrval;
+			}
+			iTuios.push(outvoice);
+		}
+	}
+	result.outputTuios = iTuios;
+	return result;
+}
+</string>
+						<key>userInfo</key>
+						<data>
+						BAtzdHJlYW10eXBlZIHoA4QBQISE
+						hBNOU011dGFibGVEaWN0aW9uYXJ5
+						AISEDE5TRGljdGlvbmFyeQCEhAhO
+						U09iamVjdACFhAFpApKEhIQITlNT
+						dHJpbmcBlYQBKwRuYW1lhpKEl5gI
+						dGVzdG1vZGWGkoSXmAhwb3NpdGlv
+						boaShISEB05TVmFsdWUAlYQBKoSE
+						DHtDR1BvaW50PWRkfZuBb/25hoY=
+						</data>
+						<key>version</key>
+						<integer>1</integer>
 					</dict>
 				</dict>
 			</array>
 			<key>userInfo</key>
 			<data>
 			BAtzdHJlYW10eXBlZIHoA4QBQISEhBNOU011dGFibGVEaWN0aW9u
-			YXJ5AISEDE5TRGljdGlvbmFyeQCEhAhOU09iamVjdACFhAFpA5KE
-			hIQITlNTdHJpbmcBlYQBKwhwb3NpdGlvboaShISEB05TVmFsdWUA
-			lYQBKoSEDHtDR1BvaW50PWRkfZsAAYaShJeYCXNjcm9sbGluZ4aS
-			hJmampuDAAAAAAAABMCB4QCGkoSXmAp6b29tRmFjdG9yhpKEhIQI
-			TlNOdW1iZXIAmZqEhAFmnQGGhg==
+			YXJ5AISEDE5TRGljdGlvbmFyeQCEhAhOU09iamVjdACFhAFpBJKE
+			hIQITlNTdHJpbmcBlYQBKwp6b29tRmFjdG9yhpKEhIQITlNOdW1i
+			ZXIAhIQHTlNWYWx1ZQCVhAEqhIQBZpwBhpKEl5gIbm90ZUxpc3SG
+			koSEhA5OU011dGFibGVBcnJheQCEhAdOU0FycmF5AJWWAZKEk5YD
+			koSXmAZzdHJpbmeGkoSXmFFyZW1hcCB0aGUgVHVpb3Mgc28gdGhh
+			dCB0aGUgc2ltdWxhdG9yIGhhcyB0aGUgc2FtZSBibG9jayBjX2lk
+			IHJhbmdlcyBhcyB0aGUgdGFibGWGkoSXmAZib3VuZHOGkoSam4SE
+			IHtDR1JlY3Q9e0NHUG9pbnQ9ZGR9e0NHU2l6ZT1kZH19n4FS/YGJ
+			/4HIAGSGkoSXmAVjb2xvcoaShISEB05TQ29sb3IAlYQBYwKEBGZm
+			ZmYBAYMAAAA/AYaGhpKEl5gJc2Nyb2xsaW5nhpKEmpuEhAx7Q0dQ
+			b2ludD1kZH2jgwAAAAAAwELAgwAAAAAASHRAhpKEl5gIcG9zaXRp
+			b26GkoSam6ujAAGGhg==
 			</data>
 		</dict>
 	</dict>
@@ -5496,7 +5583,7 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 					hIQITlNOdW1iZXIAhIQHTlNWYWx1ZQCVhAEq
 					hIQBZpwBhpKEl5gJc2Nyb2xsaW5nhpKEmpuE
 					hAx7Q0dQb2ludD1kZH2dgeIB8oaShJeYCHBv
-					c2l0aW9uhpKEmpueneGBnQCGhg==
+					c2l0aW9uhpKEmpuenYG8AIG1AIaG
 					</data>
 				</dict>
 			</dict>
