@@ -501,7 +501,7 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
                   voice[j] = to_copy[j];
               }
               outvoicenum = Math.floor(to_copy.c_id/6);
-              if (outvoicenum&lt;=4) { //'voice info' in low voice #s
+              if (outvoicenum&lt;=5) { //'voice info' in low voice #s
                 outchan = 'voice' + Math.floor(to_copy.c_id/6);
                 if (!result[outchan]) {
                     result[outchan] = [voice];
@@ -509,7 +509,7 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
                     result[outchan].push(voice);
                 }
               } else { //'fx info' in higher voice #s
-                outchan = 'fx' + (to_copy.c_id-30);
+                outchan = 'fx' + (to_copy.c_id-36);
                 result[outchan] = voice;
               }
         }
@@ -973,7 +973,8 @@ function (__structure outputTuios) main (__structure inputTuios) {
 						dHJpbmcBlYQBKwRuYW1lhpKEl5gI
 						dGVzdG1vZGWGkoSXmAhwb3NpdGlv
 						boaShISEB05TVmFsdWUAlYQBKoSE
-						DHtDR1BvaW50PWRkfZuBb/25hoY=
+						DHtDR1BvaW50PWRkfZuBXP2Bcf+G
+						hg==
 						</data>
 						<key>version</key>
 						<integer>1</integer>
@@ -5164,7 +5165,7 @@ function (__structure outputTuios) main (__structure inputTuios) {
 			aGUgVHVpb3Mgc28gdGhhdCB0aGUgc2ltdWxhdG9yIGhhcyB0aGUg
 			c2FtZSBibG9jayBjX2lkIHJhbmdlcyBhcyB0aGUgdGFibGWGkoSX
 			mAZib3VuZHOGkoSam4SEIHtDR1JlY3Q9e0NHUG9pbnQ9ZGR9e0NH
-			U2l6ZT1kZH19oIFS/YGJ/4HIAGSGkoSXmAVjb2xvcoaShISEB05T
+			U2l6ZT1kZH19oIFO/YE+/4HIAGSGkoSXmAVjb2xvcoaShISEB05T
 			Q29sb3IAlYQBYwKEBGZmZmYBAYMAAAA/AYaGhpKEl5gIcG9zaXRp
 			b26GkoSam56dAAGGhg==
 			</data>
