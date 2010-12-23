@@ -3882,13 +3882,13 @@ function (__structure outputTuios) main (__structure inputTuios) {
 										<key>connection_13</key>
 										<dict>
 											<key>destinationNode</key>
-											<string>StructureMember_index_1</string>
+											<string>Expression_6</string>
 											<key>destinationPort</key>
-											<string>inputIndex</string>
+											<string>a</string>
 											<key>sourceNode</key>
-											<string>Splitter_1</string>
+											<string>StructureMember_key_3</string>
 											<key>sourcePort</key>
-											<string>output</string>
+											<string>outputMember</string>
 										</dict>
 										<key>connection_14</key>
 										<dict>
@@ -3923,21 +3923,21 @@ function (__structure outputTuios) main (__structure inputTuios) {
 											<key>sourcePort</key>
 											<string>outputPixelsHigh</string>
 										</dict>
+										<key>connection_17</key>
+										<dict>
+											<key>destinationNode</key>
+											<string>VortexDistortion_1</string>
+											<key>destinationPort</key>
+											<string>inputAngle</string>
+											<key>sourceNode</key>
+											<string>Expression_6</string>
+											<key>sourcePort</key>
+											<string>outputResult</string>
+										</dict>
 										<key>connection_2</key>
 										<dict>
 											<key>destinationNode</key>
 											<string>StructureMember_key_1</string>
-											<key>destinationPort</key>
-											<string>inputStructure</string>
-											<key>sourceNode</key>
-											<string>StructureMember_index_1</string>
-											<key>sourcePort</key>
-											<string>outputMember</string>
-										</dict>
-										<key>connection_28</key>
-										<dict>
-											<key>destinationNode</key>
-											<string>StructureMember_index_1</string>
 											<key>destinationPort</key>
 											<string>inputStructure</string>
 											<key>sourceNode</key>
@@ -3963,9 +3963,9 @@ function (__structure outputTuios) main (__structure inputTuios) {
 											<key>destinationPort</key>
 											<string>inputStructure</string>
 											<key>sourceNode</key>
-											<string>StructureMember_index_1</string>
+											<string>Splitter_2</string>
 											<key>sourcePort</key>
-											<string>outputMember</string>
+											<string>output</string>
 										</dict>
 										<key>connection_5</key>
 										<dict>
@@ -3985,9 +3985,9 @@ function (__structure outputTuios) main (__structure inputTuios) {
 											<key>destinationPort</key>
 											<string>inputStructure</string>
 											<key>sourceNode</key>
-											<string>StructureMember_index_1</string>
+											<string>Splitter_2</string>
 											<key>sourcePort</key>
-											<string>outputMember</string>
+											<string>output</string>
 										</dict>
 										<key>connection_7</key>
 										<dict>
@@ -4034,14 +4034,6 @@ function (__structure outputTuios) main (__structure inputTuios) {
 											<string>VortexDistortion_1</string>
 											<key>state</key>
 											<dict>
-												<key>customInputPortStates</key>
-												<dict>
-													<key>inputAngle</key>
-													<dict>
-														<key>value</key>
-														<real>5002.9411764705883</real>
-													</dict>
-												</dict>
 												<key>filterVersion</key>
 												<integer>1</integer>
 												<key>filteringMode</key>
@@ -4067,42 +4059,12 @@ function (__structure outputTuios) main (__structure inputTuios) {
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZuB4ABthoY=
+								fZuB2wBthoY=
 												</data>
 												<key>version</key>
 												<integer>2</integer>
 												<key>wrappingMode</key>
 												<string>Bilinear</string>
-											</dict>
-										</dict>
-										<dict>
-											<key>class</key>
-											<string>QCStructureMember</string>
-											<key>identifier</key>
-											<string>index</string>
-											<key>key</key>
-											<string>StructureMember_index_1</string>
-											<key>state</key>
-											<dict>
-												<key>userInfo</key>
-												<data>
-								BAtzdHJlYW10
-								eXBlZIHoA4QB
-								QISEhBNOU011
-								dGFibGVEaWN0
-								aW9uYXJ5AISE
-								DE5TRGljdGlv
-								bmFyeQCEhAhO
-								U09iamVjdACF
-								hAFpAZKEhIQI
-								TlNTdHJpbmcB
-								lYQBKwhwb3Np
-								dGlvboaShISE
-								B05TVmFsdWUA
-								lYQBKoSEDHtD
-								R1BvaW50PWRk
-								fZuBbP0BhoY=
-												</data>
 											</dict>
 										</dict>
 										<dict>
@@ -4195,7 +4157,7 @@ function (__structure outputTuios) main (__structure inputTuios) {
 													<key>inputKey</key>
 													<dict>
 														<key>value</key>
-														<string>c_id</string>
+														<string>angle</string>
 													</dict>
 												</dict>
 												<key>userInfo</key>
@@ -4326,7 +4288,7 @@ function (__structure outputTuios) main (__structure inputTuios) {
 											<key>state</key>
 											<dict>
 												<key>expression</key>
-												<string>(a+1)*b/2</string>
+												<string>(a*0.5+1)*b/2</string>
 												<key>userInfo</key>
 												<data>
 								BAtzdHJlYW10
@@ -4373,7 +4335,7 @@ function (__structure outputTuios) main (__structure inputTuios) {
 								hAFpApKEhIQI
 								TlNTdHJpbmcB
 								lYQBKwRuYW1l
-								hpKEl5gDc2lu
+								hpKEl5gDY29z
 								hpKEl5gIcG9z
 								aXRpb26GkoSE
 								hAdOU1ZhbHVl
@@ -4392,7 +4354,7 @@ function (__structure outputTuios) main (__structure inputTuios) {
 											<key>state</key>
 											<dict>
 												<key>expression</key>
-												<string>(a+1)*b/2</string>
+												<string>(a*0.5+1)*b/2</string>
 												<key>userInfo</key>
 												<data>
 								BAtzdHJlYW10
@@ -4533,6 +4495,39 @@ function (__structure outputTuios) main (__structure inputTuios) {
 												</data>
 											</dict>
 										</dict>
+										<dict>
+											<key>class</key>
+											<string>QCExpression</string>
+											<key>key</key>
+											<string>Expression_6</string>
+											<key>state</key>
+											<dict>
+												<key>expression</key>
+												<string>sin(a-180.0)*5400</string>
+												<key>userInfo</key>
+												<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpApKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gLYW5n
+								bGUgc2NhbGWG
+								koSXmAhwb3Np
+								dGlvboaShISE
+								B05TVmFsdWUA
+								lYQBKoSEDHtD
+								R1BvaW50PWRk
+								fZuB9/4lhoY=
+												</data>
+											</dict>
+										</dict>
 									</array>
 									<key>publishedInputPorts</key>
 									<array>
@@ -4638,7 +4633,7 @@ function (__structure outputTuios) main (__structure inputTuios) {
 								wIMAAAAAACh0
 								QIaShJeYCHBv
 								c2l0aW9uhpKE
-								mpugnTeB/QCG
+								mpugnTuB/QCG
 								hg==
 									</data>
 								</dict>
