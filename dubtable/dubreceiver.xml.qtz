@@ -1218,6 +1218,17 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 																				<key>sourcePort</key>
 																				<string>outputValue</string>
 																			</dict>
+																			<key>connection_41</key>
+																			<dict>
+																				<key>destinationNode</key>
+																				<string>StructureMember_key_4</string>
+																				<key>destinationPort</key>
+																				<string>inputStructure</string>
+																				<key>sourceNode</key>
+																				<string>StructureMember_index_1</string>
+																				<key>sourcePort</key>
+																				<string>outputMember</string>
+																			</dict>
 																			<key>connection_42</key>
 																			<dict>
 																				<key>destinationNode</key>
@@ -1239,6 +1250,17 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 																				<string>LFO_4</string>
 																				<key>sourcePort</key>
 																				<string>outputValue</string>
+																			</dict>
+																			<key>connection_44</key>
+																			<dict>
+																				<key>destinationNode</key>
+																				<string>Multiplexer_1</string>
+																				<key>destinationPort</key>
+																				<string>inputIndex</string>
+																				<key>sourceNode</key>
+																				<string>StructureMember_key_4</string>
+																				<key>sourcePort</key>
+																				<string>outputMember</string>
 																			</dict>
 																			<key>connection_5</key>
 																			<dict>
@@ -1364,7 +1386,7 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								hIQHTlNWYWx1
 								ZQCVhAEqhIQM
 								e0NHUG9pbnQ9
-								ZGR9m4Ec/4FB
+								ZGR9m4Ea/4Ed
 								/4aG
 																					</data>
 																				</dict>
@@ -1405,7 +1427,7 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								hIQHTlNWYWx1
 								ZQCVhAEqhIQM
 								e0NHUG9pbnQ9
-								ZGR9m4Ei/4F9
+								ZGR9m4Eg/4FZ
 								/4aG
 																					</data>
 																				</dict>
@@ -1446,7 +1468,7 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								hIQHTlNWYWx1
 								ZQCVhAEqhIQM
 								e0NHUG9pbnQ9
-								ZGR9m4Ej/7mG
+								ZGR9m4Eh/5WG
 								hg==
 																					</data>
 																				</dict>
@@ -2489,7 +2511,7 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								hAdOU1ZhbHVl
 								AJWEASqEhAx7
 								Q0dQb2ludD1k
-								ZH2bgSn/EIaG
+								ZH2b+IEU/4aG
 																					</data>
 																					<key>version</key>
 																					<integer>1</integer>
@@ -2524,7 +2546,7 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZvLAYaG
+								fZtvgU3/hoY=
 																					</data>
 																				</dict>
 																			</dict>
@@ -3169,14 +3191,6 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 																					</dict>
 																					<key>inputCount</key>
 																					<integer>6</integer>
-																					<key>ivarInputPortStates</key>
-																					<dict>
-																						<key>inputIndex</key>
-																						<dict>
-																							<key>value</key>
-																							<integer>0</integer>
-																						</dict>
-																					</dict>
 																					<key>portClass</key>
 																					<string>QCColorPort</string>
 																					<key>userInfo</key>
@@ -3200,7 +3214,7 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								TlNWYWx1ZQCV
 								hAEqhIQMe0NH
 								UG9pbnQ9ZGR9
-								m4Es/mGGhg==
+								m789hoY=
 																					</data>
 																				</dict>
 																			</dict>
@@ -3261,6 +3275,48 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
 								fZubgbEBhoY=
+																					</data>
+																				</dict>
+																			</dict>
+																			<dict>
+																				<key>class</key>
+																				<string>QCStructureMember</string>
+																				<key>identifier</key>
+																				<string>key</string>
+																				<key>key</key>
+																				<string>StructureMember_key_4</string>
+																				<key>state</key>
+																				<dict>
+																					<key>customInputPortStates</key>
+																					<dict>
+																						<key>inputKey</key>
+																						<dict>
+																							<key>value</key>
+																							<string>sub_voice_num</string>
+																						</dict>
+																					</dict>
+																					<key>userInfo</key>
+																					<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpApKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gNc3Vi
+								X3ZvaWNlX251
+								bYaShJeYCHBv
+								c2l0aW9uhpKE
+								hIQHTlNWYWx1
+								ZQCVhAEqhIQM
+								e0NHUG9pbnQ9
+								ZGR9m4El/9GG
+								hg==
 																					</data>
 																				</dict>
 																			</dict>
