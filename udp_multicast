@@ -1,0 +1,2 @@
+#!/bin/env sh
+socat UDP4-LISTEN:3334 UDP4-DATAGRAM:192.168.97.255:3333,broadcast
