@@ -2,8 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>aspectRatio</key>
+	<real>1.3333333730697632</real>
 	<key>editorViewerWindow</key>
-	<string>353 360 512 430 0 0 1440 878 </string>
+	<string>83 354 512 430 0 0 1440 878 </string>
 	<key>frameworkVersion</key>
 	<string>{156.28}</string>
 	<key>portAttributes</key>
@@ -369,7 +371,7 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 						U09iamVjdACFhAFpAZKEhIQITlNT
 						dHJpbmcBlYQBKwhwb3NpdGlvboaS
 						hISEB05TVmFsdWUAlYQBKoSEDHtD
-						R1BvaW50PWRkfZuBvvyBTf+Ghg==
+						R1BvaW50PWRkfZuBvvyBWf+Ghg==
 						</data>
 					</dict>
 				</dict>
@@ -6415,8 +6417,8 @@ function (__structure outputTuios) main (__structure inputTuios) {
 			IHtDR1JlY3Q9e0NHUG9pbnQ9ZGR9e0NHU2l6ZT1kZH19n4FO/YE+
 			/4HIAGSGkoSXmAVjb2xvcoaShISEB05TQ29sb3IAlYQBYwKEBGZm
 			ZmYBAYMAAAA/AYaGhpKEl5gJc2Nyb2xsaW5nhpKEmpuEhAx7Q0dQ
-			b2ludD1kZH2jgd4AgacAhpKEl5gIcG9zaXRpb26GkoSam6ujAAGG
-			hg==
+			b2ludD1kZH2jgaL+gwAAAAAAEGRAhpKEl5gIcG9zaXRpb26GkoSa
+			m6ujAAGGhg==
 			</data>
 		</dict>
 	</dict>
