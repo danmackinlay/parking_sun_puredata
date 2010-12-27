@@ -1,0 +1,20 @@
+Day glow orange
+dull sky blue
+fluoro yellow
+emergency orange
+electric green
+white
+
+drum
+bass
+guitar
+keys
+vocal hits
+
+
+delay tracks
+drum 29
+bass 30
+guitar 31
+keys 32
+vocals 34
