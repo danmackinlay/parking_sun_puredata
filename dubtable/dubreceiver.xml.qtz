@@ -5,7 +5,7 @@
 	<key>aspectRatio</key>
 	<real>1.3333333730697632</real>
 	<key>editorViewerWindow</key>
-	<string>346 164 512 430 0 0 1440 878 </string>
+	<string>703 270 512 430 0 0 1440 878 </string>
 	<key>frameworkVersion</key>
 	<string>{156.28}</string>
 	<key>portAttributes</key>
@@ -1473,6 +1473,28 @@ function (__structure outputTuios) main (__structure inputTuios) {
 																				<key>sourcePort</key>
 																				<string>output</string>
 																			</dict>
+																			<key>connection_42</key>
+																			<dict>
+																				<key>destinationNode</key>
+																				<string>LFO_4</string>
+																				<key>destinationPort</key>
+																				<string>inputPeriod</string>
+																				<key>sourceNode</key>
+																				<string>Math_13</string>
+																				<key>sourcePort</key>
+																				<string>outputValue</string>
+																			</dict>
+																			<key>connection_43</key>
+																			<dict>
+																				<key>destinationNode</key>
+																				<string>Math_7</string>
+																				<key>destinationPort</key>
+																				<string>operand_2</string>
+																				<key>sourceNode</key>
+																				<string>LFO_4</string>
+																				<key>sourcePort</key>
+																				<string>outputValue</string>
+																			</dict>
 																			<key>connection_5</key>
 																			<dict>
 																				<key>destinationNode</key>
@@ -2461,11 +2483,16 @@ function (__structure outputTuios) main (__structure inputTuios) {
 																							<key>value</key>
 																							<integer>2</integer>
 																						</dict>
+																						<key>operation_2</key>
+																						<dict>
+																							<key>value</key>
+																							<integer>0</integer>
+																						</dict>
 																					</dict>
 																					<key>numberOfOperations</key>
-																					<integer>1</integer>
+																					<integer>2</integer>
 																					<key>operationCount</key>
-																					<integer>1</integer>
+																					<integer>2</integer>
 																					<key>userInfo</key>
 																					<data>
 								BAtzdHJlYW10
@@ -3019,7 +3046,7 @@ function (__structure outputTuios) main (__structure inputTuios) {
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZuBU/+BJgGG
+								fZuBVv+BhgGG
 								hg==
 																					</data>
 																					<key>version</key>
@@ -3082,7 +3109,7 @@ function (__structure outputTuios) main (__structure inputTuios) {
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZuVgfEAhoY=
+								fZuYgVEBhoY=
 																					</data>
 																				</dict>
 																			</dict>
@@ -3177,7 +3204,7 @@ function (__structure outputTuios) main (__structure inputTuios) {
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZuBUv+BhgGG
+								fZuBU/+BJgGG
 								hg==
 																					</data>
 																					<key>version</key>
@@ -3240,7 +3267,7 @@ function (__structure outputTuios) main (__structure inputTuios) {
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZuUgVEBhoY=
+								fZuVgfEAhoY=
 																					</data>
 																				</dict>
 																			</dict>
@@ -3417,6 +3444,66 @@ function (__structure outputTuios) main (__structure inputTuios) {
 																					</data>
 																				</dict>
 																			</dict>
+																			<dict>
+																				<key>class</key>
+																				<string>QCLFO</string>
+																				<key>key</key>
+																				<string>LFO_4</string>
+																				<key>state</key>
+																				<dict>
+																					<key>ivarInputPortStates</key>
+																					<dict>
+																						<key>inputAmplitude</key>
+																						<dict>
+																							<key>value</key>
+																							<real>180</real>
+																						</dict>
+																						<key>inputOffset</key>
+																						<dict>
+																							<key>value</key>
+																							<real>180</real>
+																						</dict>
+																						<key>inputPWMRatio</key>
+																						<dict>
+																							<key>value</key>
+																							<real>0.25</real>
+																						</dict>
+																						<key>inputPhase</key>
+																						<dict>
+																							<key>value</key>
+																							<real>0.0</real>
+																						</dict>
+																						<key>inputType</key>
+																						<dict>
+																							<key>value</key>
+																							<integer>4</integer>
+																						</dict>
+																					</dict>
+																					<key>randomSeed</key>
+																					<integer>1457984104</integer>
+																					<key>timebase</key>
+																					<string>parent</string>
+																					<key>userInfo</key>
+																					<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwhwb3Np
+								dGlvboaShISE
+								B05TVmFsdWUA
+								lYQBKoSEDHtD
+								R1BvaW50PWRk
+								fZubgbEBhoY=
+																					</data>
+																				</dict>
+																			</dict>
 																		</array>
 																		<key>publishedInputPorts</key>
 																		<array>
@@ -3541,7 +3628,7 @@ function (__structure outputTuios) main (__structure inputTuios) {
 								DHtDR1BvaW50
 								PWRkfZ2DAAAA
 								AADgXUCDAAAA
-								AABARECGkoSX
+								AADgVkCGkoSX
 								mAhwb3NpdGlv
 								boaShJqboJ0L
 								gVn/hoY=
