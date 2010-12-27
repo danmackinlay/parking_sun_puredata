@@ -5,7 +5,7 @@
 	<key>aspectRatio</key>
 	<real>1.3333333730697632</real>
 	<key>editorViewerWindow</key>
-	<string>666 304 512 430 0 0 1440 878 </string>
+	<string>519 296 512 430 0 0 1440 878 </string>
 	<key>frameworkVersion</key>
 	<string>{156.28}</string>
 	<key>portAttributes</key>
@@ -133,28 +133,6 @@
 					<string>Image</string>
 					<key>sourceNode</key>
 					<string>Patch_3</string>
-					<key>sourcePort</key>
-					<string>Image_1</string>
-				</dict>
-				<key>connection_33</key>
-				<dict>
-					<key>destinationNode</key>
-					<string>Patch_5</string>
-					<key>destinationPort</key>
-					<string>Composite_Operator</string>
-					<key>sourceNode</key>
-					<string>Splitter_2</string>
-					<key>sourcePort</key>
-					<string>output</string>
-				</dict>
-				<key>connection_34</key>
-				<dict>
-					<key>destinationNode</key>
-					<string>Patch_5</string>
-					<key>destinationPort</key>
-					<string>Image</string>
-					<key>sourceNode</key>
-					<string>Patch_4</string>
 					<key>sourcePort</key>
 					<string>Image_1</string>
 				</dict>
@@ -615,28 +593,6 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 						c2Nyb2xsaW5nhpKEmpuEhAx7Q0dQ
 						b2ludD1kZH2dgeIB8oaShJeYCHBv
 						c2l0aW9uhpKEmpuenYG7AHmGhg==
-						</data>
-					</dict>
-				</dict>
-				<dict>
-					<key>class</key>
-					<string>/composite</string>
-					<key>key</key>
-					<string>Patch_5</string>
-					<key>state</key>
-					<dict>
-						<key>userInfo</key>
-						<data>
-						BAtzdHJlYW10eXBlZIHoA4QBQISE
-						hBNOU011dGFibGVEaWN0aW9uYXJ5
-						AISEDE5TRGljdGlvbmFyeQCEhAhO
-						U09iamVjdACFhAFpA5KEhIQITlNT
-						dHJpbmcBlYQBKwp6b29tRmFjdG9y
-						hpKEhIQITlNOdW1iZXIAhIQHTlNW
-						YWx1ZQCVhAEqhIQBZpwBhpKEl5gJ
-						c2Nyb2xsaW5nhpKEmpuEhAx7Q0dQ
-						b2ludD1kZH2dgeIB8oaShJeYCHBv
-						c2l0aW9uhpKEmpuenYG8AIG1AIaG
 						</data>
 					</dict>
 				</dict>
@@ -5291,7 +5247,7 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 						U09iamVjdACFhAFpAZKEhIQITlNT
 						dHJpbmcBlYQBKwhwb3NpdGlvboaS
 						hISEB05TVmFsdWUAlYQBKoSEDHtD
-						R1BvaW50PWRkfZuBCv+BzQCGhg==
+						R1BvaW50PWRkfZuBtP7dhoY=
 						</data>
 						<key>version</key>
 						<integer>2</integer>
@@ -5362,7 +5318,7 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 						U09iamVjdACFhAFpAZKEhIQITlNT
 						dHJpbmcBlYQBKwhwb3NpdGlvboaS
 						hISEB05TVmFsdWUAlYQBKoSEDHtD
-						R1BvaW50PWRkfZuWgc0AhoY=
+						R1BvaW50PWRkfZuBQP/dhoY=
 						</data>
 					</dict>
 				</dict>
@@ -8195,7 +8151,7 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 					hIQITlNOdW1iZXIAhIQHTlNWYWx1ZQCVhAEq
 					hIQBZpwBhpKEl5gJc2Nyb2xsaW5nhpKEmpuE
 					hAx7Q0dQb2ludD1kZH2dgeIB8oaShJeYCHBv
-					c2l0aW9uhpKEmpuenYG8AIG1AIaG
+					c2l0aW9uhpKEmpuenYG7AHmGhg==
 					</data>
 				</dict>
 			</dict>
