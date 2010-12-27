@@ -6,6 +6,8 @@
 	<string>{156.28}</string>
 	<key>inputParameters</key>
 	<dict>
+		<key>Blur</key>
+		<real>0.0</real>
 		<key>Luminosity</key>
 		<real>1</real>
 		<key>Mix</key>
@@ -17,6 +19,13 @@
 	</dict>
 	<key>portAttributes</key>
 	<dict>
+		<key>Blur</key>
+		<dict>
+			<key>description</key>
+			<string>The input port.</string>
+			<key>name</key>
+			<string>Input</string>
+		</dict>
 		<key>Input_Image</key>
 		<dict>
 			<key>description</key>
@@ -305,7 +314,7 @@
 						dHJpbmcBlYQBKwRuYW1lhpKEl5gM
 						T3V0cHV0IEltYWdlhpKEl5gIcG9z
 						aXRpb26GkoSEhAdOU1ZhbHVlAJWE
-						ASqEhAx7Q0dQb2ludD1kZH2bgfAD
+						ASqEhAx7Q0dQb2ludD1kZH2bgVQE
 						gbgAhoY=
 						</data>
 						<key>version</key>
@@ -367,7 +376,7 @@
 						U09iamVjdACFhAFpAZKEhIQITlNT
 						dHJpbmcBlYQBKwhwb3NpdGlvboaS
 						hISEB05TVmFsdWUAlYQBKoSEDHtD
-						R1BvaW50PWRkfZuB8QKBqQCGhg==
+						R1BvaW50PWRkfZuBVQOBqQCGhg==
 						</data>
 						<key>version</key>
 						<integer>1</integer>
@@ -1094,6 +1103,79 @@
 						</data>
 					</dict>
 				</dict>
+				<dict>
+					<key>class</key>
+					<string>QCSplitter</string>
+					<key>key</key>
+					<string>Splitter_1</string>
+					<key>state</key>
+					<dict>
+						<key>customInputPortStates</key>
+						<dict>
+							<key>input</key>
+							<dict>
+								<key>userInfo</key>
+								<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gKTHVt
+								aW5vc2l0eYaG
+								</data>
+							</dict>
+						</dict>
+						<key>customOutputPortStates</key>
+						<dict>
+							<key>output</key>
+							<dict>
+								<key>userInfo</key>
+								<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gKTHVt
+								aW5vc2l0eYaG
+								</data>
+							</dict>
+						</dict>
+						<key>inputMax</key>
+						<real>2</real>
+						<key>inputMin</key>
+						<real>-2</real>
+						<key>portClass</key>
+						<string>QCNumberPort</string>
+						<key>userInfo</key>
+						<data>
+						BAtzdHJlYW10eXBlZIHoA4QBQISE
+						hBNOU011dGFibGVEaWN0aW9uYXJ5
+						AISEDE5TRGljdGlvbmFyeQCEhAhO
+						U09iamVjdACFhAFpApKEhIQITlNT
+						dHJpbmcBlYQBKwRuYW1lhpKEl5gK
+						THVtaW5vc2l0eYaShJeYCHBvc2l0
+						aW9uhpKEhIQHTlNWYWx1ZQCVhAEq
+						hIQMe0NHUG9pbnQ9ZGR9m4HfAYF4
+						AYaG
+						</data>
+						<key>version</key>
+						<integer>1</integer>
+					</dict>
+				</dict>
 			</array>
 			<key>publishedInputPorts</key>
 			<array>
@@ -1179,6 +1261,26 @@
 				</dict>
 				<dict>
 					<key>key</key>
+					<string>Blur</string>
+					<key>node</key>
+					<string>Splitter_1</string>
+					<key>port</key>
+					<string>input</string>
+					<key>state</key>
+					<dict>
+						<key>userInfo</key>
+						<data>
+						BAtzdHJlYW10eXBlZIHoA4QBQISE
+						hBNOU011dGFibGVEaWN0aW9uYXJ5
+						AISEDE5TRGljdGlvbmFyeQCEhAhO
+						U09iamVjdACFhAFpAZKEhIQITlNT
+						dHJpbmcBlYQBKwRuYW1lhpKEl5gE
+						Qmx1coaG
+						</data>
+					</dict>
+				</dict>
+				<dict>
+					<key>key</key>
 					<string>Input_Image</string>
 					<key>node</key>
 					<string>_protocolInput_Image</string>
@@ -1229,7 +1331,7 @@
 			YXJ5AISEDE5TRGljdGlvbmFyeQCEhAhOU09iamVjdACFhAFpA5KE
 			hIQITlNTdHJpbmcBlYQBKwhwb3NpdGlvboaShISEB05TVmFsdWUA
 			lYQBKoSEDHtDR1BvaW50PWRkfZsAAYaShJeYCXNjcm9sbGluZ4aS
-			hJmampuDAAAAAAAMhECBJgGGkoSXmAp6b29tRmFjdG9yhpKEhIQI
+			hJmampuDAAAAAABMgkCBJgGGkoSXmAp6b29tRmFjdG9yhpKEhIQI
 			TlNOdW1iZXIAmZqEhAFmnQGGhg==
 			</data>
 		</dict>
