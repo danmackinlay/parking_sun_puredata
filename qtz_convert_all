@@ -1,0 +1,2 @@
+#!/bin/sh
+find . -name "*.qtz" -not -name "*.xml.qtz" -print0 |xargs -0 -n 1 ./qtz_convert
