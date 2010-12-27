@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>editorViewerWindow</key>
-	<string>703 403 512 430 0 0 1440 878 </string>
+	<string>353 360 512 430 0 0 1440 878 </string>
 	<key>frameworkVersion</key>
 	<string>{156.28}</string>
 	<key>portAttributes</key>
@@ -341,7 +341,7 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 						dHJpbmcBlYQBKwRuYW1lhpKEl5gG
 						cm91dGVyhpKEl5gIcG9zaXRpb26G
 						koSEhAdOU1ZhbHVlAJWEASqEhAx7
-						Q0dQb2ludD1kZH2bgUT+oYaG
+						Q0dQb2ludD1kZH2bgaT+gXH/hoY=
 						</data>
 						<key>version</key>
 						<integer>1</integer>
@@ -1306,6 +1306,17 @@ function (__structure outputTuios) main (__structure inputTuios) {
 																				<key>sourcePort</key>
 																				<string>output</string>
 																			</dict>
+																			<key>connection_29</key>
+																			<dict>
+																				<key>destinationNode</key>
+																				<string>LFO_1</string>
+																				<key>destinationPort</key>
+																				<string>inputPeriod</string>
+																				<key>sourceNode</key>
+																				<string>Math_11</string>
+																				<key>sourcePort</key>
+																				<string>outputValue</string>
+																			</dict>
 																			<key>connection_3</key>
 																			<dict>
 																				<key>destinationNode</key>
@@ -1328,6 +1339,105 @@ function (__structure outputTuios) main (__structure inputTuios) {
 																				<key>sourcePort</key>
 																				<string>outputIndex</string>
 																			</dict>
+																			<key>connection_31</key>
+																			<dict>
+																				<key>destinationNode</key>
+																				<string>Math_12</string>
+																				<key>destinationPort</key>
+																				<string>operand_1</string>
+																				<key>sourceNode</key>
+																				<string>LFO_1</string>
+																				<key>sourcePort</key>
+																				<string>outputValue</string>
+																			</dict>
+																			<key>connection_32</key>
+																			<dict>
+																				<key>destinationNode</key>
+																				<string>Camera_1</string>
+																				<key>destinationPort</key>
+																				<string>inputScaleX</string>
+																				<key>sourceNode</key>
+																				<string>Math_12</string>
+																				<key>sourcePort</key>
+																				<string>outputValue</string>
+																			</dict>
+																			<key>connection_33</key>
+																			<dict>
+																				<key>destinationNode</key>
+																				<string>Math_13</string>
+																				<key>destinationPort</key>
+																				<string>inputValue</string>
+																				<key>sourceNode</key>
+																				<string>Math_11</string>
+																				<key>sourcePort</key>
+																				<string>outputValue</string>
+																			</dict>
+																			<key>connection_34</key>
+																			<dict>
+																				<key>destinationNode</key>
+																				<string>LFO_2</string>
+																				<key>destinationPort</key>
+																				<string>inputPeriod</string>
+																				<key>sourceNode</key>
+																				<string>Math_13</string>
+																				<key>sourcePort</key>
+																				<string>outputValue</string>
+																			</dict>
+																			<key>connection_35</key>
+																			<dict>
+																				<key>destinationNode</key>
+																				<string>Camera_1</string>
+																				<key>destinationPort</key>
+																				<string>inputScaleY</string>
+																				<key>sourceNode</key>
+																				<string>Math_14</string>
+																				<key>sourcePort</key>
+																				<string>outputValue</string>
+																			</dict>
+																			<key>connection_36</key>
+																			<dict>
+																				<key>destinationNode</key>
+																				<string>Math_14</string>
+																				<key>destinationPort</key>
+																				<string>operand_1</string>
+																				<key>sourceNode</key>
+																				<string>LFO_2</string>
+																				<key>sourcePort</key>
+																				<string>outputValue</string>
+																			</dict>
+																			<key>connection_37</key>
+																			<dict>
+																				<key>destinationNode</key>
+																				<string>LFO_3</string>
+																				<key>destinationPort</key>
+																				<string>inputPeriod</string>
+																				<key>sourceNode</key>
+																				<string>Math_15</string>
+																				<key>sourcePort</key>
+																				<string>outputValue</string>
+																			</dict>
+																			<key>connection_38</key>
+																			<dict>
+																				<key>destinationNode</key>
+																				<string>Math_15</string>
+																				<key>destinationPort</key>
+																				<string>inputValue</string>
+																				<key>sourceNode</key>
+																				<string>Math_11</string>
+																				<key>sourcePort</key>
+																				<string>outputValue</string>
+																			</dict>
+																			<key>connection_39</key>
+																			<dict>
+																				<key>destinationNode</key>
+																				<string>Camera_1</string>
+																				<key>destinationPort</key>
+																				<string>inputScaleZ</string>
+																				<key>sourceNode</key>
+																				<string>Math_16</string>
+																				<key>sourcePort</key>
+																				<string>outputValue</string>
+																			</dict>
 																			<key>connection_4</key>
 																			<dict>
 																				<key>destinationNode</key>
@@ -1338,6 +1448,17 @@ function (__structure outputTuios) main (__structure inputTuios) {
 																				<string>StructureMember_index_1</string>
 																				<key>sourcePort</key>
 																				<string>outputMember</string>
+																			</dict>
+																			<key>connection_40</key>
+																			<dict>
+																				<key>destinationNode</key>
+																				<string>Math_16</string>
+																				<key>destinationPort</key>
+																				<string>operand_1</string>
+																				<key>sourceNode</key>
+																				<string>LFO_3</string>
+																				<key>sourcePort</key>
+																				<string>outputValue</string>
 																			</dict>
 																			<key>connection_5</key>
 																			<dict>
@@ -1944,21 +2065,6 @@ function (__structure outputTuios) main (__structure inputTuios) {
 																							<key>value</key>
 																							<real>0.0</real>
 																						</dict>
-																						<key>inputScaleX</key>
-																						<dict>
-																							<key>value</key>
-																							<real>1</real>
-																						</dict>
-																						<key>inputScaleY</key>
-																						<dict>
-																							<key>value</key>
-																							<real>1</real>
-																						</dict>
-																						<key>inputScaleZ</key>
-																						<dict>
-																							<key>value</key>
-																							<real>1</real>
-																						</dict>
 																						<key>inputTranslateX</key>
 																						<dict>
 																							<key>value</key>
@@ -2191,20 +2297,20 @@ function (__structure outputTuios) main (__structure inputTuios) {
 								U09iamVjdACF
 								hAFpA5KEhIQI
 								TlNTdHJpbmcB
-								lYQBKwp6b29t
-								RmFjdG9yhpKE
-								hIQITlNOdW1i
-								ZXIAhIQHTlNW
-								YWx1ZQCVhAEq
-								hIQBZpwBhpKE
-								l5gIcG9zaXRp
-								b26GkoSam4SE
-								DHtDR1BvaW50
-								PWRkfZ2B/wGV
-								hpKEl5gJc2Ny
-								b2xsaW5nhpKE
-								mpuenYMAAAAA
-								ALBuQIG4AIaG
+								lYQBKwhwb3Np
+								dGlvboaShISE
+								B05TVmFsdWUA
+								lYQBKoSEDHtD
+								R1BvaW50PWRk
+								fZuB/wGVhpKE
+								l5gJc2Nyb2xs
+								aW5nhpKEmZqa
+								m4MAAAAAALBu
+								QIG4AIaShJeY
+								Cnpvb21GYWN0
+								b3KGkoSEhAhO
+								U051bWJlcgCZ
+								moSEAWadAYaG
 																					</data>
 																				</dict>
 																			</dict>
@@ -2458,7 +2564,8 @@ function (__structure outputTuios) main (__structure inputTuios) {
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZuBmAF+hoY=
+								fZuBmQGBlgCG
+								hg==
 																					</data>
 																					<key>version</key>
 																					<integer>1</integer>
@@ -2508,7 +2615,7 @@ function (__structure outputTuios) main (__structure inputTuios) {
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZuBsAGBogCG
+								fZuBsQGBugCG
 								hg==
 																					</data>
 																					<key>version</key>
@@ -2692,6 +2799,488 @@ function (__structure outputTuios) main (__structure inputTuios) {
 																					</data>
 																				</dict>
 																			</dict>
+																			<dict>
+																				<key>class</key>
+																				<string>QCLFO</string>
+																				<key>key</key>
+																				<string>LFO_1</string>
+																				<key>state</key>
+																				<dict>
+																					<key>ivarInputPortStates</key>
+																					<dict>
+																						<key>inputAmplitude</key>
+																						<dict>
+																							<key>value</key>
+																							<real>0.25</real>
+																						</dict>
+																						<key>inputOffset</key>
+																						<dict>
+																							<key>value</key>
+																							<real>1</real>
+																						</dict>
+																						<key>inputPWMRatio</key>
+																						<dict>
+																							<key>value</key>
+																							<real>0.25</real>
+																						</dict>
+																						<key>inputPhase</key>
+																						<dict>
+																							<key>value</key>
+																							<real>0.0</real>
+																						</dict>
+																						<key>inputType</key>
+																						<dict>
+																							<key>value</key>
+																							<integer>1</integer>
+																						</dict>
+																					</dict>
+																					<key>randomSeed</key>
+																					<integer>1716032552</integer>
+																					<key>timebase</key>
+																					<string>parent</string>
+																					<key>userInfo</key>
+																					<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwhwb3Np
+								dGlvboaShISE
+								B05TVmFsdWUA
+								lYQBKoSEDHtD
+								R1BvaW50PWRk
+								fZuUgZEAhoY=
+																					</data>
+																				</dict>
+																			</dict>
+																			<dict>
+																				<key>class</key>
+																				<string>QCMath</string>
+																				<key>key</key>
+																				<string>Math_11</string>
+																				<key>state</key>
+																				<dict>
+																					<key>customInputPortStates</key>
+																					<dict>
+																						<key>operand_1</key>
+																						<dict>
+																							<key>value</key>
+																							<real>73</real>
+																						</dict>
+																						<key>operation_1</key>
+																						<dict>
+																							<key>value</key>
+																							<integer>3</integer>
+																						</dict>
+																					</dict>
+																					<key>ivarInputPortStates</key>
+																					<dict>
+																						<key>inputValue</key>
+																						<dict>
+																							<key>value</key>
+																							<real>60</real>
+																						</dict>
+																					</dict>
+																					<key>numberOfOperations</key>
+																					<integer>1</integer>
+																					<key>operationCount</key>
+																					<integer>1</integer>
+																					<key>userInfo</key>
+																					<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwhwb3Np
+								dGlvboaShISE
+								B05TVmFsdWUA
+								lYQBKoSEDHtD
+								R1BvaW50PWRk
+								fZuByf6B3gCG
+								hg==
+																					</data>
+																					<key>version</key>
+																					<integer>1</integer>
+																				</dict>
+																			</dict>
+																			<dict>
+																				<key>class</key>
+																				<string>QCMath</string>
+																				<key>key</key>
+																				<string>Math_12</string>
+																				<key>state</key>
+																				<dict>
+																					<key>customInputPortStates</key>
+																					<dict>
+																						<key>operation_1</key>
+																						<dict>
+																							<key>value</key>
+																							<integer>2</integer>
+																						</dict>
+																					</dict>
+																					<key>ivarInputPortStates</key>
+																					<dict>
+																						<key>inputValue</key>
+																						<dict>
+																							<key>value</key>
+																							<real>1</real>
+																						</dict>
+																					</dict>
+																					<key>numberOfOperations</key>
+																					<integer>1</integer>
+																					<key>operationCount</key>
+																					<integer>1</integer>
+																					<key>userInfo</key>
+																					<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwhwb3Np
+								dGlvboaShISE
+								B05TVmFsdWUA
+								lYQBKoSEDHtD
+								R1BvaW50PWRk
+								fZuBjwE2hoY=
+																					</data>
+																					<key>version</key>
+																					<integer>1</integer>
+																				</dict>
+																			</dict>
+																			<dict>
+																				<key>class</key>
+																				<string>QCMath</string>
+																				<key>key</key>
+																				<string>Math_13</string>
+																				<key>state</key>
+																				<dict>
+																					<key>customInputPortStates</key>
+																					<dict>
+																						<key>operand_1</key>
+																						<dict>
+																							<key>value</key>
+																							<real>4</real>
+																						</dict>
+																						<key>operation_1</key>
+																						<dict>
+																							<key>value</key>
+																							<integer>2</integer>
+																						</dict>
+																					</dict>
+																					<key>numberOfOperations</key>
+																					<integer>1</integer>
+																					<key>operationCount</key>
+																					<integer>1</integer>
+																					<key>userInfo</key>
+																					<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwhwb3Np
+								dGlvboaShISE
+								B05TVmFsdWUA
+								lYQBKoSEDHtD
+								R1BvaW50PWRk
+								fZuBU/+BJgGG
+								hg==
+																					</data>
+																					<key>version</key>
+																					<integer>1</integer>
+																				</dict>
+																			</dict>
+																			<dict>
+																				<key>class</key>
+																				<string>QCLFO</string>
+																				<key>key</key>
+																				<string>LFO_2</string>
+																				<key>state</key>
+																				<dict>
+																					<key>ivarInputPortStates</key>
+																					<dict>
+																						<key>inputAmplitude</key>
+																						<dict>
+																							<key>value</key>
+																							<real>0.5</real>
+																						</dict>
+																						<key>inputOffset</key>
+																						<dict>
+																							<key>value</key>
+																							<real>1</real>
+																						</dict>
+																						<key>inputPWMRatio</key>
+																						<dict>
+																							<key>value</key>
+																							<real>0.25</real>
+																						</dict>
+																						<key>inputPhase</key>
+																						<dict>
+																							<key>value</key>
+																							<real>0.0</real>
+																						</dict>
+																						<key>inputType</key>
+																						<dict>
+																							<key>value</key>
+																							<integer>1</integer>
+																						</dict>
+																					</dict>
+																					<key>randomSeed</key>
+																					<integer>434673066</integer>
+																					<key>timebase</key>
+																					<string>parent</string>
+																					<key>userInfo</key>
+																					<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwhwb3Np
+								dGlvboaShISE
+								B05TVmFsdWUA
+								lYQBKoSEDHtD
+								R1BvaW50PWRk
+								fZuVgfEAhoY=
+																					</data>
+																				</dict>
+																			</dict>
+																			<dict>
+																				<key>class</key>
+																				<string>QCMath</string>
+																				<key>key</key>
+																				<string>Math_14</string>
+																				<key>state</key>
+																				<dict>
+																					<key>customInputPortStates</key>
+																					<dict>
+																						<key>operation_1</key>
+																						<dict>
+																							<key>value</key>
+																							<integer>2</integer>
+																						</dict>
+																					</dict>
+																					<key>ivarInputPortStates</key>
+																					<dict>
+																						<key>inputValue</key>
+																						<dict>
+																							<key>value</key>
+																							<real>1</real>
+																						</dict>
+																					</dict>
+																					<key>numberOfOperations</key>
+																					<integer>1</integer>
+																					<key>operationCount</key>
+																					<integer>1</integer>
+																					<key>userInfo</key>
+																					<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwhwb3Np
+								dGlvboaShISE
+								B05TVmFsdWUA
+								lYQBKoSEDHtD
+								R1BvaW50PWRk
+								fZuBkAFOhoY=
+																					</data>
+																					<key>version</key>
+																					<integer>1</integer>
+																				</dict>
+																			</dict>
+																			<dict>
+																				<key>class</key>
+																				<string>QCMath</string>
+																				<key>key</key>
+																				<string>Math_15</string>
+																				<key>state</key>
+																				<dict>
+																					<key>customInputPortStates</key>
+																					<dict>
+																						<key>operand_1</key>
+																						<dict>
+																							<key>value</key>
+																							<real>2</real>
+																						</dict>
+																						<key>operation_1</key>
+																						<dict>
+																							<key>value</key>
+																							<integer>2</integer>
+																						</dict>
+																					</dict>
+																					<key>numberOfOperations</key>
+																					<integer>1</integer>
+																					<key>operationCount</key>
+																					<integer>1</integer>
+																					<key>userInfo</key>
+																					<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwhwb3Np
+								dGlvboaShISE
+								B05TVmFsdWUA
+								lYQBKoSEDHtD
+								R1BvaW50PWRk
+								fZuBUv+BhgGG
+								hg==
+																					</data>
+																					<key>version</key>
+																					<integer>1</integer>
+																				</dict>
+																			</dict>
+																			<dict>
+																				<key>class</key>
+																				<string>QCLFO</string>
+																				<key>key</key>
+																				<string>LFO_3</string>
+																				<key>state</key>
+																				<dict>
+																					<key>ivarInputPortStates</key>
+																					<dict>
+																						<key>inputAmplitude</key>
+																						<dict>
+																							<key>value</key>
+																							<real>0.5</real>
+																						</dict>
+																						<key>inputOffset</key>
+																						<dict>
+																							<key>value</key>
+																							<real>1</real>
+																						</dict>
+																						<key>inputPWMRatio</key>
+																						<dict>
+																							<key>value</key>
+																							<real>0.25</real>
+																						</dict>
+																						<key>inputPhase</key>
+																						<dict>
+																							<key>value</key>
+																							<real>0.0</real>
+																						</dict>
+																						<key>inputType</key>
+																						<dict>
+																							<key>value</key>
+																							<integer>1</integer>
+																						</dict>
+																					</dict>
+																					<key>randomSeed</key>
+																					<integer>1691286296</integer>
+																					<key>timebase</key>
+																					<string>parent</string>
+																					<key>userInfo</key>
+																					<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwhwb3Np
+								dGlvboaShISE
+								B05TVmFsdWUA
+								lYQBKoSEDHtD
+								R1BvaW50PWRk
+								fZuUgVEBhoY=
+																					</data>
+																				</dict>
+																			</dict>
+																			<dict>
+																				<key>class</key>
+																				<string>QCMath</string>
+																				<key>key</key>
+																				<string>Math_16</string>
+																				<key>state</key>
+																				<dict>
+																					<key>customInputPortStates</key>
+																					<dict>
+																						<key>operation_1</key>
+																						<dict>
+																							<key>value</key>
+																							<integer>2</integer>
+																						</dict>
+																					</dict>
+																					<key>ivarInputPortStates</key>
+																					<dict>
+																						<key>inputValue</key>
+																						<dict>
+																							<key>value</key>
+																							<real>1</real>
+																						</dict>
+																					</dict>
+																					<key>numberOfOperations</key>
+																					<integer>1</integer>
+																					<key>operationCount</key>
+																					<integer>1</integer>
+																					<key>userInfo</key>
+																					<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwhwb3Np
+								dGlvboaShISE
+								B05TVmFsdWUA
+								lYQBKoSEDHtD
+								R1BvaW50PWRk
+								fZuBkQFmhoY=
+																					</data>
+																					<key>version</key>
+																					<integer>1</integer>
+																				</dict>
+																			</dict>
 																		</array>
 																		<key>publishedInputPorts</key>
 																		<array>
@@ -2750,6 +3339,35 @@ function (__structure outputTuios) main (__structure inputTuios) {
 																					</data>
 																				</dict>
 																			</dict>
+																			<dict>
+																				<key>key</key>
+																				<string>bpm</string>
+																				<key>node</key>
+																				<string>Math_11</string>
+																				<key>port</key>
+																				<string>operand_1</string>
+																				<key>state</key>
+																				<dict>
+																					<key>userInfo</key>
+																					<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gDYnBt
+								hoY=
+																					</data>
+																					<key>value</key>
+																					<real>73</real>
+																				</dict>
+																			</dict>
 																		</array>
 																		<key>systemInputPortStates</key>
 																		<dict>
@@ -2759,6 +3377,8 @@ function (__structure outputTuios) main (__structure inputTuios) {
 																				<true/>
 																			</dict>
 																		</dict>
+																		<key>timebase</key>
+																		<string>parent</string>
 																		<key>userInfo</key>
 																		<data>
 								BAtzdHJlYW10
@@ -2783,12 +3403,10 @@ function (__structure outputTuios) main (__structure inputTuios) {
 								mAlzY3JvbGxp
 								bmeGkoSam4SE
 								DHtDR1BvaW50
-								PWRkfZ2DAAAA
-								AACgXUCDAAAA
-								AADAQ0CGkoSX
-								mAhwb3NpdGlv
-								boaShJqboJ0L
-								gVn/hoY=
+								PWRkfZ13KIaS
+								hJeYCHBvc2l0
+								aW9uhpKEmpug
+								nQuBWf+Ghg==
 																		</data>
 																	</dict>
 																</dict>
@@ -2962,6 +3580,35 @@ function (__structure outputTuios) main (__structure inputTuios) {
 																		</data>
 																	</dict>
 																</dict>
+																<dict>
+																	<key>key</key>
+																	<string>bpm</string>
+																	<key>node</key>
+																	<string>Iterator_1</string>
+																	<key>port</key>
+																	<string>bpm</string>
+																	<key>state</key>
+																	<dict>
+																		<key>userInfo</key>
+																		<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gDYnBt
+								hoY=
+																		</data>
+																		<key>value</key>
+																		<real>73</real>
+																	</dict>
+																</dict>
 															</array>
 															<key>separateSpecular</key>
 															<integer>1</integer>
@@ -2973,6 +3620,8 @@ function (__structure outputTuios) main (__structure inputTuios) {
 																	<true/>
 																</dict>
 															</dict>
+															<key>timebase</key>
+															<string>parent</string>
 															<key>userInfo</key>
 															<data>
 								BAtzdHJlYW10
@@ -2985,16 +3634,16 @@ function (__structure outputTuios) main (__structure inputTuios) {
 								U09iamVjdACF
 								hAFpA5KEhIQI
 								TlNTdHJpbmcB
-								lYQBKwlzY3Jv
-								bGxpbmeGkoSE
-								hAdOU1ZhbHVl
-								AJWEASqEhAx7
-								Q0dQb2ludD1k
-								ZH2bboMAAAAA
-								AAArQIaShJeY
-								CHBvc2l0aW9u
-								hpKEmZqam4FV
-								/+mGkoSXmAp6
+								lYQBKwhwb3Np
+								dGlvboaShISE
+								B05TVmFsdWUA
+								lYQBKoSEDHtD
+								R1BvaW50PWRk
+								fZuBVf/phpKE
+								l5gJc2Nyb2xs
+								aW5nhpKEmZqa
+								m26DAAAAAAAA
+								K0CGkoSXmAp6
 								b29tRmFjdG9y
 								hpKEhIQITlNO
 								dW1iZXIAmZqE
@@ -3062,9 +3711,40 @@ function (__structure outputTuios) main (__structure inputTuios) {
 															</data>
 														</dict>
 													</dict>
+													<dict>
+														<key>key</key>
+														<string>bpm</string>
+														<key>node</key>
+														<string>Lighting_1</string>
+														<key>port</key>
+														<string>bpm</string>
+														<key>state</key>
+														<dict>
+															<key>userInfo</key>
+															<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gDYnBt
+								hoY=
+															</data>
+															<key>value</key>
+															<real>73</real>
+														</dict>
+													</dict>
 												</array>
 												<key>target</key>
 												<string>GL_TEXTURE_RECTANGLE_EXT</string>
+												<key>timebase</key>
+												<string>parent</string>
 												<key>userInfo</key>
 												<data>
 								BAtzdHJlYW10
@@ -3243,7 +3923,7 @@ function (__structure outputTuios) main (__structure inputTuios) {
 								hAdOU1ZhbHVl
 								AJWEASqEhAx7
 								Q0dQb2ludD1k
-								ZH2b3YE4/4aG
+								ZH2bzIEU/4aG
 												</data>
 												<key>version</key>
 												<integer>1</integer>
@@ -3308,6 +3988,35 @@ function (__structure outputTuios) main (__structure inputTuios) {
 												</data>
 											</dict>
 										</dict>
+										<dict>
+											<key>key</key>
+											<string>bpm</string>
+											<key>node</key>
+											<string>RenderInImage_1</string>
+											<key>port</key>
+											<string>bpm</string>
+											<key>state</key>
+											<dict>
+												<key>userInfo</key>
+												<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gDYnBt
+								hoY=
+												</data>
+												<key>value</key>
+												<real>73</real>
+											</dict>
+										</dict>
 									</array>
 									<key>publishedOutputPorts</key>
 									<array>
@@ -3320,6 +4029,8 @@ function (__structure outputTuios) main (__structure inputTuios) {
 											<string>outputImage</string>
 										</dict>
 									</array>
+									<key>timebase</key>
+									<string>parent</string>
 									<key>userInfo</key>
 									<data>
 								BAtzdHJlYW10
@@ -3344,11 +4055,10 @@ function (__structure outputTuios) main (__structure inputTuios) {
 								CXNjcm9sbGlu
 								Z4aShJqbhIQM
 								e0NHUG9pbnQ9
-								ZGR9nYMAAAAA
-								AAAEwIH+/oaS
-								hJeYCHBvc2l0
-								aW9uhpKEmpug
-								ndkBhoY=
+								ZGR9nf6B/v6G
+								koSXmAhwb3Np
+								dGlvboaShJqb
+								oJ3ZAYaG
 									</data>
 								</dict>
 							</dict>
@@ -4322,6 +5032,35 @@ function (__structure outputTuios) main (__structure inputTuios) {
 								hpKEl5gJRlgg
 								c3RydWN0hoY=
 									</data>
+								</dict>
+							</dict>
+							<dict>
+								<key>key</key>
+								<string>bpm</string>
+								<key>node</key>
+								<string>Patch_6</string>
+								<key>port</key>
+								<string>bpm</string>
+								<key>state</key>
+								<dict>
+									<key>userInfo</key>
+									<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gDYnBt
+								hoY=
+									</data>
+									<key>value</key>
+									<real>73</real>
 								</dict>
 							</dict>
 						</array>
