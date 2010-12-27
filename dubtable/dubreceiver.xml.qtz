@@ -180,17 +180,6 @@
 					<key>sourcePort</key>
 					<string>fx0</string>
 				</dict>
-				<key>connection_8</key>
-				<dict>
-					<key>destinationNode</key>
-					<string>Billboard_1</string>
-					<key>destinationPort</key>
-					<string>inputImage</string>
-					<key>sourceNode</key>
-					<string>Patch_7</string>
-					<key>sourcePort</key>
-					<string>Image</string>
-				</dict>
 			</dict>
 			<key>nodes</key>
 			<array>
@@ -354,98 +343,6 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 						hISEB05TVmFsdWUAlYQBKoSEDHtD
 						R1BvaW50PWRkfZuBi/2BZf+Ghg==
 						</data>
-					</dict>
-				</dict>
-				<dict>
-					<key>class</key>
-					<string>QCBillboard</string>
-					<key>key</key>
-					<string>Billboard_1</string>
-					<key>state</key>
-					<dict>
-						<key>CIRendering</key>
-						<false/>
-						<key>customInputPortStates</key>
-						<dict>
-							<key>inputScale</key>
-							<dict>
-								<key>value</key>
-								<real>2</real>
-							</dict>
-						</dict>
-						<key>ivarInputPortStates</key>
-						<dict>
-							<key>inputBlending</key>
-							<dict>
-								<key>value</key>
-								<integer>0</integer>
-							</dict>
-							<key>inputColor</key>
-							<dict>
-								<key>value</key>
-								<dict>
-									<key>alpha</key>
-									<real>1</real>
-									<key>blue</key>
-									<real>1</real>
-									<key>green</key>
-									<real>1</real>
-									<key>red</key>
-									<real>1</real>
-								</dict>
-							</dict>
-							<key>inputPixelAligned</key>
-							<dict>
-								<key>value</key>
-								<false/>
-							</dict>
-							<key>inputRotation</key>
-							<dict>
-								<key>value</key>
-								<real>0.0</real>
-							</dict>
-							<key>inputScale</key>
-							<dict>
-								<key>value</key>
-								<real>2</real>
-							</dict>
-							<key>inputX</key>
-							<dict>
-								<key>value</key>
-								<real>0.0</real>
-							</dict>
-							<key>inputY</key>
-							<dict>
-								<key>value</key>
-								<real>0.0</real>
-							</dict>
-						</dict>
-						<key>optimizedRendering</key>
-						<false/>
-						<key>pixelAligned</key>
-						<false/>
-						<key>sizeMode</key>
-						<string>autoHeight</string>
-						<key>systemInputPortStates</key>
-						<dict>
-							<key>_enable</key>
-							<dict>
-								<key>value</key>
-								<true/>
-							</dict>
-						</dict>
-						<key>userInfo</key>
-						<data>
-						BAtzdHJlYW10eXBlZIHoA4QBQISE
-						hBNOU011dGFibGVEaWN0aW9uYXJ5
-						AISEDE5TRGljdGlvbmFyeQCEhAhO
-						U09iamVjdACFhAFpAZKEhIQITlNT
-						dHJpbmcBlYQBKwhwb3NpdGlvboaS
-						hISEB05TVmFsdWUAlYQBKoSEDHtD
-						R1BvaW50PWRkfZuBIQKBaQGGhg==
-						</data>
-						<key>version</key>
-						<integer>4</integer>
 					</dict>
 				</dict>
 				<dict>
@@ -5331,39 +5228,6 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 					<dict>
 						<key>connections</key>
 						<dict>
-							<key>connection_1</key>
-							<dict>
-								<key>destinationNode</key>
-								<string>ImageResize_1</string>
-								<key>destinationPort</key>
-								<string>inputWidth</string>
-								<key>sourceNode</key>
-								<string>ScreenInfo_2</string>
-								<key>sourcePort</key>
-								<string>outputPixelsWide</string>
-							</dict>
-							<key>connection_13</key>
-							<dict>
-								<key>destinationNode</key>
-								<string>ImageResize_1</string>
-								<key>destinationPort</key>
-								<string>inputImage</string>
-								<key>sourceNode</key>
-								<string>ImageLoader_1</string>
-								<key>sourcePort</key>
-								<string>outputImage</string>
-							</dict>
-							<key>connection_2</key>
-							<dict>
-								<key>destinationNode</key>
-								<string>ImageResize_1</string>
-								<key>destinationPort</key>
-								<string>inputHeight</string>
-								<key>sourceNode</key>
-								<string>ScreenInfo_2</string>
-								<key>sourcePort</key>
-								<string>outputPixelsHigh</string>
-							</dict>
 							<key>connection_3</key>
 							<dict>
 								<key>destinationNode</key>
@@ -5371,62 +5235,29 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								<key>destinationPort</key>
 								<string>inputImage</string>
 								<key>sourceNode</key>
-								<string>BlendWithMask_1</string>
+								<string>Splitter_1</string>
 								<key>sourcePort</key>
-								<string>outputImage</string>
-							</dict>
-							<key>connection_4</key>
-							<dict>
-								<key>destinationNode</key>
-								<string>ImageCrop_1</string>
-								<key>destinationPort</key>
-								<string>inputRectangle_Z</string>
-								<key>sourceNode</key>
-								<string>ScreenInfo_2</string>
-								<key>sourcePort</key>
-								<string>outputPixelsWide</string>
-							</dict>
-							<key>connection_5</key>
-							<dict>
-								<key>destinationNode</key>
-								<string>ImageCrop_1</string>
-								<key>destinationPort</key>
-								<string>inputRectangle_W</string>
-								<key>sourceNode</key>
-								<string>ScreenInfo_2</string>
-								<key>sourcePort</key>
-								<string>outputPixelsHigh</string>
+								<string>output</string>
 							</dict>
 							<key>connection_6</key>
 							<dict>
 								<key>destinationNode</key>
-								<string>ImageCrop_2</string>
+								<string>Billboard_1</string>
+								<key>destinationPort</key>
+								<string>inputMask</string>
+								<key>sourceNode</key>
+								<string>ImageLoader_1</string>
+								<key>sourcePort</key>
+								<string>outputImage</string>
+							</dict>
+							<key>connection_9</key>
+							<dict>
+								<key>destinationNode</key>
+								<string>Billboard_1</string>
 								<key>destinationPort</key>
 								<string>inputImage</string>
 								<key>sourceNode</key>
-								<string>ConstantColorGenerator_1</string>
-								<key>sourcePort</key>
-								<string>outputImage</string>
-							</dict>
-							<key>connection_7</key>
-							<dict>
-								<key>destinationNode</key>
-								<string>BlendWithMask_1</string>
-								<key>destinationPort</key>
-								<string>inputBackgroundImage</string>
-								<key>sourceNode</key>
-								<string>ImageCrop_2</string>
-								<key>sourcePort</key>
-								<string>outputImage</string>
-							</dict>
-							<key>connection_8</key>
-							<dict>
-								<key>destinationNode</key>
-								<string>BlendWithMask_1</string>
-								<key>destinationPort</key>
-								<string>inputMaskImage</string>
-								<key>sourceNode</key>
-								<string>ImageResize_1</string>
+								<string>ImageCrop_1</string>
 								<key>sourcePort</key>
 								<string>outputImage</string>
 							</dict>
@@ -6116,126 +5947,11 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								hISEB05TVmFs
 								dWUAlYQBKoSE
 								DHtDR1BvaW50
-								PWRkfZuB8v6B
-								RQGGhg==
+								PWRkfZuBjQCB
+								OQGGhg==
 									</data>
 									<key>version</key>
 									<integer>2</integer>
-								</dict>
-							</dict>
-							<dict>
-								<key>class</key>
-								<string>QCImageFilter</string>
-								<key>identifier</key>
-								<string>CIBlendWithMask</string>
-								<key>key</key>
-								<string>BlendWithMask_1</string>
-								<key>state</key>
-								<dict>
-									<key>filterVersion</key>
-									<integer>1</integer>
-									<key>filteringMode</key>
-									<string>Bilinear</string>
-									<key>hasBypass</key>
-									<integer>0</integer>
-									<key>normalizeCoordinates</key>
-									<integer>0</integer>
-									<key>userInfo</key>
-									<data>
-								BAtzdHJlYW10
-								eXBlZIHoA4QB
-								QISEhBNOU011
-								dGFibGVEaWN0
-								aW9uYXJ5AISE
-								DE5TRGljdGlv
-								bmFyeQCEhAhO
-								U09iamVjdACF
-								hAFpAZKEhIQI
-								TlNTdHJpbmcB
-								lYQBKwhwb3Np
-								dGlvboaShISE
-								B05TVmFsdWUA
-								lYQBKoSEDHtD
-								R1BvaW50PWRk
-								fZuBlgCBFQGG
-								hg==
-									</data>
-									<key>version</key>
-									<integer>2</integer>
-									<key>wrappingMode</key>
-									<string>Bilinear</string>
-								</dict>
-							</dict>
-							<dict>
-								<key>class</key>
-								<string>QCImageResize</string>
-								<key>key</key>
-								<string>ImageResize_1</string>
-								<key>state</key>
-								<dict>
-									<key>ivarInputPortStates</key>
-									<dict>
-										<key>inputCondition</key>
-										<dict>
-											<key>value</key>
-											<integer>0</integer>
-										</dict>
-										<key>inputMode</key>
-										<dict>
-											<key>value</key>
-											<integer>0</integer>
-										</dict>
-									</dict>
-									<key>userInfo</key>
-									<data>
-								BAtzdHJlYW10
-								eXBlZIHoA4QB
-								QISEhBNOU011
-								dGFibGVEaWN0
-								aW9uYXJ5AISE
-								DE5TRGljdGlv
-								bmFyeQCEhAhO
-								U09iamVjdACF
-								hAFpAZKEhIQI
-								TlNTdHJpbmcB
-								lYQBKwhwb3Np
-								dGlvboaShISE
-								B05TVmFsdWUA
-								lYQBKoSEDHtD
-								R1BvaW50PWRk
-								fZucgVEBhoY=
-									</data>
-								</dict>
-							</dict>
-							<dict>
-								<key>class</key>
-								<string>QCScreenInfo</string>
-								<key>key</key>
-								<string>ScreenInfo_2</string>
-								<key>state</key>
-								<dict>
-									<key>cleanAperture</key>
-									<true/>
-									<key>userInfo</key>
-									<data>
-								BAtzdHJlYW10
-								eXBlZIHoA4QB
-								QISEhBNOU011
-								dGFibGVEaWN0
-								aW9uYXJ5AISE
-								DE5TRGljdGlv
-								bmFyeQCEhAhO
-								U09iamVjdACF
-								hAFpAZKEhIQI
-								TlNTdHJpbmcB
-								lYQBKwhwb3Np
-								dGlvboaShISE
-								B05TVmFsdWUA
-								lYQBKoSEDHtD
-								R1BvaW50PWRk
-								fZuBvv6BgQGG
-								hg==
-									</data>
 								</dict>
 							</dict>
 							<dict>
@@ -6249,6 +5965,11 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								<dict>
 									<key>customInputPortStates</key>
 									<dict>
+										<key>inputRectangle_W</key>
+										<dict>
+											<key>value</key>
+											<real>384</real>
+										</dict>
 										<key>inputRectangle_X</key>
 										<dict>
 											<key>value</key>
@@ -6258,10 +5979,20 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 										<dict>
 											<key>value</key>
 											<real>0.0</real>
+										</dict>
+										<key>inputRectangle_Z</key>
+										<dict>
+											<key>value</key>
+											<real>512</real>
 										</dict>
 									</dict>
 									<key>ivarInputPortStates</key>
 									<dict>
+										<key>inputRectangle_W</key>
+										<dict>
+											<key>value</key>
+											<real>384</real>
+										</dict>
 										<key>inputRectangle_X</key>
 										<dict>
 											<key>value</key>
@@ -6271,6 +6002,11 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 										<dict>
 											<key>value</key>
 											<real>0.0</real>
+										</dict>
+										<key>inputRectangle_Z</key>
+										<dict>
+											<key>value</key>
+											<real>512</real>
 										</dict>
 									</dict>
 									<key>userInfo</key>
@@ -6290,22 +6026,34 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZuBlgGBFQGG
-								hg==
+								fZt1geUAhoY=
 									</data>
 								</dict>
 							</dict>
 							<dict>
 								<key>class</key>
-								<string>QCImageFilter</string>
-								<key>identifier</key>
-								<string>CIConstantColorGenerator</string>
+								<string>QCBillboard</string>
 								<key>key</key>
-								<string>ConstantColorGenerator_1</string>
+								<string>Billboard_1</string>
 								<key>state</key>
 								<dict>
+									<key>CIRendering</key>
+									<false/>
 									<key>customInputPortStates</key>
 									<dict>
+										<key>inputScale</key>
+										<dict>
+											<key>value</key>
+											<real>2</real>
+										</dict>
+									</dict>
+									<key>ivarInputPortStates</key>
+									<dict>
+										<key>inputBlending</key>
+										<dict>
+											<key>value</key>
+											<integer>2</integer>
+										</dict>
 										<key>inputColor</key>
 										<dict>
 											<key>value</key>
@@ -6313,22 +6061,53 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 												<key>alpha</key>
 												<real>1</real>
 												<key>blue</key>
-												<real>0.0</real>
+												<real>1</real>
 												<key>green</key>
-												<real>0.0</real>
+												<real>1</real>
 												<key>red</key>
-												<real>0.0</real>
+												<real>1</real>
 											</dict>
 										</dict>
+										<key>inputPixelAligned</key>
+										<dict>
+											<key>value</key>
+											<true/>
+										</dict>
+										<key>inputRotation</key>
+										<dict>
+											<key>value</key>
+											<real>0.0</real>
+										</dict>
+										<key>inputScale</key>
+										<dict>
+											<key>value</key>
+											<real>2</real>
+										</dict>
+										<key>inputX</key>
+										<dict>
+											<key>value</key>
+											<real>0.0</real>
+										</dict>
+										<key>inputY</key>
+										<dict>
+											<key>value</key>
+											<real>0.0</real>
+										</dict>
 									</dict>
-									<key>filterVersion</key>
-									<integer>1</integer>
-									<key>filteringMode</key>
-									<string>Bilinear</string>
-									<key>hasBypass</key>
-									<integer>0</integer>
-									<key>normalizeCoordinates</key>
-									<integer>0</integer>
+									<key>optimizedRendering</key>
+									<false/>
+									<key>pixelAligned</key>
+									<true/>
+									<key>sizeMode</key>
+									<string>autoHeight</string>
+									<key>systemInputPortStates</key>
+									<dict>
+										<key>_enable</key>
+										<dict>
+											<key>value</key>
+											<true/>
+										</dict>
+									</dict>
 									<key>userInfo</key>
 									<data>
 								BAtzdHJlYW10
@@ -6346,70 +6125,22 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZuBIv+B5QCG
+								fZuBUAGBzQCG
 								hg==
 									</data>
 									<key>version</key>
-									<integer>2</integer>
-									<key>wrappingMode</key>
-									<string>Bilinear</string>
+									<integer>4</integer>
 								</dict>
 							</dict>
 							<dict>
 								<key>class</key>
-								<string>QCImageFilter</string>
-								<key>identifier</key>
-								<string>CICrop</string>
+								<string>QCSplitter</string>
 								<key>key</key>
-								<string>ImageCrop_2</string>
+								<string>Splitter_1</string>
 								<key>state</key>
 								<dict>
-									<key>customInputPortStates</key>
-									<dict>
-										<key>inputRectangle_W</key>
-										<dict>
-											<key>value</key>
-											<real>0.0</real>
-										</dict>
-										<key>inputRectangle_X</key>
-										<dict>
-											<key>value</key>
-											<real>0.0</real>
-										</dict>
-										<key>inputRectangle_Y</key>
-										<dict>
-											<key>value</key>
-											<real>0.0</real>
-										</dict>
-										<key>inputRectangle_Z</key>
-										<dict>
-											<key>value</key>
-											<real>0.0</real>
-										</dict>
-									</dict>
-									<key>ivarInputPortStates</key>
-									<dict>
-										<key>inputRectangle_W</key>
-										<dict>
-											<key>value</key>
-											<real>0.0</real>
-										</dict>
-										<key>inputRectangle_X</key>
-										<dict>
-											<key>value</key>
-											<real>0.0</real>
-										</dict>
-										<key>inputRectangle_Y</key>
-										<dict>
-											<key>value</key>
-											<real>0.0</real>
-										</dict>
-										<key>inputRectangle_Z</key>
-										<dict>
-											<key>value</key>
-											<real>0.0</real>
-										</dict>
-									</dict>
+									<key>portClass</key>
+									<string>QCGLImagePort</string>
 									<key>userInfo</key>
 									<data>
 								BAtzdHJlYW10
@@ -6420,15 +6151,20 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								DE5TRGljdGlv
 								bmFyeQCEhAhO
 								U09iamVjdACF
-								hAFpAZKEhIQI
+								hAFpApKEhIQI
 								TlNTdHJpbmcB
-								lYQBKwhwb3Np
-								dGlvboaShISE
-								B05TVmFsdWUA
-								lYQBKoSEDHtD
-								R1BvaW50PWRk
-								fZuugeUAhoY=
+								lYQBKwRuYW1l
+								hpKEl5gFSW1h
+								Z2WGkoSXmAhw
+								b3NpdGlvboaS
+								hISEB05TVmFs
+								dWUAlYQBKoSE
+								DHtDR1BvaW50
+								PWRkfZvbgfQA
+								hoY=
 									</data>
+									<key>version</key>
+									<integer>1</integer>
 								</dict>
 							</dict>
 						</array>
@@ -6438,20 +6174,9 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								<key>key</key>
 								<string>inputImage_proxy_1</string>
 								<key>node</key>
-								<string>BlendWithMask_1</string>
+								<string>Splitter_1</string>
 								<key>port</key>
-								<string>inputImage</string>
-							</dict>
-						</array>
-						<key>publishedOutputPorts</key>
-						<array>
-							<dict>
-								<key>key</key>
-								<string>Image</string>
-								<key>node</key>
-								<string>ImageCrop_1</string>
-								<key>port</key>
-								<string>outputImage</string>
+								<string>input</string>
 								<key>state</key>
 								<dict>
 									<key>userInfo</key>
@@ -6473,6 +6198,14 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 								</dict>
 							</dict>
 						</array>
+						<key>systemInputPortStates</key>
+						<dict>
+							<key>_enable</key>
+							<dict>
+								<key>value</key>
+								<true/>
+							</dict>
+						</dict>
 						<key>userInfo</key>
 						<data>
 						BAtzdHJlYW10eXBlZIHoA4QBQISE
@@ -6482,11 +6215,12 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 						dHJpbmcBlYQBKwp6b29tRmFjdG9y
 						hpKEhIQITlNOdW1iZXIAhIQHTlNW
 						YWx1ZQCVhAEqhIQBZpwBhpKEl5gE
-						bmFtZYaShJeYDW1hc2sgYW5kIHRy
-						aW2GkoSXmAlzY3JvbGxpbmeGkoSa
-						m4SEDHtDR1BvaW50PWRkfZ2B3gCB
-						pwCGkoSXmAhwb3NpdGlvboaShJqb
-						oJ2BngGBgQGGhg==
+						bmFtZYaShJeYD21hc2sgYW5kIHJl
+						bmRlcoaShJeYCXNjcm9sbGluZ4aS
+						hJqbhIQMe0NHUG9pbnQ9ZGR9nYMA
+						AAAAANBrQIMAAAAAAPBkQIaShJeY
+						CHBvc2l0aW9uhpKEmpugnYGkAbmG
+						hg==
 						</data>
 					</dict>
 				</dict>
