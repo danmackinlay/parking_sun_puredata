@@ -246,14 +246,8 @@
 						<integer>0</integer>
 						<key>script</key>
 						<string>/*
-A simple script that takes two input values, sums them and returns the result.
-
-Special keywords for defining input and output key types:
-__boolean, __index, __number, __string, __image, __structure, __virtual
-
-Note that the function input arguments are read-only.
+Take a bunch of TUIO settings and mangle them into nicer ones
 */
-
 var state = new Object();
 state.firstTime = true;
 var fx_cid_map = [];
@@ -271,6 +265,8 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 	var outchan = null;
 	var outvoicenum = null;
 	var _debugstring = "l " + Math.random() ;
+	var outsubvoicenum = null;
+	
 	if (!_testMode){
 		for (i in inputTuios){
 			voice = new Object();
@@ -279,11 +275,13 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 			for (j in to_copy) {
                   voice[j] = to_copy[j];
               }
-              if (to_copy.c_id&lt;29) { //'voice info' in low voice #s
- 			  Log("voice info "+ to_copy.c_id);
-               //note we are missing a samples in channel 5
-                outvoicenum = Math.floor(to_copy.c_id/6);
-
+              if (voice.c_id&lt;29) { //'voice info' in low voice #s
+ 			  Log("voice info "+ voice.c_id);
+               //note we are missing a sample for channel 5
+                outvoicenum = Math.floor(voice.c_id/6);
+                outsubvoicenum = voice.c_id - 6*outvoicenum;
+                voice.voice_num = outvoicenum;
+                voice.sub_voice_num = outsubvoicenum;
                 outchan = 'voice' + outvoicenum;
                 if (!result[outchan]) {
                     result[outchan] = [voice];
@@ -292,8 +290,9 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
                 }
               } else { //'fx info' in higher voice #s
                 Log("fx info "+ to_copy.c_id);
-
-                outchan = 'fx' + (fx_cid_map[to_copy.c_id]);
+			  outvoicenum = fx_cid_map[to_copy.c_id];
+			  voice.voice_num = outvoicenum;
+                outchan = 'fx' + outvoicenum;
                 _debugstring =_debugstring+" fx " + outchan
                 result[outchan] = voice;
               }
@@ -6233,7 +6232,7 @@ function (__structure voice0, __structure voice1, __structure voice2, __structur
 			YXJ5AISEDE5TRGljdGlvbmFyeQCEhAhOU09iamVjdACFhAFpA5KE
 			hIQITlNTdHJpbmcBlYQBKwhwb3NpdGlvboaShISEB05TVmFsdWUA
 			lYQBKoSEDHtDR1BvaW50PWRkfZsAAYaShJeYCXNjcm9sbGluZ4aS
-			hJmampuDAAAAAABAQsCDAAAAAACIcECGkoSXmAp6b29tRmFjdG9y
+			hJmampuDAAAAAABAQsCDAAAAAACYcECGkoSXmAp6b29tRmFjdG9y
 			hpKEhIQITlNOdW1iZXIAmZqEhAFmnQGGhg==
 			</data>
 		</dict>
