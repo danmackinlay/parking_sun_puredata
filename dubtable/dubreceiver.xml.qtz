@@ -189,9 +189,9 @@ function (__structure voice_struct, __string debug) main (__structure inputTuios
 	var result = new Object();
 	var voice = null;
 	var to_copy = null;
-	var outvoicenum = null;
+	var out_voice_num = null;
 	var _debugstring = "l " + Math.random() ;
-	var outsubvoicenum = null;
+	var out_sub_voice_num = null;
 	Log('sanity');
 	if (!_testMode){
 		result.voice_struct= [];
@@ -208,21 +208,21 @@ function (__structure voice_struct, __string debug) main (__structure inputTuios
 			}
 			if (struct.c_id&lt;29) { //'voice info' in low voice #s
 				//note we are missing a sample for channel 5
-				outvoicenum = Math.floor(struct.c_id/NUM_SUBVOICES);
-				outsubvoicenum = struct.c_id - NUM_SUBVOICES*outvoicenum;
-				struct.voice_num = outvoicenum;
-				struct.sub_voice_num = outsubvoicenum;
-				struct = subvoice_decorate(struct);
-				result.voice_struct[outvoicenum].sub_voices.push(struct);
+				out_voice_num = Math.floor(struct.c_id/NUM_SUBVOICES);
+				out_sub_voice_num = struct.c_id - NUM_SUBVOICES*out_voice_num;
+				struct.voice_num = out_voice_num;
+				struct.sub_voice_num = out_sub_voice_num;
+				struct = sub_voice_decorate(struct);
+				result.voice_struct[out_voice_num].sub_voices.push(struct);
 			} else { //'fx info' in higher voice #s
 				Log("fx");
 
-				outvoicenum = fx_cid_map[to_copy.c_id];
-				Log("ov"+outvoicenum);
-				_debugstring = _debugstring+"--"+outvoicenum;
-				struct.voice_num = outvoicenum;
+				out_voice_num = fx_cid_map[to_copy.c_id];
+				Log("ov"+out_voice_num);
+				_debugstring = _debugstring+"--"+out_voice_num;
+				struct.voice_num = out_voice_num;
 				struct = fxvoice_decorate(struct);
-				result.voice_struct[outvoicenum].fx = struct;
+				result.voice_struct[out_voice_num].fx = struct;
 			}
 		}
 	}
@@ -266,8 +266,8 @@ function voice_create(voice_num) {
 }
 function fx_create(voice_num) {
 	var new_fx = new Object();
-	new_fx.xpos = -1.0;
-	new_fx.ypos = -1.0;
+	new_fx.xpos = 0;
+	new_fx.ypos = 0;
 	new_fx.angle = 0.;
 	new_fx.blur = 0.;
 	new_fx.wetness = 0.;
@@ -276,10 +276,10 @@ function fx_create(voice_num) {
 	return new_fx;
 }
 //do all the voice mappings here that might be done with spaghetti inside the patch
-function subvoice_decorate(v_struct) {
+function sub_voice_decorate(v_struct) {
 	var voice_num = v_struct.voice_num;
 	var sub_voice_num = v_struct.sub_voice_num;
-	var rand = n_rng(100*voice_num+sub_voice_num);
+	var rand = n_rng(11.37*voice_num+sub_voice_num*.24);
 	v_struct.base_rot_x = (2*rand-1.0)*v_struct.angle;
 	rand = n_rng(rand);
 	v_struct.base_rot_y = (2*rand-1.0)*v_struct.angle;
@@ -4223,7 +4223,7 @@ function n_rng(flt) {
 								bmeGkoSam4SE
 								DHtDR1BvaW50
 								PWRkfZ2DAAAA
-								AADgUUBUhpKE
+								AADgUUDuhpKE
 								l5gIcG9zaXRp
 								b26GkoSam6Cd
 								C4FZ/4aG
@@ -4465,17 +4465,17 @@ function n_rng(flt) {
 								U09iamVjdACF
 								hAFpA5KEhIQI
 								TlNTdHJpbmcB
-								lYQBKwlzY3Jv
-								bGxpbmeGkoSE
-								hAdOU1ZhbHVl
-								AJWEASqEhAx7
-								Q0dQb2ludD1k
-								ZH2bgwAAAAAA
-								IFxAgwAAAAAA
-								QEBAhpKEl5gI
-								cG9zaXRpb26G
-								koSZmpqbgVX/
-								6YaShJeYCnpv
+								lYQBKwhwb3Np
+								dGlvboaShISE
+								B05TVmFsdWUA
+								lYQBKoSEDHtD
+								R1BvaW50PWRk
+								fZuBVf/phpKE
+								l5gJc2Nyb2xs
+								aW5nhpKEmZqa
+								m4MAAAAAACBc
+								QIMAAAAAAEBA
+								QIaShJeYCnpv
 								b21GYWN0b3KG
 								koSEhAhOU051
 								bWJlcgCZmoSE
@@ -6515,10 +6515,15 @@ function n_rng(flt) {
 						BAtzdHJlYW10eXBlZIHoA4QBQISE
 						hBNOU011dGFibGVEaWN0aW9uYXJ5
 						AISEDE5TRGljdGlvbmFyeQCEhAhO
-						U09iamVjdACFhAFpAZKEhIQITlNT
-						dHJpbmcBlYQBKwhwb3NpdGlvboaS
-						hISEB05TVmFsdWUAlYQBKoSEDHtD
-						R1BvaW50PWRkfZtGoYaG
+						U09iamVjdACFhAFpBJKEhIQITlNT
+						dHJpbmcBlYQBKwp6b29tRmFjdG9y
+						hpKEhIQITlNOdW1iZXIAhIQHTlNW
+						YWx1ZQCVhAEqhIQBZpwBhpKEl5gE
+						bmFtZYaShJeYCmFsbCB2b2ljZXOG
+						koSXmAlzY3JvbGxpbmeGkoSam4SE
+						DHtDR1BvaW50PWRkfZ2DAAAAAACA
+						P8DQhpKEl5gIcG9zaXRpb26GkoSa
+						m6CdRqGGhg==
 						</data>
 						<key>version</key>
 						<integer>1</integer>
