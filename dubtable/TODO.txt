@@ -1,1 +1,1 @@
-why do some blocks vanish some times?
+a send bus for delay signals

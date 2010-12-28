@@ -176,7 +176,14 @@ state.firstTime = true;
 
 var NUM_VOICES = 5;
 var NUM_SUBVOICES = 6;
-
+var BORING_ATTRS = {
+  maccel: 0,
+  raccel: 0,
+  rspeed: 0,
+  xspeed: 0,
+  yspeed: 0,
+  s_id: 0
+}
 var fx_cid_map = [];
 fx_cid_map[29]=0;
 fx_cid_map[30]=1;
@@ -204,6 +211,7 @@ function (__structure voice_struct, __string debug) main (__structure inputTuios
 			to_copy = inputTuios[i];
 
 			for (j in to_copy) {
+				if (j in BORING_ATTRS) {continue;}
 				struct[j] = to_copy[j];
 			}
 			if (struct.c_id&lt;29) { //'voice info' in low voice #s
@@ -1958,7 +1966,7 @@ function n_rng(flt) {
 															<key>noDepthBuffer</key>
 															<false/>
 															<key>noFeedback</key>
-															<false/>
+															<true/>
 															<key>nodes</key>
 															<array>
 																<dict>
@@ -2033,39 +2041,6 @@ function n_rng(flt) {
 																				<string>Iterator_1</string>
 																				<key>destinationPort</key>
 																				<string>Structure</string>
-																				<key>sourceNode</key>
-																				<string>Splitter_1</string>
-																				<key>sourcePort</key>
-																				<string>output</string>
-																			</dict>
-																			<key>connection_2</key>
-																			<dict>
-																				<key>destinationNode</key>
-																				<string>StructureCount_2</string>
-																				<key>destinationPort</key>
-																				<string>inputStructure</string>
-																				<key>sourceNode</key>
-																				<string>StructureMember_key_1</string>
-																				<key>sourcePort</key>
-																				<string>outputMember</string>
-																			</dict>
-																			<key>connection_3</key>
-																			<dict>
-																				<key>destinationNode</key>
-																				<string>Iterator_1</string>
-																				<key>destinationPort</key>
-																				<string>inputCount</string>
-																				<key>sourceNode</key>
-																				<string>StructureCount_2</string>
-																				<key>sourcePort</key>
-																				<string>outputCount</string>
-																			</dict>
-																			<key>connection_4</key>
-																			<dict>
-																				<key>destinationNode</key>
-																				<string>StructureMember_key_1</string>
-																				<key>destinationPort</key>
-																				<string>inputStructure</string>
 																				<key>sourceNode</key>
 																				<string>Splitter_1</string>
 																				<key>sourcePort</key>
@@ -2559,6 +2534,14 @@ function n_rng(flt) {
 																							<string>StructureMember_key_9</string>
 																							<key>sourcePort</key>
 																							<string>outputMember</string>
+																						</dict>
+																					</dict>
+																					<key>ivarInputPortStates</key>
+																					<dict>
+																						<key>inputCount</key>
+																						<dict>
+																							<key>value</key>
+																							<integer>6</integer>
 																						</dict>
 																					</dict>
 																					<key>nodes</key>
@@ -3226,7 +3209,7 @@ function n_rng(flt) {
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZuBzf2BEf+G
+								fZuBtf2BEf+G
 								hg==
 																								</data>
 																							</dict>
@@ -4227,39 +4210,11 @@ function n_rng(flt) {
 								bmeGkoSam4SE
 								DHtDR1BvaW50
 								PWRkfZ2DAAAA
-								AADgUUDuhpKE
-								l5gIcG9zaXRp
-								b26GkoSam6Cd
-								C4FZ/4aG
-																					</data>
-																				</dict>
-																			</dict>
-																			<dict>
-																				<key>class</key>
-																				<string>QCStructureCount</string>
-																				<key>key</key>
-																				<string>StructureCount_2</string>
-																				<key>state</key>
-																				<dict>
-																					<key>userInfo</key>
-																					<data>
-								BAtzdHJlYW10
-								eXBlZIHoA4QB
-								QISEhBNOU011
-								dGFibGVEaWN0
-								aW9uYXJ5AISE
-								DE5TRGljdGlv
-								bmFyeQCEhAhO
-								U09iamVjdACF
-								hAFpAZKEhIQI
-								TlNTdHJpbmcB
-								lYQBKwhwb3Np
-								dGlvboaShISE
-								B05TVmFsdWUA
-								lYQBKoSEDHtD
-								R1BvaW50PWRk
-								fZuBdP+BTf+G
-								hg==
+								AACQZsCDAAAA
+								AACAMsCGkoSX
+								mAhwb3NpdGlv
+								boaShJqboJ0L
+								gVn/hoY=
 																					</data>
 																				</dict>
 																			</dict>
@@ -4340,47 +4295,6 @@ function n_rng(flt) {
 																					</data>
 																					<key>version</key>
 																					<integer>1</integer>
-																				</dict>
-																			</dict>
-																			<dict>
-																				<key>class</key>
-																				<string>QCStructureMember</string>
-																				<key>identifier</key>
-																				<string>key</string>
-																				<key>key</key>
-																				<string>StructureMember_key_1</string>
-																				<key>state</key>
-																				<dict>
-																					<key>customInputPortStates</key>
-																					<dict>
-																						<key>inputKey</key>
-																						<dict>
-																							<key>value</key>
-																							<string>sub_voices</string>
-																						</dict>
-																					</dict>
-																					<key>userInfo</key>
-																					<data>
-								BAtzdHJlYW10
-								eXBlZIHoA4QB
-								QISEhBNOU011
-								dGFibGVEaWN0
-								aW9uYXJ5AISE
-								DE5TRGljdGlv
-								bmFyeQCEhAhO
-								U09iamVjdACF
-								hAFpApKEhIQI
-								TlNTdHJpbmcB
-								lYQBKwRuYW1l
-								hpKEl5gKc3Vi
-								X3ZvaWNlc4aS
-								hJeYCHBvc2l0
-								aW9uhpKEhIQH
-								TlNWYWx1ZQCV
-								hAEqhIQMe0NH
-								UG9pbnQ9ZGR9
-								m4Hk/oER/4aG
-																					</data>
 																				</dict>
 																			</dict>
 																		</array>
@@ -4852,7 +4766,7 @@ function n_rng(flt) {
 								APBtQIHh/oaS
 								hJeYCHBvc2l0
 								aW9uhpKEmpug
-								nYEJ/4HxAIaG
+								nYEcCYEVAYaG
 												</data>
 											</dict>
 										</dict>
@@ -4885,7 +4799,7 @@ function n_rng(flt) {
 								hAdOU1ZhbHVl
 								AJWEASqEhAx7
 								Q0dQb2ludD1k
-								ZH2bgVX9gVQB
+								ZH2bgdIHgXgB
 								hoY=
 												</data>
 												<key>version</key>
@@ -4916,7 +4830,7 @@ function n_rng(flt) {
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZuBU/2B/QCG
+								fZuB0AeBIQGG
 								hg==
 												</data>
 											</dict>
@@ -5016,7 +4930,7 @@ function n_rng(flt) {
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZuBhQCB/QCG
+								fZuBbwqBIQGG
 								hg==
 												</data>
 												<key>version</key>
@@ -5049,7 +4963,7 @@ function n_rng(flt) {
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZuB5/2B8QCG
+								fZuBZAiBFQGG
 								hg==
 												</data>
 											</dict>
@@ -6395,7 +6309,7 @@ function n_rng(flt) {
 								AAAAGHdAhpKE
 								l5gIcG9zaXRp
 								b26GkoSam6Cd
-								zIEVAYaG
+								gd8JgTkBhoY=
 												</data>
 											</dict>
 										</dict>
@@ -6492,10 +6406,12 @@ function n_rng(flt) {
 								cm9sbGluZ4aS
 								hJqbhIQMe0NH
 								UG9pbnQ9ZGR9
-								nYEH/4HxAYaS
-								hJeYCHBvc2l0
-								aW9uhpKEmpug
-								nWa5hoY=
+								nYMAAAAAAL+i
+								QIMAAAAAABh/
+								QIaShJeYCHBv
+								c2l0aW9uhpKE
+								mpugnYGKAIFN
+								/4aG
 									</data>
 								</dict>
 							</dict>
@@ -6574,8 +6490,8 @@ function n_rng(flt) {
 						bmFtZYaShJeYCmFsbCB2b2ljZXOG
 						koSXmAlzY3JvbGxpbmeGkoSam4SE
 						DHtDR1BvaW50PWRkfZ2DAAAAAACA
-						P8DQhpKEl5gIcG9zaXRpb26GkoSa
-						m6CdRqGGhg==
+						P8CDAAAAAADAR8CGkoSXmAhwb3Np
+						dGlvboaShJqboJ1GoYaG
 						</data>
 						<key>version</key>
 						<integer>1</integer>
@@ -6636,8 +6552,8 @@ function n_rng(flt) {
 			YXJ5AISEDE5TRGljdGlvbmFyeQCEhAhOU09iamVjdACFhAFpA5KE
 			hIQITlNTdHJpbmcBlYQBKwhwb3NpdGlvboaShISEB05TVmFsdWUA
 			lYQBKoSEDHtDR1BvaW50PWRkfZsAAYaShJeYCXNjcm9sbGluZ4aS
-			hJmampuDAAAAAACAP8DQhpKEl5gKem9vbUZhY3RvcoaShISECE5T
-			TnVtYmVyAJmahIQBZp0BhoY=
+			hJmampuDAAAAAACAPsCDAAAAAADwZ0CGkoSXmAp6b29tRmFjdG9y
+			hpKEhIQITlNOdW1iZXIAmZqEhAFmnQGGhg==
 			</data>
 		</dict>
 	</dict>
