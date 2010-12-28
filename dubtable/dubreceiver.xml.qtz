@@ -3640,9 +3640,9 @@ function n_rng(flt) {
 											<key>destinationPort</key>
 											<string>inputImage</string>
 											<key>sourceNode</key>
-											<string>Patch_1</string>
+											<string>AdditionCompositing_2</string>
 											<key>sourcePort</key>
-											<string>cropped_image</string>
+											<string>outputImage</string>
 										</dict>
 										<key>connection_11</key>
 										<dict>
@@ -3665,6 +3665,17 @@ function n_rng(flt) {
 											<string>StructureMember_key_1</string>
 											<key>sourcePort</key>
 											<string>outputMember</string>
+										</dict>
+										<key>connection_13</key>
+										<dict>
+											<key>destinationNode</key>
+											<string>AdditionCompositing_2</string>
+											<key>destinationPort</key>
+											<string>inputImage</string>
+											<key>sourceNode</key>
+											<string>ImageCrop_1</string>
+											<key>sourcePort</key>
+											<string>outputImage</string>
 										</dict>
 										<key>connection_14</key>
 										<dict>
@@ -3699,6 +3710,17 @@ function n_rng(flt) {
 											<key>sourcePort</key>
 											<string>outputMember</string>
 										</dict>
+										<key>connection_17</key>
+										<dict>
+											<key>destinationNode</key>
+											<string>AdditionCompositing_2</string>
+											<key>destinationPort</key>
+											<string>inputBackgroundImage</string>
+											<key>sourceNode</key>
+											<string>Patch_1</string>
+											<key>sourcePort</key>
+											<string>cropped_image</string>
+										</dict>
 										<key>connection_18</key>
 										<dict>
 											<key>destinationNode</key>
@@ -3720,6 +3742,17 @@ function n_rng(flt) {
 											<string>ConstantColorGenerator_1</string>
 											<key>sourcePort</key>
 											<string>outputImage</string>
+										</dict>
+										<key>connection_2</key>
+										<dict>
+											<key>destinationNode</key>
+											<string>ImageCrop_1</string>
+											<key>destinationPort</key>
+											<string>inputImage</string>
+											<key>sourceNode</key>
+											<string>Patch_1</string>
+											<key>sourcePort</key>
+											<string>Aggregate_image</string>
 										</dict>
 										<key>connection_20</key>
 										<dict>
@@ -6184,6 +6217,126 @@ function n_rng(flt) {
 												</data>
 											</dict>
 										</dict>
+										<dict>
+											<key>class</key>
+											<string>QCImageFilter</string>
+											<key>identifier</key>
+											<string>CICrop</string>
+											<key>key</key>
+											<string>ImageCrop_1</string>
+											<key>state</key>
+											<dict>
+												<key>customInputPortStates</key>
+												<dict>
+													<key>inputRectangle_W</key>
+													<dict>
+														<key>value</key>
+														<real>1</real>
+													</dict>
+													<key>inputRectangle_X</key>
+													<dict>
+														<key>value</key>
+														<real>0.0</real>
+													</dict>
+													<key>inputRectangle_Y</key>
+													<dict>
+														<key>value</key>
+														<real>0.0</real>
+													</dict>
+													<key>inputRectangle_Z</key>
+													<dict>
+														<key>value</key>
+														<real>1</real>
+													</dict>
+												</dict>
+												<key>ivarInputPortStates</key>
+												<dict>
+													<key>inputRectangle_W</key>
+													<dict>
+														<key>value</key>
+														<real>1</real>
+													</dict>
+													<key>inputRectangle_X</key>
+													<dict>
+														<key>value</key>
+														<real>0.0</real>
+													</dict>
+													<key>inputRectangle_Y</key>
+													<dict>
+														<key>value</key>
+														<real>0.0</real>
+													</dict>
+													<key>inputRectangle_Z</key>
+													<dict>
+														<key>value</key>
+														<real>1</real>
+													</dict>
+												</dict>
+												<key>userInfo</key>
+												<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwhwb3Np
+								dGlvboaShISE
+								B05TVmFsdWUA
+								lYQBKoSEDHtD
+								R1BvaW50PWRk
+								fZuBjACBCQGG
+								hg==
+												</data>
+											</dict>
+										</dict>
+										<dict>
+											<key>class</key>
+											<string>QCImageFilter</string>
+											<key>identifier</key>
+											<string>CIAdditionCompositing</string>
+											<key>key</key>
+											<string>AdditionCompositing_2</string>
+											<key>state</key>
+											<dict>
+												<key>filterVersion</key>
+												<integer>1</integer>
+												<key>filteringMode</key>
+												<string>Bilinear</string>
+												<key>hasBypass</key>
+												<integer>0</integer>
+												<key>normalizeCoordinates</key>
+												<integer>0</integer>
+												<key>userInfo</key>
+												<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwhwb3Np
+								dGlvboaShISE
+								B05TVmFsdWUA
+								lYQBKoSEDHtD
+								R1BvaW50PWRk
+								fZuB3gCBdQGG
+								hg==
+												</data>
+												<key>version</key>
+												<integer>2</integer>
+												<key>wrappingMode</key>
+												<string>Bilinear</string>
+											</dict>
+										</dict>
 									</array>
 									<key>publishedInputPorts</key>
 									<array>
@@ -6306,10 +6459,11 @@ function n_rng(flt) {
 								aW5nhpKEmpuE
 								hAx7Q0dQb2lu
 								dD1kZH2dgwAA
-								AAAAwErAgWAB
-								hpKEl5gIcG9z
-								aXRpb26GkoSa
-								m6CdzIEVAYaG
+								AAAAwErAgwAA
+								AAAACHZAhpKE
+								l5gIcG9zaXRp
+								b26GkoSam6Cd
+								zIEVAYaG
 									</data>
 								</dict>
 							</dict>
