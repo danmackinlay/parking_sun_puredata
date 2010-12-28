@@ -1,8 +1,4 @@
 fix the problem with blocks staying around after they shoudl be dead
 make user movement more obvious
-position each voice differently
-check scaling of feedback when screen resized
-clone into the full 5 voices
-kill spaghetti mapping structures
-punch holes in the sides of cubes
 fix peak mapping of param
+why do some blocks vanish some times?
