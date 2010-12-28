@@ -5063,6 +5063,17 @@ function n_rng(flt) {
 											<dict>
 												<key>connections</key>
 												<dict>
+													<key>connection_1</key>
+													<dict>
+														<key>destinationNode</key>
+														<string>Patch_1</string>
+														<key>destinationPort</key>
+														<string>Image</string>
+														<key>sourceNode</key>
+														<string>AdditionCompositing_1</string>
+														<key>sourcePort</key>
+														<string>outputImage</string>
+													</dict>
 													<key>connection_10</key>
 													<dict>
 														<key>destinationNode</key>
@@ -5096,6 +5107,17 @@ function n_rng(flt) {
 														<key>sourcePort</key>
 														<string>outputMember</string>
 													</dict>
+													<key>connection_13</key>
+													<dict>
+														<key>destinationNode</key>
+														<string>TwirlDistortion_1</string>
+														<key>destinationPort</key>
+														<string>inputCenter_X</string>
+														<key>sourceNode</key>
+														<string>Math_5</string>
+														<key>sourcePort</key>
+														<string>outputValue</string>
+													</dict>
 													<key>connection_14</key>
 													<dict>
 														<key>destinationNode</key>
@@ -5128,6 +5150,17 @@ function n_rng(flt) {
 														<string>StructureMember_key_4</string>
 														<key>sourcePort</key>
 														<string>outputMember</string>
+													</dict>
+													<key>connection_17</key>
+													<dict>
+														<key>destinationNode</key>
+														<string>TwirlDistortion_1</string>
+														<key>destinationPort</key>
+														<string>inputCenter_Y</string>
+														<key>sourceNode</key>
+														<string>Math_6</string>
+														<key>sourcePort</key>
+														<string>outputValue</string>
 													</dict>
 													<key>connection_18</key>
 													<dict>
@@ -5228,28 +5261,6 @@ function n_rng(flt) {
 														<key>sourcePort</key>
 														<string>outputPixelsHigh</string>
 													</dict>
-													<key>connection_28</key>
-													<dict>
-														<key>destinationNode</key>
-														<string>TwirlDistortion_1</string>
-														<key>destinationPort</key>
-														<string>inputCenter_X</string>
-														<key>sourceNode</key>
-														<string>Math_2</string>
-														<key>sourcePort</key>
-														<string>outputValue</string>
-													</dict>
-													<key>connection_29</key>
-													<dict>
-														<key>destinationNode</key>
-														<string>TwirlDistortion_1</string>
-														<key>destinationPort</key>
-														<string>inputCenter_Y</string>
-														<key>sourceNode</key>
-														<string>Math_1</string>
-														<key>sourcePort</key>
-														<string>outputValue</string>
-													</dict>
 													<key>connection_3</key>
 													<dict>
 														<key>destinationNode</key>
@@ -5257,9 +5268,9 @@ function n_rng(flt) {
 														<key>destinationPort</key>
 														<string>input</string>
 														<key>sourceNode</key>
-														<string>AdditionCompositing_1</string>
+														<string>Patch_1</string>
 														<key>sourcePort</key>
-														<string>outputImage</string>
+														<string>Image_1</string>
 													</dict>
 													<key>connection_30</key>
 													<dict>
@@ -5857,7 +5868,7 @@ function n_rng(flt) {
 								hISEB05TVmFs
 								dWUAlYQBKoSE
 								DHtDR1BvaW50
-								PWRkfZuB6gGB
+								PWRkfZuBdQKB
 								CAKGhg==
 															</data>
 															<key>version</key>
@@ -6230,6 +6241,43 @@ function n_rng(flt) {
 															<string>Bilinear</string>
 														</dict>
 													</dict>
+													<dict>
+														<key>class</key>
+														<string>/crop to destination</string>
+														<key>key</key>
+														<string>Patch_1</string>
+														<key>state</key>
+														<dict>
+															<key>userInfo</key>
+															<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpA5KEhIQI
+								TlNTdHJpbmcB
+								lYQBKwhwb3Np
+								dGlvboaShISE
+								B05TVmFsdWUA
+								lYQBKoSEDHtD
+								R1BvaW50PWRk
+								fZuB5gGB+QGG
+								koSXmAlzY3Jv
+								bGxpbmeGkoSZ
+								mpqbgwAAAAAA
+								ZIxAgTcEhpKE
+								l5gKem9vbUZh
+								Y3RvcoaShISE
+								CE5TTnVtYmVy
+								AJmahIQBZp0B
+								hoY=
+															</data>
+														</dict>
+													</dict>
 												</array>
 												<key>publishedInputPorts</key>
 												<array>
@@ -6342,11 +6390,12 @@ function n_rng(flt) {
 								l5gJc2Nyb2xs
 								aW5nhpKEmpuE
 								hAx7Q0dQb2lu
-								dD1kZH2dy4Fx
-								AYaShJeYCHBv
-								c2l0aW9uhpKE
-								mpugncyBFQGG
-								hg==
+								dD1kZH2dgwAA
+								AAAAcGtAgwAA
+								AAAAGHdAhpKE
+								l5gIcG9zaXRp
+								b26GkoSam6Cd
+								zIEVAYaG
 												</data>
 											</dict>
 										</dict>
@@ -6443,11 +6492,10 @@ function n_rng(flt) {
 								cm9sbGluZ4aS
 								hJqbhIQMe0NH
 								UG9pbnQ9ZGR9
-								nYMAAAAAACh1
-								wIH1AYaShJeY
-								CHBvc2l0aW9u
-								hpKEmpugnWa5
-								hoY=
+								nYEH/4HxAYaS
+								hJeYCHBvc2l0
+								aW9uhpKEmpug
+								nWa5hoY=
 									</data>
 								</dict>
 							</dict>
@@ -6594,6 +6642,226 @@ function n_rng(flt) {
 		</dict>
 	</dict>
 	<key>virtualPatches</key>
-	<dict/>
+	<dict>
+		<key>/crop to destination</key>
+		<dict>
+			<key>frameworkVersion</key>
+			<string>{156.28}</string>
+			<key>portAttributes</key>
+			<dict>
+				<key>Image</key>
+				<dict>
+					<key>description</key>
+					<string>The input port.</string>
+					<key>name</key>
+					<string>Input</string>
+				</dict>
+				<key>Image_1</key>
+				<dict>
+					<key>description</key>
+					<string>The cropped image.</string>
+					<key>name</key>
+					<string>Cropped Image</string>
+				</dict>
+			</dict>
+			<key>rootPatch</key>
+			<dict>
+				<key>class</key>
+				<string>QCPatch</string>
+				<key>state</key>
+				<dict>
+					<key>connections</key>
+					<dict>
+						<key>connection_1</key>
+						<dict>
+							<key>destinationNode</key>
+							<string>Crop_1</string>
+							<key>destinationPort</key>
+							<string>inputImage</string>
+							<key>sourceNode</key>
+							<string>Splitter_4</string>
+							<key>sourcePort</key>
+							<string>output</string>
+						</dict>
+						<key>connection_2</key>
+						<dict>
+							<key>destinationNode</key>
+							<string>Crop_1</string>
+							<key>destinationPort</key>
+							<string>inputRectangle_Z</string>
+							<key>sourceNode</key>
+							<string>ScreenInfo_1</string>
+							<key>sourcePort</key>
+							<string>outputPixelsWide</string>
+						</dict>
+						<key>connection_3</key>
+						<dict>
+							<key>destinationNode</key>
+							<string>Crop_1</string>
+							<key>destinationPort</key>
+							<string>inputRectangle_W</string>
+							<key>sourceNode</key>
+							<string>ScreenInfo_1</string>
+							<key>sourcePort</key>
+							<string>outputPixelsHigh</string>
+						</dict>
+					</dict>
+					<key>nodes</key>
+					<array>
+						<dict>
+							<key>class</key>
+							<string>QCImageFilter</string>
+							<key>identifier</key>
+							<string>CICrop</string>
+							<key>key</key>
+							<string>Crop_1</string>
+							<key>state</key>
+							<dict>
+								<key>customInputPortStates</key>
+								<dict>
+									<key>inputRectangle_X</key>
+									<dict>
+										<key>value</key>
+										<real>0.0</real>
+									</dict>
+									<key>inputRectangle_Y</key>
+									<dict>
+										<key>value</key>
+										<real>0.0</real>
+									</dict>
+								</dict>
+								<key>ivarInputPortStates</key>
+								<dict>
+									<key>inputRectangle_X</key>
+									<dict>
+										<key>value</key>
+										<real>0.0</real>
+									</dict>
+									<key>inputRectangle_Y</key>
+									<dict>
+										<key>value</key>
+										<real>0.0</real>
+									</dict>
+								</dict>
+							</dict>
+						</dict>
+						<dict>
+							<key>class</key>
+							<string>QCSplitter</string>
+							<key>key</key>
+							<string>Splitter_4</string>
+							<key>state</key>
+							<dict>
+								<key>portClass</key>
+								<string>QCGLImagePort</string>
+								<key>userInfo</key>
+								<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gQIklt
+								YWdlIFNwbGl0
+								dGVyIoaG
+								</data>
+								<key>version</key>
+								<integer>1</integer>
+							</dict>
+						</dict>
+						<dict>
+							<key>class</key>
+							<string>QCScreenInfo</string>
+							<key>key</key>
+							<string>ScreenInfo_1</string>
+							<key>state</key>
+							<dict>
+								<key>cleanAperture</key>
+								<true/>
+							</dict>
+						</dict>
+					</array>
+					<key>publishedInputPorts</key>
+					<array>
+						<dict>
+							<key>key</key>
+							<string>Image</string>
+							<key>node</key>
+							<string>Splitter_4</string>
+							<key>port</key>
+							<string>input</string>
+							<key>state</key>
+							<dict>
+								<key>userInfo</key>
+								<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gFSW1h
+								Z2WGhg==
+								</data>
+							</dict>
+						</dict>
+					</array>
+					<key>publishedOutputPorts</key>
+					<array>
+						<dict>
+							<key>key</key>
+							<string>Image_1</string>
+							<key>node</key>
+							<string>Crop_1</string>
+							<key>port</key>
+							<string>outputImage</string>
+							<key>state</key>
+							<dict>
+								<key>userInfo</key>
+								<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gFSW1h
+								Z2WGhg==
+								</data>
+							</dict>
+						</dict>
+					</array>
+					<key>userInfo</key>
+					<data>
+					BAtzdHJlYW10eXBlZIHoA4QBQISEhBNOU011
+					dGFibGVEaWN0aW9uYXJ5AISEDE5TRGljdGlv
+					bmFyeQCEhAhOU09iamVjdACFhAFpA5KEhIQI
+					TlNTdHJpbmcBlYQBKwhwb3NpdGlvboaShISE
+					B05TVmFsdWUAlYQBKoSEDHtDR1BvaW50PWRk
+					fZuB5gGB+QGGkoSXmAlzY3JvbGxpbmeGkoSZ
+					mpqbgwAAAAAAZIxAgTcEhpKEl5gKem9vbUZh
+					Y3RvcoaShISECE5TTnVtYmVyAJmahIQBZp0B
+					hoY=
+					</data>
+				</dict>
+			</dict>
+		</dict>
+	</dict>
 </dict>
 </plist>

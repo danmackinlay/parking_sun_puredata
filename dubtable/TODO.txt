@@ -1,2 +1,1 @@
 why do some blocks vanish some times?
-why does adding an effect move some blocks?
