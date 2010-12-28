@@ -293,7 +293,7 @@ function sub_voice_decorate(v_struct) {
 	var voice_num = v_struct.voice_num;
 	var sub_voice_num = v_struct.sub_voice_num;
 	var x_mag = 1-v_struct.xpos*v_struct.xpos;
-	var y_mag = 1-v_struct.ypos*v_struct.ypos;
+	var y_mag = 1-v_struct.ypos*v_struct.ypos/0.75/0.74;
 	var rand = n_rng(11.37*voice_num+0.243*sub_voice_num);
 	v_struct.base_rot_x = (2*rand-1.0)*v_struct.angle;
 	rand = n_rng(rand);
@@ -316,7 +316,7 @@ function sub_voice_decorate(v_struct) {
 
 function fxvoice_decorate(fx_struct) {
 	var x_mag = 1-(Math.pow(fx_struct.xpos,2.));
-	var y_mag = 1-(Math.pow(fx_struct.ypos,2.));
+	var y_mag = 1-(Math.pow(fx_struct.ypos/0.75,2.));
 	fx_struct.blur = x_mag;
 	fx_struct.wetness = y_mag;
 	fx_struct.twist = Math.sin(fx_struct.angle/360*2*Math.PI)*360;

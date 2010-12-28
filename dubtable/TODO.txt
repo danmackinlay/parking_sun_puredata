@@ -1,1 +1,2 @@
 a send bus for delay signals
+make TUIO mapper 2d-aware
