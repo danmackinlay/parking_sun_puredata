@@ -5,7 +5,7 @@
 	<key>aspectRatio</key>
 	<real>1.3333333730697632</real>
 	<key>editorViewerWindow</key>
-	<string>553 104 876 703 0 0 1440 878 </string>
+	<string>563 155 876 703 0 0 1440 878 </string>
 	<key>frameworkVersion</key>
 	<string>{156.28}</string>
 	<key>portAttributes</key>
@@ -225,6 +225,21 @@ function voice_create (voice_num) {
 
 //do all the voice mappings here that might be done with spaghetti inside the patch
 function subvoice_decorate(v_struct) {
+	var voice_num = v_struct.voice_num;
+	var sub_voice_num = v_struct.sub_voice_num;
+	var rand = n_rng(100*voice_num+sub_voice_num);
+	Log(rand);
+	v_struct.base_rot_x = 15*(20*rand-1.0);
+	rand = n_rng(rand);
+	v_struct.base_rot_y = 15*(20*rand-1.0);
+	rand = n_rng(rand);
+	v_struct.base_rot_z = 15*(20*rand-1.0);
+	rand = n_rng(rand);
+	v_struct.x_size = 0.25*(0.5*rand+1.0);
+	rand = n_rng(rand);
+	v_struct.y_size = 0.25*(0.5*rand+1.0);
+	rand = n_rng(rand);
+	v_struct.z_size = 0.25*(0.5*rand+1.0);
 	return v_struct;
 }
 
@@ -672,49 +687,49 @@ function n_rng(flt) {
 																	<dict>
 																		<key>connections</key>
 																		<dict>
-																			<key>connection_10</key>
+																			<key>connection_1</key>
 																			<dict>
 																				<key>destinationNode</key>
 																				<string>Camera_1</string>
 																				<key>destinationPort</key>
-																				<string>Y_Position</string>
+																				<string>inputRotateY</string>
 																				<key>sourceNode</key>
-																				<string>StructureMember_key_2</string>
-																				<key>sourcePort</key>
-																				<string>outputMember</string>
-																			</dict>
-																			<key>connection_11</key>
-																			<dict>
-																				<key>destinationNode</key>
-																				<string>Math_6</string>
-																				<key>destinationPort</key>
-																				<string>inputValue</string>
-																				<key>sourceNode</key>
-																				<string>Math_1</string>
+																				<string>LFO_4</string>
 																				<key>sourcePort</key>
 																				<string>outputValue</string>
+																			</dict>
+																			<key>connection_10</key>
+																			<dict>
+																				<key>destinationNode</key>
+																				<string>StructureMember_key_3</string>
+																				<key>destinationPort</key>
+																				<string>inputStructure</string>
+																				<key>sourceNode</key>
+																				<string>StructureMember_index_1</string>
+																				<key>sourcePort</key>
+																				<string>outputMember</string>
 																			</dict>
 																			<key>connection_12</key>
 																			<dict>
 																				<key>destinationNode</key>
-																				<string>Math_3</string>
+																				<string>StructureMember_key_10</string>
 																				<key>destinationPort</key>
-																				<string>inputValue</string>
+																				<string>inputStructure</string>
 																				<key>sourceNode</key>
-																				<string>Math_2</string>
+																				<string>StructureMember_index_1</string>
 																				<key>sourcePort</key>
-																				<string>outputValue</string>
+																				<string>outputMember</string>
 																			</dict>
 																			<key>connection_13</key>
 																			<dict>
 																				<key>destinationNode</key>
-																				<string>Math_4</string>
+																				<string>StructureMember_key_11</string>
 																				<key>destinationPort</key>
-																				<string>inputValue</string>
+																				<string>inputStructure</string>
 																				<key>sourceNode</key>
-																				<string>Math_3</string>
+																				<string>StructureMember_index_1</string>
 																				<key>sourcePort</key>
-																				<string>outputValue</string>
+																				<string>outputMember</string>
 																			</dict>
 																			<key>connection_14</key>
 																			<dict>
@@ -723,42 +738,42 @@ function n_rng(flt) {
 																				<key>destinationPort</key>
 																				<string>inputRotateX</string>
 																				<key>sourceNode</key>
-																				<string>Math_6</string>
+																				<string>StructureMember_key_3</string>
 																				<key>sourcePort</key>
-																				<string>outputValue</string>
+																				<string>outputMember</string>
 																			</dict>
 																			<key>connection_15</key>
 																			<dict>
 																				<key>destinationNode</key>
-																				<string>Camera_1</string>
+																				<string>StructureMember_key_12</string>
 																				<key>destinationPort</key>
-																				<string>inputRotateY</string>
+																				<string>inputStructure</string>
 																				<key>sourceNode</key>
-																				<string>Math_7</string>
+																				<string>StructureMember_index_1</string>
 																				<key>sourcePort</key>
-																				<string>outputValue</string>
+																				<string>outputMember</string>
 																			</dict>
 																			<key>connection_16</key>
 																			<dict>
 																				<key>destinationNode</key>
-																				<string>Math_7</string>
+																				<string>Camera_1</string>
 																				<key>destinationPort</key>
-																				<string>inputValue</string>
+																				<string>Width</string>
 																				<key>sourceNode</key>
-																				<string>Math_2</string>
+																				<string>StructureMember_key_10</string>
 																				<key>sourcePort</key>
-																				<string>outputValue</string>
+																				<string>outputMember</string>
 																			</dict>
 																			<key>connection_17</key>
 																			<dict>
 																				<key>destinationNode</key>
-																				<string>Math_8</string>
+																				<string>Camera_1</string>
 																				<key>destinationPort</key>
-																				<string>inputValue</string>
+																				<string>Height</string>
 																				<key>sourceNode</key>
-																				<string>Math_3</string>
+																				<string>StructureMember_key_11</string>
 																				<key>sourcePort</key>
-																				<string>outputValue</string>
+																				<string>outputMember</string>
 																			</dict>
 																			<key>connection_18</key>
 																			<dict>
@@ -767,20 +782,20 @@ function n_rng(flt) {
 																				<key>destinationPort</key>
 																				<string>inputRotateZ</string>
 																				<key>sourceNode</key>
-																				<string>Math_8</string>
+																				<string>StructureMember_key_9</string>
 																				<key>sourcePort</key>
-																				<string>outputValue</string>
+																				<string>outputMember</string>
 																			</dict>
 																			<key>connection_19</key>
 																			<dict>
 																				<key>destinationNode</key>
 																				<string>Camera_1</string>
 																				<key>destinationPort</key>
-																				<string>Width</string>
+																				<string>Depth</string>
 																				<key>sourceNode</key>
-																				<string>Math_3</string>
+																				<string>StructureMember_key_12</string>
 																				<key>sourcePort</key>
-																				<string>outputValue</string>
+																				<string>outputMember</string>
 																			</dict>
 																			<key>connection_2</key>
 																			<dict>
@@ -796,35 +811,35 @@ function n_rng(flt) {
 																			<key>connection_20</key>
 																			<dict>
 																				<key>destinationNode</key>
-																				<string>Camera_1</string>
+																				<string>Math_1</string>
 																				<key>destinationPort</key>
-																				<string>Height</string>
+																				<string>inputValue</string>
 																				<key>sourceNode</key>
-																				<string>Math_9</string>
+																				<string>StructureMember_key_1</string>
 																				<key>sourcePort</key>
-																				<string>outputValue</string>
+																				<string>outputMember</string>
 																			</dict>
 																			<key>connection_21</key>
 																			<dict>
 																				<key>destinationNode</key>
-																				<string>Camera_1</string>
+																				<string>Math_2</string>
 																				<key>destinationPort</key>
-																				<string>Depth</string>
+																				<string>inputValue</string>
 																				<key>sourceNode</key>
-																				<string>Math_10</string>
+																				<string>StructureMember_key_2</string>
 																				<key>sourcePort</key>
-																				<string>outputValue</string>
+																				<string>outputMember</string>
 																			</dict>
 																			<key>connection_22</key>
 																			<dict>
 																				<key>destinationNode</key>
-																				<string>Math_9</string>
+																				<string>Math_1</string>
 																				<key>destinationPort</key>
-																				<string>inputValue</string>
+																				<string>operand_1</string>
 																				<key>sourceNode</key>
-																				<string>Math_4</string>
+																				<string>StructureMember_key_6</string>
 																				<key>sourcePort</key>
-																				<string>outputValue</string>
+																				<string>outputMember</string>
 																			</dict>
 																			<key>connection_23</key>
 																			<dict>
@@ -873,13 +888,35 @@ function n_rng(flt) {
 																			<key>connection_27</key>
 																			<dict>
 																				<key>destinationNode</key>
-																				<string>Math_10</string>
+																				<string>Math_2</string>
 																				<key>destinationPort</key>
 																				<string>operand_1</string>
 																				<key>sourceNode</key>
-																				<string>Math_9</string>
+																				<string>StructureMember_key_5</string>
 																				<key>sourcePort</key>
-																				<string>outputValue</string>
+																				<string>outputMember</string>
+																			</dict>
+																			<key>connection_28</key>
+																			<dict>
+																				<key>destinationNode</key>
+																				<string>StructureMember_key_8</string>
+																				<key>destinationPort</key>
+																				<string>inputStructure</string>
+																				<key>sourceNode</key>
+																				<string>StructureMember_index_1</string>
+																				<key>sourcePort</key>
+																				<string>outputMember</string>
+																			</dict>
+																			<key>connection_29</key>
+																			<dict>
+																				<key>destinationNode</key>
+																				<string>StructureMember_key_9</string>
+																				<key>destinationPort</key>
+																				<string>inputStructure</string>
+																				<key>sourceNode</key>
+																				<string>StructureMember_index_1</string>
+																				<key>sourcePort</key>
+																				<string>outputMember</string>
 																			</dict>
 																			<key>connection_3</key>
 																			<dict>
@@ -903,17 +940,6 @@ function n_rng(flt) {
 																				<key>sourcePort</key>
 																				<string>outputIndex</string>
 																			</dict>
-																			<key>connection_32</key>
-																			<dict>
-																				<key>destinationNode</key>
-																				<string>Camera_1</string>
-																				<key>destinationPort</key>
-																				<string>inputScaleX</string>
-																				<key>sourceNode</key>
-																				<string>Math_12</string>
-																				<key>sourcePort</key>
-																				<string>outputValue</string>
-																			</dict>
 																			<key>connection_33</key>
 																			<dict>
 																				<key>destinationNode</key>
@@ -922,28 +948,6 @@ function n_rng(flt) {
 																				<string>inputValue</string>
 																				<key>sourceNode</key>
 																				<string>Math_11</string>
-																				<key>sourcePort</key>
-																				<string>outputValue</string>
-																			</dict>
-																			<key>connection_35</key>
-																			<dict>
-																				<key>destinationNode</key>
-																				<string>Camera_1</string>
-																				<key>destinationPort</key>
-																				<string>inputScaleY</string>
-																				<key>sourceNode</key>
-																				<string>Math_14</string>
-																				<key>sourcePort</key>
-																				<string>outputValue</string>
-																			</dict>
-																			<key>connection_39</key>
-																			<dict>
-																				<key>destinationNode</key>
-																				<string>Camera_1</string>
-																				<key>destinationPort</key>
-																				<string>inputScaleZ</string>
-																				<key>sourceNode</key>
-																				<string>Math_16</string>
 																				<key>sourcePort</key>
 																				<string>outputValue</string>
 																			</dict>
@@ -980,17 +984,6 @@ function n_rng(flt) {
 																				<key>sourcePort</key>
 																				<string>outputValue</string>
 																			</dict>
-																			<key>connection_43</key>
-																			<dict>
-																				<key>destinationNode</key>
-																				<string>Math_7</string>
-																				<key>destinationPort</key>
-																				<string>operand_2</string>
-																				<key>sourceNode</key>
-																				<string>LFO_4</string>
-																				<key>sourcePort</key>
-																				<string>outputValue</string>
-																			</dict>
 																			<key>connection_44</key>
 																			<dict>
 																				<key>destinationNode</key>
@@ -1005,11 +998,33 @@ function n_rng(flt) {
 																			<key>connection_5</key>
 																			<dict>
 																				<key>destinationNode</key>
-																				<string>Math_5</string>
+																				<string>Camera_1</string>
 																				<key>destinationPort</key>
-																				<string>inputValue</string>
+																				<string>cube_x_rot</string>
 																				<key>sourceNode</key>
-																				<string>Math_4</string>
+																				<string>StructureMember_key_3</string>
+																				<key>sourcePort</key>
+																				<string>outputMember</string>
+																			</dict>
+																			<key>connection_6</key>
+																			<dict>
+																				<key>destinationNode</key>
+																				<string>Camera_1</string>
+																				<key>destinationPort</key>
+																				<string>cube_y_rot</string>
+																				<key>sourceNode</key>
+																				<string>StructureMember_key_8</string>
+																				<key>sourcePort</key>
+																				<string>outputMember</string>
+																			</dict>
+																			<key>connection_7</key>
+																			<dict>
+																				<key>destinationNode</key>
+																				<string>Camera_1</string>
+																				<key>destinationPort</key>
+																				<string>inputTranslateX</string>
+																				<key>sourceNode</key>
+																				<string>Math_1</string>
 																				<key>sourcePort</key>
 																				<string>outputValue</string>
 																			</dict>
@@ -1018,22 +1033,22 @@ function n_rng(flt) {
 																				<key>destinationNode</key>
 																				<string>Camera_1</string>
 																				<key>destinationPort</key>
-																				<string>X_Position</string>
+																				<string>inputTranslateY</string>
 																				<key>sourceNode</key>
-																				<string>StructureMember_key_1</string>
+																				<string>Math_2</string>
 																				<key>sourcePort</key>
-																				<string>outputMember</string>
+																				<string>outputValue</string>
 																			</dict>
 																			<key>connection_9</key>
 																			<dict>
 																				<key>destinationNode</key>
-																				<string>Math_2</string>
+																				<string>Camera_1</string>
 																				<key>destinationPort</key>
-																				<string>inputValue</string>
+																				<string>cube_z_rot</string>
 																				<key>sourceNode</key>
-																				<string>Math_1</string>
+																				<string>StructureMember_key_9</string>
 																				<key>sourcePort</key>
-																				<string>outputValue</string>
+																				<string>outputMember</string>
 																			</dict>
 																		</dict>
 																		<key>nodes</key>
@@ -1105,7 +1120,7 @@ function n_rng(flt) {
 								hIQHTlNWYWx1
 								ZQCVhAEqhIQM
 								e0NHUG9pbnQ9
-								ZGR9m4Ea/4Ed
+								ZGR9m4Em/4GJ
 								/4aG
 																					</data>
 																				</dict>
@@ -1146,8 +1161,8 @@ function n_rng(flt) {
 								hIQHTlNWYWx1
 								ZQCVhAEqhIQM
 								e0NHUG9pbnQ9
-								ZGR9m4Eb/4FN
-								/4aG
+								ZGR9m4En/7mG
+								hg==
 																					</data>
 																				</dict>
 																			</dict>
@@ -1167,7 +1182,7 @@ function n_rng(flt) {
 																							<key>destinationPort</key>
 																							<string>inputColorRight</string>
 																							<key>sourceNode</key>
-																							<string>Splitter_1</string>
+																							<string>Splitter_2</string>
 																							<key>sourcePort</key>
 																							<string>output</string>
 																						</dict>
@@ -1189,7 +1204,7 @@ function n_rng(flt) {
 																							<key>destinationPort</key>
 																							<string>inputColorLeft</string>
 																							<key>sourceNode</key>
-																							<string>Splitter_1</string>
+																							<string>Splitter_2</string>
 																							<key>sourcePort</key>
 																							<string>output</string>
 																						</dict>
@@ -1244,15 +1259,20 @@ function n_rng(flt) {
 																							<key>value</key>
 																							<real>0.0</real>
 																						</dict>
-																						<key>inputTranslateX</key>
+																						<key>inputScaleX</key>
 																						<dict>
 																							<key>value</key>
-																							<real>0.0</real>
+																							<real>1</real>
 																						</dict>
-																						<key>inputTranslateY</key>
+																						<key>inputScaleY</key>
 																						<dict>
 																							<key>value</key>
-																							<real>0.0</real>
+																							<real>1</real>
+																						</dict>
+																						<key>inputScaleZ</key>
+																						<dict>
+																							<key>value</key>
+																							<real>1</real>
 																						</dict>
 																						<key>inputTranslateZ</key>
 																						<dict>
@@ -1274,24 +1294,19 @@ function n_rng(flt) {
 																									<key>inputBlending</key>
 																									<dict>
 																										<key>value</key>
-																										<integer>2</integer>
+																										<integer>1</integer>
 																									</dict>
 																									<key>inputCulling</key>
 																									<dict>
 																										<key>value</key>
-																										<integer>1</integer>
+																										<integer>0</integer>
 																									</dict>
-																									<key>inputRX</key>
+																									<key>inputX</key>
 																									<dict>
 																										<key>value</key>
 																										<real>0.0</real>
 																									</dict>
-																									<key>inputRY</key>
-																									<dict>
-																										<key>value</key>
-																										<real>0.0</real>
-																									</dict>
-																									<key>inputRZ</key>
+																									<key>inputY</key>
 																									<dict>
 																										<key>value</key>
 																										<real>0.0</real>
@@ -1372,6 +1387,59 @@ function n_rng(flt) {
 																								<integer>1</integer>
 																							</dict>
 																						</dict>
+																						<dict>
+																							<key>class</key>
+																							<string>QCSplitter</string>
+																							<key>key</key>
+																							<string>Splitter_2</string>
+																							<key>state</key>
+																							<dict>
+																								<key>customInputPortStates</key>
+																								<dict>
+																									<key>input</key>
+																									<dict>
+																										<key>value</key>
+																										<dict>
+																											<key>alpha</key>
+																											<real>0.0</real>
+																											<key>blue</key>
+																											<real>1</real>
+																											<key>green</key>
+																											<real>1</real>
+																											<key>red</key>
+																											<real>1</real>
+																										</dict>
+																									</dict>
+																								</dict>
+																								<key>portClass</key>
+																								<string>QCColorPort</string>
+																								<key>userInfo</key>
+																								<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpApKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gQIkNv
+								bG9yIFNwbGl0
+								dGVyIoaShJeY
+								CHBvc2l0aW9u
+								hpKEhIQHTlNW
+								YWx1ZQCVhAEq
+								hIQMe0NHUG9p
+								bnQ9ZGR9m4G+
+								AIHQAIaG
+																								</data>
+																								<key>version</key>
+																								<integer>1</integer>
+																							</dict>
+																						</dict>
 																					</array>
 																					<key>publishedInputPorts</key>
 																					<array>
@@ -1409,6 +1477,11 @@ function n_rng(flt) {
 																							<string>Cube_1</string>
 																							<key>port</key>
 																							<string>inputX</string>
+																							<key>state</key>
+																							<dict>
+																								<key>value</key>
+																								<real>0.0</real>
+																							</dict>
 																						</dict>
 																						<dict>
 																							<key>key</key>
@@ -1417,6 +1490,11 @@ function n_rng(flt) {
 																							<string>Cube_1</string>
 																							<key>port</key>
 																							<string>inputY</string>
+																							<key>state</key>
+																							<dict>
+																								<key>value</key>
+																								<real>0.0</real>
+																							</dict>
 																						</dict>
 																						<dict>
 																							<key>key</key>
@@ -1455,6 +1533,87 @@ function n_rng(flt) {
 																							<key>port</key>
 																							<string>inputDepth</string>
 																						</dict>
+																						<dict>
+																							<key>key</key>
+																							<string>cube_x_rot</string>
+																							<key>node</key>
+																							<string>Cube_1</string>
+																							<key>port</key>
+																							<string>inputRX</string>
+																							<key>state</key>
+																							<dict>
+																								<key>userInfo</key>
+																								<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gKY3Vi
+								ZV94X3JvdIaG
+																								</data>
+																							</dict>
+																						</dict>
+																						<dict>
+																							<key>key</key>
+																							<string>cube_y_rot</string>
+																							<key>node</key>
+																							<string>Cube_1</string>
+																							<key>port</key>
+																							<string>inputRY</string>
+																							<key>state</key>
+																							<dict>
+																								<key>userInfo</key>
+																								<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gKY3Vi
+								ZV95X3JvdIaG
+																								</data>
+																							</dict>
+																						</dict>
+																						<dict>
+																							<key>key</key>
+																							<string>cube_z_rot</string>
+																							<key>node</key>
+																							<string>Cube_1</string>
+																							<key>port</key>
+																							<string>inputRZ</string>
+																							<key>state</key>
+																							<dict>
+																								<key>userInfo</key>
+																								<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gKY3Vi
+								ZV96X3JvdIaG
+																								</data>
+																							</dict>
+																						</dict>
 																					</array>
 																					<key>systemInputPortStates</key>
 																					<dict>
@@ -1476,267 +1635,21 @@ function n_rng(flt) {
 								U09iamVjdACF
 								hAFpA5KEhIQI
 								TlNTdHJpbmcB
-								lYQBKwlzY3Jv
-								bGxpbmeGkoSE
-								hAdOU1ZhbHVl
-								AJWEASqEhAx7
-								Q0dQb2ludD1k
-								ZH2bgwAAAAAA
-								sG5AgwAAAAAA
-								EGdAhpKEl5gI
-								cG9zaXRpb26G
-								koSZmpqbgf8B
-								lYaShJeYCnpv
-								b21GYWN0b3KG
-								koSEhAhOU051
-								bWJlcgCZmoSE
-								AWadAYaG
+								lYQBKwp6b29t
+								RmFjdG9yhpKE
+								hIQITlNOdW1i
+								ZXIAhIQHTlNW
+								YWx1ZQCVhAEq
+								hIQBZpwBhpKE
+								l5gJc2Nyb2xs
+								aW5nhpKEmpuE
+								hAx7Q0dQb2lu
+								dD1kZH2dgwAA
+								AAAAsG5AgbkA
+								hpKEl5gIcG9z
+								aXRpb26GkoSa
+								m56dgUwB0YaG
 																					</data>
-																				</dict>
-																			</dict>
-																			<dict>
-																				<key>class</key>
-																				<string>QCMath</string>
-																				<key>key</key>
-																				<string>Math_6</string>
-																				<key>state</key>
-																				<dict>
-																					<key>customInputPortStates</key>
-																					<dict>
-																						<key>operand_1</key>
-																						<dict>
-																							<key>value</key>
-																							<real>360</real>
-																						</dict>
-																						<key>operation_1</key>
-																						<dict>
-																							<key>value</key>
-																							<integer>2</integer>
-																						</dict>
-																					</dict>
-																					<key>numberOfOperations</key>
-																					<integer>1</integer>
-																					<key>operationCount</key>
-																					<integer>1</integer>
-																					<key>userInfo</key>
-																					<data>
-								BAtzdHJlYW10
-								eXBlZIHoA4QB
-								QISEhBNOU011
-								dGFibGVEaWN0
-								aW9uYXJ5AISE
-								DE5TRGljdGlv
-								bmFyeQCEhAhO
-								U09iamVjdACF
-								hAFpAZKEhIQI
-								TlNTdHJpbmcB
-								lYQBKwhwb3Np
-								dGlvboaShISE
-								B05TVmFsdWUA
-								lYQBKoSEDHtD
-								R1BvaW50PWRk
-								fZuBjQHKhoY=
-																					</data>
-																					<key>version</key>
-																					<integer>1</integer>
-																				</dict>
-																			</dict>
-																			<dict>
-																				<key>class</key>
-																				<string>QCMath</string>
-																				<key>key</key>
-																				<string>Math_7</string>
-																				<key>state</key>
-																				<dict>
-																					<key>customInputPortStates</key>
-																					<dict>
-																						<key>operand_1</key>
-																						<dict>
-																							<key>value</key>
-																							<real>360</real>
-																						</dict>
-																						<key>operation_1</key>
-																						<dict>
-																							<key>value</key>
-																							<integer>2</integer>
-																						</dict>
-																						<key>operation_2</key>
-																						<dict>
-																							<key>value</key>
-																							<integer>0</integer>
-																						</dict>
-																					</dict>
-																					<key>numberOfOperations</key>
-																					<integer>2</integer>
-																					<key>operationCount</key>
-																					<integer>2</integer>
-																					<key>userInfo</key>
-																					<data>
-								BAtzdHJlYW10
-								eXBlZIHoA4QB
-								QISEhBNOU011
-								dGFibGVEaWN0
-								aW9uYXJ5AISE
-								DE5TRGljdGlv
-								bmFyeQCEhAhO
-								U09iamVjdACF
-								hAFpAZKEhIQI
-								TlNTdHJpbmcB
-								lYQBKwhwb3Np
-								dGlvboaShISE
-								B05TVmFsdWUA
-								lYQBKoSEDHtD
-								R1BvaW50PWRk
-								fZuBjgHuhoY=
-																					</data>
-																					<key>version</key>
-																					<integer>1</integer>
-																				</dict>
-																			</dict>
-																			<dict>
-																				<key>class</key>
-																				<string>QCMath</string>
-																				<key>key</key>
-																				<string>Math_8</string>
-																				<key>state</key>
-																				<dict>
-																					<key>customInputPortStates</key>
-																					<dict>
-																						<key>operand_1</key>
-																						<dict>
-																							<key>value</key>
-																							<real>360</real>
-																						</dict>
-																						<key>operation_1</key>
-																						<dict>
-																							<key>value</key>
-																							<integer>2</integer>
-																						</dict>
-																					</dict>
-																					<key>numberOfOperations</key>
-																					<integer>1</integer>
-																					<key>operationCount</key>
-																					<integer>1</integer>
-																					<key>userInfo</key>
-																					<data>
-								BAtzdHJlYW10
-								eXBlZIHoA4QB
-								QISEhBNOU011
-								dGFibGVEaWN0
-								aW9uYXJ5AISE
-								DE5TRGljdGlv
-								bmFyeQCEhAhO
-								U09iamVjdACF
-								hAFpAZKEhIQI
-								TlNTdHJpbmcB
-								lYQBKwhwb3Np
-								dGlvboaShISE
-								B05TVmFsdWUA
-								lYQBKoSEDHtD
-								R1BvaW50PWRk
-								fZuBjgEShoY=
-																					</data>
-																					<key>version</key>
-																					<integer>1</integer>
-																				</dict>
-																			</dict>
-																			<dict>
-																				<key>class</key>
-																				<string>QCMath</string>
-																				<key>key</key>
-																				<string>Math_9</string>
-																				<key>state</key>
-																				<dict>
-																					<key>customInputPortStates</key>
-																					<dict>
-																						<key>operand_1</key>
-																						<dict>
-																							<key>value</key>
-																							<real>2</real>
-																						</dict>
-																						<key>operation_1</key>
-																						<dict>
-																							<key>value</key>
-																							<integer>2</integer>
-																						</dict>
-																					</dict>
-																					<key>numberOfOperations</key>
-																					<integer>1</integer>
-																					<key>operationCount</key>
-																					<integer>1</integer>
-																					<key>userInfo</key>
-																					<data>
-								BAtzdHJlYW10
-								eXBlZIHoA4QB
-								QISEhBNOU011
-								dGFibGVEaWN0
-								aW9uYXJ5AISE
-								DE5TRGljdGlv
-								bmFyeQCEhAhO
-								U09iamVjdACF
-								hAFpAZKEhIQI
-								TlNTdHJpbmcB
-								lYQBKwhwb3Np
-								dGlvboaShISE
-								B05TVmFsdWUA
-								lYQBKoSEDHtD
-								R1BvaW50PWRk
-								fZuBmQGBlgCG
-								hg==
-																					</data>
-																					<key>version</key>
-																					<integer>1</integer>
-																				</dict>
-																			</dict>
-																			<dict>
-																				<key>class</key>
-																				<string>QCMath</string>
-																				<key>key</key>
-																				<string>Math_10</string>
-																				<key>state</key>
-																				<dict>
-																					<key>customInputPortStates</key>
-																					<dict>
-																						<key>operation_1</key>
-																						<dict>
-																							<key>value</key>
-																							<integer>3</integer>
-																						</dict>
-																					</dict>
-																					<key>ivarInputPortStates</key>
-																					<dict>
-																						<key>inputValue</key>
-																						<dict>
-																							<key>value</key>
-																							<real>0.5</real>
-																						</dict>
-																					</dict>
-																					<key>numberOfOperations</key>
-																					<integer>1</integer>
-																					<key>operationCount</key>
-																					<integer>1</integer>
-																					<key>userInfo</key>
-																					<data>
-								BAtzdHJlYW10
-								eXBlZIHoA4QB
-								QISEhBNOU011
-								dGFibGVEaWN0
-								aW9uYXJ5AISE
-								DE5TRGljdGlv
-								bmFyeQCEhAhO
-								U09iamVjdACF
-								hAFpAZKEhIQI
-								TlNTdHJpbmcB
-								lYQBKwhwb3Np
-								dGlvboaShISE
-								B05TVmFsdWUA
-								lYQBKoSEDHtD
-								R1BvaW50PWRk
-								fZuBsQGBugCG
-								hg==
-																					</data>
-																					<key>version</key>
-																					<integer>1</integer>
 																				</dict>
 																			</dict>
 																			<dict>
@@ -1847,62 +1760,8 @@ function n_rng(flt) {
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZuwgW4BhoY=
-																					</data>
-																					<key>version</key>
-																					<integer>1</integer>
-																				</dict>
-																			</dict>
-																			<dict>
-																				<key>class</key>
-																				<string>QCMath</string>
-																				<key>key</key>
-																				<string>Math_12</string>
-																				<key>state</key>
-																				<dict>
-																					<key>customInputPortStates</key>
-																					<dict>
-																						<key>operand_1</key>
-																						<dict>
-																							<key>value</key>
-																							<real>0.77772993763082554</real>
-																						</dict>
-																						<key>operation_1</key>
-																						<dict>
-																							<key>value</key>
-																							<integer>2</integer>
-																						</dict>
-																					</dict>
-																					<key>ivarInputPortStates</key>
-																					<dict>
-																						<key>inputValue</key>
-																						<dict>
-																							<key>value</key>
-																							<real>1</real>
-																						</dict>
-																					</dict>
-																					<key>numberOfOperations</key>
-																					<integer>1</integer>
-																					<key>operationCount</key>
-																					<integer>1</integer>
-																					<key>userInfo</key>
-																					<data>
-								BAtzdHJlYW10
-								eXBlZIHoA4QB
-								QISEhBNOU011
-								dGFibGVEaWN0
-								aW9uYXJ5AISE
-								DE5TRGljdGlv
-								bmFyeQCEhAhO
-								U09iamVjdACF
-								hAFpAZKEhIQI
-								TlNTdHJpbmcB
-								lYQBKwhwb3Np
-								dGlvboaShISE
-								B05TVmFsdWUA
-								lYQBKoSEDHtD
-								R1BvaW50PWRk
-								fZuBjwE2hoY=
+								fZuBp/6BYgGG
+								hg==
 																					</data>
 																					<key>version</key>
 																					<integer>1</integer>
@@ -1949,117 +1808,8 @@ function n_rng(flt) {
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZvrgW4BhoY=
-																					</data>
-																					<key>version</key>
-																					<integer>1</integer>
-																				</dict>
-																			</dict>
-																			<dict>
-																				<key>class</key>
-																				<string>QCMath</string>
-																				<key>key</key>
-																				<string>Math_14</string>
-																				<key>state</key>
-																				<dict>
-																					<key>customInputPortStates</key>
-																					<dict>
-																						<key>operand_1</key>
-																						<dict>
-																							<key>value</key>
-																							<real>1.3091320097515311</real>
-																						</dict>
-																						<key>operation_1</key>
-																						<dict>
-																							<key>value</key>
-																							<integer>2</integer>
-																						</dict>
-																					</dict>
-																					<key>ivarInputPortStates</key>
-																					<dict>
-																						<key>inputValue</key>
-																						<dict>
-																							<key>value</key>
-																							<real>1</real>
-																						</dict>
-																					</dict>
-																					<key>numberOfOperations</key>
-																					<integer>1</integer>
-																					<key>operationCount</key>
-																					<integer>1</integer>
-																					<key>userInfo</key>
-																					<data>
-								BAtzdHJlYW10
-								eXBlZIHoA4QB
-								QISEhBNOU011
-								dGFibGVEaWN0
-								aW9uYXJ5AISE
-								DE5TRGljdGlv
-								bmFyeQCEhAhO
-								U09iamVjdACF
-								hAFpAZKEhIQI
-								TlNTdHJpbmcB
-								lYQBKwhwb3Np
-								dGlvboaShISE
-								B05TVmFsdWUA
-								lYQBKoSEDHtD
-								R1BvaW50PWRk
-								fZuBkAFOhoY=
-																					</data>
-																					<key>version</key>
-																					<integer>1</integer>
-																				</dict>
-																			</dict>
-																			<dict>
-																				<key>class</key>
-																				<string>QCMath</string>
-																				<key>key</key>
-																				<string>Math_16</string>
-																				<key>state</key>
-																				<dict>
-																					<key>customInputPortStates</key>
-																					<dict>
-																						<key>operand_1</key>
-																						<dict>
-																							<key>value</key>
-																							<real>0.8822503978120827</real>
-																						</dict>
-																						<key>operation_1</key>
-																						<dict>
-																							<key>value</key>
-																							<integer>2</integer>
-																						</dict>
-																					</dict>
-																					<key>ivarInputPortStates</key>
-																					<dict>
-																						<key>inputValue</key>
-																						<dict>
-																							<key>value</key>
-																							<real>1</real>
-																						</dict>
-																					</dict>
-																					<key>numberOfOperations</key>
-																					<integer>1</integer>
-																					<key>operationCount</key>
-																					<integer>1</integer>
-																					<key>userInfo</key>
-																					<data>
-								BAtzdHJlYW10
-								eXBlZIHoA4QB
-								QISEhBNOU011
-								dGFibGVEaWN0
-								aW9uYXJ5AISE
-								DE5TRGljdGlv
-								bmFyeQCEhAhO
-								U09iamVjdACF
-								hAFpAZKEhIQI
-								TlNTdHJpbmcB
-								lYQBKwhwb3Np
-								dGlvboaShISE
-								B05TVmFsdWUA
-								lYQBKoSEDHtD
-								R1BvaW50PWRk
-								fZuBkQFmhoY=
+								fZuB4v6BYgGG
+								hg==
 																					</data>
 																					<key>version</key>
 																					<integer>1</integer>
@@ -2184,7 +1934,7 @@ function n_rng(flt) {
 								TlNWYWx1ZQCV
 								hAEqhIQMe0NH
 								UG9pbnQ9ZGR9
-								m789hoY=
+								m3mBNf+Ghg==
 																					</data>
 																				</dict>
 																			</dict>
@@ -2244,7 +1994,8 @@ function n_rng(flt) {
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZssgVEBhoY=
+								fZuBI/+BRQGG
+								hg==
 																					</data>
 																				</dict>
 																			</dict>
@@ -2285,8 +2036,8 @@ function n_rng(flt) {
 								hIQHTlNWYWx1
 								ZQCVhAEqhIQM
 								e0NHUG9pbnQ9
-								ZGR9m4Ed/4F9
-								/4aG
+								ZGR9m4Ep/+mG
+								hg==
 																					</data>
 																				</dict>
 																			</dict>
@@ -2327,7 +2078,8 @@ function n_rng(flt) {
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZuBuv0lhoY=
+								fZuBNf+B/QCG
+								hg==
 																					</data>
 																				</dict>
 																			</dict>
@@ -2368,7 +2120,8 @@ function n_rng(flt) {
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZuBuv3phoY=
+								fZuBNf+BzQCG
+								hg==
 																					</data>
 																				</dict>
 																			</dict>
@@ -2415,6 +2168,252 @@ function n_rng(flt) {
 																			</dict>
 																			<dict>
 																				<key>class</key>
+																				<string>QCStructureMember</string>
+																				<key>identifier</key>
+																				<string>key</string>
+																				<key>key</key>
+																				<string>StructureMember_key_3</string>
+																				<key>state</key>
+																				<dict>
+																					<key>customInputPortStates</key>
+																					<dict>
+																						<key>inputKey</key>
+																						<dict>
+																							<key>value</key>
+																							<string>base_rot_x</string>
+																						</dict>
+																					</dict>
+																					<key>userInfo</key>
+																					<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpApKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gKYmFz
+								ZV9yb3RfeIaS
+								hJeYCHBvc2l0
+								aW9uhpKEhIQH
+								TlNWYWx1ZQCV
+								hAEqhIQMe0NH
+								UG9pbnQ9ZGR9
+								m4E6/4Hh/oaG
+																					</data>
+																				</dict>
+																			</dict>
+																			<dict>
+																				<key>class</key>
+																				<string>QCStructureMember</string>
+																				<key>identifier</key>
+																				<string>key</string>
+																				<key>key</key>
+																				<string>StructureMember_key_8</string>
+																				<key>state</key>
+																				<dict>
+																					<key>customInputPortStates</key>
+																					<dict>
+																						<key>inputKey</key>
+																						<dict>
+																							<key>value</key>
+																							<string>base_rot_y</string>
+																						</dict>
+																					</dict>
+																					<key>userInfo</key>
+																					<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpApKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gKYmFz
+								ZV9yb3RfeYaS
+								hJeYCHBvc2l0
+								aW9uhpKEhIQH
+								TlNWYWx1ZQCV
+								hAEqhIQMe0NH
+								UG9pbnQ9ZGR9
+								m4E9/4ER/4aG
+																					</data>
+																				</dict>
+																			</dict>
+																			<dict>
+																				<key>class</key>
+																				<string>QCStructureMember</string>
+																				<key>identifier</key>
+																				<string>key</string>
+																				<key>key</key>
+																				<string>StructureMember_key_9</string>
+																				<key>state</key>
+																				<dict>
+																					<key>customInputPortStates</key>
+																					<dict>
+																						<key>inputKey</key>
+																						<dict>
+																							<key>value</key>
+																							<string>base_rot_z</string>
+																						</dict>
+																					</dict>
+																					<key>userInfo</key>
+																					<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpApKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gKYmFz
+								ZV9yb3RfeoaS
+								hJeYCHBvc2l0
+								aW9uhpKEhIQH
+								TlNWYWx1ZQCV
+								hAEqhIQMe0NH
+								UG9pbnQ9ZGR9
+								m4E9/4FB/4aG
+																					</data>
+																				</dict>
+																			</dict>
+																			<dict>
+																				<key>class</key>
+																				<string>QCStructureMember</string>
+																				<key>identifier</key>
+																				<string>key</string>
+																				<key>key</key>
+																				<string>StructureMember_key_10</string>
+																				<key>state</key>
+																				<dict>
+																					<key>customInputPortStates</key>
+																					<dict>
+																						<key>inputKey</key>
+																						<dict>
+																							<key>value</key>
+																							<string>x_size</string>
+																						</dict>
+																					</dict>
+																					<key>userInfo</key>
+																					<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpApKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gGeF9z
+								aXplhpKEl5gI
+								cG9zaXRpb26G
+								koSEhAdOU1Zh
+								bHVlAJWEASqE
+								hAx7Q0dQb2lu
+								dD1kZH2bgTv/
+								MYaG
+																					</data>
+																				</dict>
+																			</dict>
+																			<dict>
+																				<key>class</key>
+																				<string>QCStructureMember</string>
+																				<key>identifier</key>
+																				<string>key</string>
+																				<key>key</key>
+																				<string>StructureMember_key_11</string>
+																				<key>state</key>
+																				<dict>
+																					<key>customInputPortStates</key>
+																					<dict>
+																						<key>inputKey</key>
+																						<dict>
+																							<key>value</key>
+																							<string>y_size</string>
+																						</dict>
+																					</dict>
+																					<key>userInfo</key>
+																					<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpApKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gGeV9z
+								aXplhpKEl5gI
+								cG9zaXRpb26G
+								koSEhAdOU1Zh
+								bHVlAJWEASqE
+								hAx7Q0dQb2lu
+								dD1kZH2bgTr/
+								YYaG
+																					</data>
+																				</dict>
+																			</dict>
+																			<dict>
+																				<key>class</key>
+																				<string>QCStructureMember</string>
+																				<key>identifier</key>
+																				<string>key</string>
+																				<key>key</key>
+																				<string>StructureMember_key_12</string>
+																				<key>state</key>
+																				<dict>
+																					<key>customInputPortStates</key>
+																					<dict>
+																						<key>inputKey</key>
+																						<dict>
+																							<key>value</key>
+																							<string>z_size</string>
+																						</dict>
+																					</dict>
+																					<key>userInfo</key>
+																					<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpApKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gGel9z
+								aXplhpKEl5gI
+								cG9zaXRpb26G
+								koSEhAdOU1Zh
+								bHVlAJWEASqE
+								hAx7Q0dQb2lu
+								dD1kZH2bgTz/
+								gZEAhoY=
+																					</data>
+																				</dict>
+																			</dict>
+																			<dict>
+																				<key>class</key>
 																				<string>QCMath</string>
 																				<key>key</key>
 																				<string>Math_1</string>
@@ -2422,49 +2421,16 @@ function n_rng(flt) {
 																				<dict>
 																					<key>customInputPortStates</key>
 																					<dict>
-																						<key>operand_1</key>
-																						<dict>
-																							<key>value</key>
-																							<real>4.3179999999999996</real>
-																						</dict>
-																						<key>operand_2</key>
-																						<dict>
-																							<key>value</key>
-																							<real>876.10000000000002</real>
-																						</dict>
-																						<key>operand_3</key>
-																						<dict>
-																							<key>value</key>
-																							<real>1</real>
-																						</dict>
 																						<key>operation_1</key>
 																						<dict>
 																							<key>value</key>
 																							<integer>0</integer>
 																						</dict>
-																						<key>operation_2</key>
-																						<dict>
-																							<key>value</key>
-																							<integer>2</integer>
-																						</dict>
-																						<key>operation_3</key>
-																						<dict>
-																							<key>value</key>
-																							<integer>4</integer>
-																						</dict>
-																					</dict>
-																					<key>ivarInputPortStates</key>
-																					<dict>
-																						<key>inputValue</key>
-																						<dict>
-																							<key>value</key>
-																							<real>1</real>
-																						</dict>
 																					</dict>
 																					<key>numberOfOperations</key>
-																					<integer>3</integer>
+																					<integer>1</integer>
 																					<key>operationCount</key>
-																					<integer>3</integer>
+																					<integer>1</integer>
 																					<key>userInfo</key>
 																					<data>
 								BAtzdHJlYW10
@@ -2482,7 +2448,7 @@ function n_rng(flt) {
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZtpBoaG
+								fZuBBgFChoY=
 																					</data>
 																					<key>version</key>
 																					<integer>1</integer>
@@ -2497,175 +2463,16 @@ function n_rng(flt) {
 																				<dict>
 																					<key>customInputPortStates</key>
 																					<dict>
-																						<key>operand_1</key>
-																						<dict>
-																							<key>value</key>
-																							<real>4.3179999999999996</real>
-																						</dict>
-																						<key>operand_2</key>
-																						<dict>
-																							<key>value</key>
-																							<real>876.10000000000002</real>
-																						</dict>
-																						<key>operand_3</key>
-																						<dict>
-																							<key>value</key>
-																							<real>1</real>
-																						</dict>
 																						<key>operation_1</key>
 																						<dict>
 																							<key>value</key>
 																							<integer>0</integer>
 																						</dict>
-																						<key>operation_2</key>
-																						<dict>
-																							<key>value</key>
-																							<integer>2</integer>
-																						</dict>
-																						<key>operation_3</key>
-																						<dict>
-																							<key>value</key>
-																							<integer>4</integer>
-																						</dict>
 																					</dict>
 																					<key>numberOfOperations</key>
-																					<integer>3</integer>
-																					<key>operationCount</key>
-																					<integer>3</integer>
-																					<key>userInfo</key>
-																					<data>
-								BAtzdHJlYW10
-								eXBlZIHoA4QB
-								QISEhBNOU011
-								dGFibGVEaWN0
-								aW9uYXJ5AISE
-								DE5TRGljdGlv
-								bmFyeQCEhAhO
-								U09iamVjdACF
-								hAFpAZKEhIQI
-								TlNTdHJpbmcB
-								lYQBKwhwb3Np
-								dGlvboaShISE
-								B05TVmFsdWUA
-								lYQBKoSEDHtD
-								R1BvaW50PWRk
-								fZuBgwBChoY=
-																					</data>
-																					<key>version</key>
 																					<integer>1</integer>
-																				</dict>
-																			</dict>
-																			<dict>
-																				<key>class</key>
-																				<string>QCMath</string>
-																				<key>key</key>
-																				<string>Math_3</string>
-																				<key>state</key>
-																				<dict>
-																					<key>customInputPortStates</key>
-																					<dict>
-																						<key>operand_1</key>
-																						<dict>
-																							<key>value</key>
-																							<real>4.3179999999999996</real>
-																						</dict>
-																						<key>operand_2</key>
-																						<dict>
-																							<key>value</key>
-																							<real>876.10000000000002</real>
-																						</dict>
-																						<key>operand_3</key>
-																						<dict>
-																							<key>value</key>
-																							<real>1</real>
-																						</dict>
-																						<key>operation_1</key>
-																						<dict>
-																							<key>value</key>
-																							<integer>0</integer>
-																						</dict>
-																						<key>operation_2</key>
-																						<dict>
-																							<key>value</key>
-																							<integer>2</integer>
-																						</dict>
-																						<key>operation_3</key>
-																						<dict>
-																							<key>value</key>
-																							<integer>4</integer>
-																						</dict>
-																					</dict>
-																					<key>numberOfOperations</key>
-																					<integer>3</integer>
 																					<key>operationCount</key>
-																					<integer>3</integer>
-																					<key>userInfo</key>
-																					<data>
-								BAtzdHJlYW10
-								eXBlZIHoA4QB
-								QISEhBNOU011
-								dGFibGVEaWN0
-								aW9uYXJ5AISE
-								DE5TRGljdGlv
-								bmFyeQCEhAhO
-								U09iamVjdACF
-								hAFpAZKEhIQI
-								TlNTdHJpbmcB
-								lYQBKwhwb3Np
-								dGlvboaShISE
-								B05TVmFsdWUA
-								lYQBKoSEDHtD
-								R1BvaW50PWRk
-								fZuBngB+hoY=
-																					</data>
-																					<key>version</key>
 																					<integer>1</integer>
-																				</dict>
-																			</dict>
-																			<dict>
-																				<key>class</key>
-																				<string>QCMath</string>
-																				<key>key</key>
-																				<string>Math_4</string>
-																				<key>state</key>
-																				<dict>
-																					<key>customInputPortStates</key>
-																					<dict>
-																						<key>operand_1</key>
-																						<dict>
-																							<key>value</key>
-																							<real>4.3179999999999996</real>
-																						</dict>
-																						<key>operand_2</key>
-																						<dict>
-																							<key>value</key>
-																							<real>876.10000000000002</real>
-																						</dict>
-																						<key>operand_3</key>
-																						<dict>
-																							<key>value</key>
-																							<real>1</real>
-																						</dict>
-																						<key>operation_1</key>
-																						<dict>
-																							<key>value</key>
-																							<integer>0</integer>
-																						</dict>
-																						<key>operation_2</key>
-																						<dict>
-																							<key>value</key>
-																							<integer>2</integer>
-																						</dict>
-																						<key>operation_3</key>
-																						<dict>
-																							<key>value</key>
-																							<integer>4</integer>
-																						</dict>
-																					</dict>
-																					<key>numberOfOperations</key>
-																					<integer>3</integer>
-																					<key>operationCount</key>
-																					<integer>3</integer>
 																					<key>userInfo</key>
 																					<data>
 								BAtzdHJlYW10
@@ -2683,76 +2490,7 @@ function n_rng(flt) {
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZuBqQCBugCG
-								hg==
-																					</data>
-																					<key>version</key>
-																					<integer>1</integer>
-																				</dict>
-																			</dict>
-																			<dict>
-																				<key>class</key>
-																				<string>QCMath</string>
-																				<key>key</key>
-																				<string>Math_5</string>
-																				<key>state</key>
-																				<dict>
-																					<key>customInputPortStates</key>
-																					<dict>
-																						<key>operand_1</key>
-																						<dict>
-																							<key>value</key>
-																							<real>4.3179999999999996</real>
-																						</dict>
-																						<key>operand_2</key>
-																						<dict>
-																							<key>value</key>
-																							<real>876.10000000000002</real>
-																						</dict>
-																						<key>operand_3</key>
-																						<dict>
-																							<key>value</key>
-																							<real>1</real>
-																						</dict>
-																						<key>operation_1</key>
-																						<dict>
-																							<key>value</key>
-																							<integer>0</integer>
-																						</dict>
-																						<key>operation_2</key>
-																						<dict>
-																							<key>value</key>
-																							<integer>2</integer>
-																						</dict>
-																						<key>operation_3</key>
-																						<dict>
-																							<key>value</key>
-																							<integer>4</integer>
-																						</dict>
-																					</dict>
-																					<key>numberOfOperations</key>
-																					<integer>3</integer>
-																					<key>operationCount</key>
-																					<integer>3</integer>
-																					<key>userInfo</key>
-																					<data>
-								BAtzdHJlYW10
-								eXBlZIHoA4QB
-								QISEhBNOU011
-								dGFibGVEaWN0
-								aW9uYXJ5AISE
-								DE5TRGljdGlv
-								bmFyeQCEhAhO
-								U09iamVjdACF
-								hAFpAZKEhIQI
-								TlNTdHJpbmcB
-								lYQBKwhwb3Np
-								dGlvboaShISE
-								B05TVmFsdWUA
-								lYQBKoSEDHtD
-								R1BvaW50PWRk
-								fZuBtACB9gCG
-								hg==
+								fZuBBwFahoY=
 																					</data>
 																					<key>version</key>
 																					<integer>1</integer>
@@ -2851,11 +2589,10 @@ function n_rng(flt) {
 								bmeGkoSam4SE
 								DHtDR1BvaW50
 								PWRkfZ2DAAAA
-								AAAYeECDAAAA
-								AACQY0CGkoSX
-								mAhwb3NpdGlv
-								boaShJqboJ0L
-								gVn/hoY=
+								AADgUUA8hpKE
+								l5gIcG9zaXRp
+								b26GkoSam6Cd
+								C4FZ/4aG
 																		</data>
 																	</dict>
 																</dict>
@@ -3094,17 +2831,17 @@ function n_rng(flt) {
 								U09iamVjdACF
 								hAFpA5KEhIQI
 								TlNTdHJpbmcB
-								lYQBKwlzY3Jv
-								bGxpbmeGkoSE
-								hAdOU1ZhbHVl
-								AJWEASqEhAx7
-								Q0dQb2ludD1k
-								ZH2bgwAAAAAA
-								IFxAgwAAAAAA
-								QEBAhpKEl5gI
-								cG9zaXRpb26G
-								koSZmpqbgVX/
-								6YaShJeYCnpv
+								lYQBKwhwb3Np
+								dGlvboaShISE
+								B05TVmFsdWUA
+								lYQBKoSEDHtD
+								R1BvaW50PWRk
+								fZuBVf/phpKE
+								l5gJc2Nyb2xs
+								aW5nhpKEmZqa
+								m4MAAAAAACBc
+								QIMAAAAAAEBA
+								QIaShJeYCnpv
 								b21GYWN0b3KG
 								koSEhAhOU051
 								bWJlcgCZmoSE
