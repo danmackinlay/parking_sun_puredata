@@ -5,7 +5,7 @@
 	<key>aspectRatio</key>
 	<real>1.3333333730697632</real>
 	<key>editorViewerWindow</key>
-	<string>218 436 512 430 0 0 1440 878 </string>
+	<string>218 163 876 703 0 0 1440 878 </string>
 	<key>frameworkVersion</key>
 	<string>{156.28}</string>
 	<key>portAttributes</key>
@@ -37,6 +37,116 @@
 					<key>sourcePort</key>
 					<string>outputObjects</string>
 				</dict>
+				<key>connection_10</key>
+				<dict>
+					<key>destinationNode</key>
+					<string>Math_1</string>
+					<key>destinationPort</key>
+					<string>inputValue</string>
+					<key>sourceNode</key>
+					<string>ScreenInfo_1</string>
+					<key>sourcePort</key>
+					<string>outputPixelsHigh</string>
+				</dict>
+				<key>connection_11</key>
+				<dict>
+					<key>destinationNode</key>
+					<string>Math_2</string>
+					<key>destinationPort</key>
+					<string>inputValue</string>
+					<key>sourceNode</key>
+					<string>ScreenInfo_1</string>
+					<key>sourcePort</key>
+					<string>outputPixelsHigh</string>
+				</dict>
+				<key>connection_12</key>
+				<dict>
+					<key>destinationNode</key>
+					<string>Math_3</string>
+					<key>destinationPort</key>
+					<string>inputValue</string>
+					<key>sourceNode</key>
+					<string>ScreenInfo_1</string>
+					<key>sourcePort</key>
+					<string>outputPixelsHigh</string>
+				</dict>
+				<key>connection_13</key>
+				<dict>
+					<key>destinationNode</key>
+					<string>Math_4</string>
+					<key>destinationPort</key>
+					<string>inputValue</string>
+					<key>sourceNode</key>
+					<string>ScreenInfo_1</string>
+					<key>sourcePort</key>
+					<string>outputPixelsHigh</string>
+				</dict>
+				<key>connection_14</key>
+				<dict>
+					<key>destinationNode</key>
+					<string>ImageCrop_3</string>
+					<key>destinationPort</key>
+					<string>inputRectangle_Y</string>
+					<key>sourceNode</key>
+					<string>Math_1</string>
+					<key>sourcePort</key>
+					<string>outputValue</string>
+				</dict>
+				<key>connection_15</key>
+				<dict>
+					<key>destinationNode</key>
+					<string>ImageCrop_4</string>
+					<key>destinationPort</key>
+					<string>inputRectangle_Y</string>
+					<key>sourceNode</key>
+					<string>Math_2</string>
+					<key>sourcePort</key>
+					<string>outputValue</string>
+				</dict>
+				<key>connection_16</key>
+				<dict>
+					<key>destinationNode</key>
+					<string>ImageCrop_5</string>
+					<key>destinationPort</key>
+					<string>inputRectangle_Y</string>
+					<key>sourceNode</key>
+					<string>Math_3</string>
+					<key>sourcePort</key>
+					<string>outputValue</string>
+				</dict>
+				<key>connection_17</key>
+				<dict>
+					<key>destinationNode</key>
+					<string>ImageCrop_6</string>
+					<key>destinationPort</key>
+					<string>inputRectangle_Y</string>
+					<key>sourceNode</key>
+					<string>Math_4</string>
+					<key>sourcePort</key>
+					<string>outputValue</string>
+				</dict>
+				<key>connection_18</key>
+				<dict>
+					<key>destinationNode</key>
+					<string>ImageCrop_3</string>
+					<key>destinationPort</key>
+					<string>inputImage</string>
+					<key>sourceNode</key>
+					<string>Patch_6</string>
+					<key>sourcePort</key>
+					<string>multiimage</string>
+				</dict>
+				<key>connection_19</key>
+				<dict>
+					<key>destinationNode</key>
+					<string>ImageCrop_4</string>
+					<key>destinationPort</key>
+					<string>inputImage</string>
+					<key>sourceNode</key>
+					<string>Patch_6</string>
+					<key>sourcePort</key>
+					<string>multiimage</string>
+				</dict>
 				<key>connection_2</key>
 				<dict>
 					<key>destinationNode</key>
@@ -47,6 +157,17 @@
 					<string>JavaScript_2</string>
 					<key>sourcePort</key>
 					<string>voice0</string>
+				</dict>
+				<key>connection_20</key>
+				<dict>
+					<key>destinationNode</key>
+					<string>ImageCrop_5</string>
+					<key>destinationPort</key>
+					<string>inputImage</string>
+					<key>sourceNode</key>
+					<string>Patch_6</string>
+					<key>sourcePort</key>
+					<string>multiimage</string>
 				</dict>
 				<key>connection_21</key>
 				<dict>
@@ -92,6 +213,50 @@
 					<key>sourcePort</key>
 					<string>output</string>
 				</dict>
+				<key>connection_25</key>
+				<dict>
+					<key>destinationNode</key>
+					<string>ImageCrop_6</string>
+					<key>destinationPort</key>
+					<string>inputImage</string>
+					<key>sourceNode</key>
+					<string>Patch_6</string>
+					<key>sourcePort</key>
+					<string>multiimage</string>
+				</dict>
+				<key>connection_26</key>
+				<dict>
+					<key>destinationNode</key>
+					<string>Patch_2</string>
+					<key>destinationPort</key>
+					<string>Background_Image</string>
+					<key>sourceNode</key>
+					<string>ImageCrop_4</string>
+					<key>sourcePort</key>
+					<string>outputImage</string>
+				</dict>
+				<key>connection_27</key>
+				<dict>
+					<key>destinationNode</key>
+					<string>Patch_3</string>
+					<key>destinationPort</key>
+					<string>Background_Image</string>
+					<key>sourceNode</key>
+					<string>ImageCrop_5</string>
+					<key>sourcePort</key>
+					<string>outputImage</string>
+				</dict>
+				<key>connection_28</key>
+				<dict>
+					<key>destinationNode</key>
+					<string>Patch_4</string>
+					<key>destinationPort</key>
+					<string>Background_Image</string>
+					<key>sourceNode</key>
+					<string>ImageCrop_6</string>
+					<key>sourcePort</key>
+					<string>outputImage</string>
+				</dict>
 				<key>connection_3</key>
 				<dict>
 					<key>destinationNode</key>
@@ -99,9 +264,9 @@
 					<key>destinationPort</key>
 					<string>Image</string>
 					<key>sourceNode</key>
-					<string>Patch_6</string>
+					<string>ImageCrop_1</string>
 					<key>sourcePort</key>
-					<string>Output_Image</string>
+					<string>outputImage</string>
 				</dict>
 				<key>connection_30</key>
 				<dict>
@@ -143,7 +308,7 @@
 					<key>destinationPort</key>
 					<string>Background_Image</string>
 					<key>sourceNode</key>
-					<string>ImageCrop_2</string>
+					<string>ImageCrop_3</string>
 					<key>sourcePort</key>
 					<string>outputImage</string>
 				</dict>
@@ -154,7 +319,7 @@
 					<key>destinationPort</key>
 					<string>inputImage_proxy_1</string>
 					<key>sourceNode</key>
-					<string>Patch_1</string>
+					<string>Patch_4</string>
 					<key>sourcePort</key>
 					<string>Image_1</string>
 				</dict>
@@ -168,6 +333,39 @@
 					<string>ConstantColorGenerator_1</string>
 					<key>sourcePort</key>
 					<string>outputImage</string>
+				</dict>
+				<key>connection_7</key>
+				<dict>
+					<key>destinationNode</key>
+					<string>ImageCrop_1</string>
+					<key>destinationPort</key>
+					<string>inputRectangle_Z</string>
+					<key>sourceNode</key>
+					<string>ScreenInfo_1</string>
+					<key>sourcePort</key>
+					<string>outputPixelsWide</string>
+				</dict>
+				<key>connection_8</key>
+				<dict>
+					<key>destinationNode</key>
+					<string>ImageCrop_1</string>
+					<key>destinationPort</key>
+					<string>inputRectangle_W</string>
+					<key>sourceNode</key>
+					<string>ScreenInfo_1</string>
+					<key>sourcePort</key>
+					<string>outputPixelsHigh</string>
+				</dict>
+				<key>connection_9</key>
+				<dict>
+					<key>destinationNode</key>
+					<string>ImageCrop_1</string>
+					<key>destinationPort</key>
+					<string>inputImage</string>
+					<key>sourceNode</key>
+					<string>Patch_6</string>
+					<key>sourcePort</key>
+					<string>multiimage</string>
 				</dict>
 			</dict>
 			<key>nodes</key>
@@ -332,10 +530,11 @@ function n_rng(flt) {
 						hBNOU011dGFibGVEaWN0aW9uYXJ5
 						AISEDE5TRGljdGlvbmFyeQCEhAhO
 						U09iamVjdACFhAFpApKEhIQITlNT
-						dHJpbmcBlYQBKwRuYW1lhpKEl5gG
-						cm91dGVyhpKEl5gIcG9zaXRpb26G
-						koSEhAdOU1ZhbHVlAJWEASqEhAx7
-						Q0dQb2ludD1kZH2bgR/+gXH/hoY=
+						dHJpbmcBlYQBKwRuYW1lhpKEl5gM
+						dm9pY2VfcGFja2VyhpKEl5gIcG9z
+						aXRpb26GkoSEhAdOU1ZhbHVlAJWE
+						ASqEhAx7Q0dQb2ludD1kZH2bgR/+
+						gXH/hoY=
 						</data>
 						<key>version</key>
 						<integer>1</integer>
@@ -401,7 +600,7 @@ function n_rng(flt) {
 							<key>input</key>
 							<dict>
 								<key>value</key>
-								<integer>17</integer>
+								<integer>21</integer>
 							</dict>
 						</dict>
 						<key>indexLabels</key>
@@ -535,6 +734,61 @@ function n_rng(flt) {
 								<key>sourcePort</key>
 								<string>Image</string>
 							</dict>
+							<key>connection_10</key>
+							<dict>
+								<key>destinationNode</key>
+								<string>Math_2</string>
+								<key>destinationPort</key>
+								<string>operand_1</string>
+								<key>sourceNode</key>
+								<string>StructureMember_key_1</string>
+								<key>sourcePort</key>
+								<string>outputMember</string>
+							</dict>
+							<key>connection_11</key>
+							<dict>
+								<key>destinationNode</key>
+								<string>Math_2</string>
+								<key>destinationPort</key>
+								<string>inputValue</string>
+								<key>sourceNode</key>
+								<string>ScreenInfo_1</string>
+								<key>sourcePort</key>
+								<string>outputPixelsHigh</string>
+							</dict>
+							<key>connection_12</key>
+							<dict>
+								<key>destinationNode</key>
+								<string>ImageAccumulator_1</string>
+								<key>destinationPort</key>
+								<string>inputDirtyOriginY</string>
+								<key>sourceNode</key>
+								<string>Math_2</string>
+								<key>sourcePort</key>
+								<string>outputValue</string>
+							</dict>
+							<key>connection_2</key>
+							<dict>
+								<key>destinationNode</key>
+								<string>ImageAccumulator_1</string>
+								<key>destinationPort</key>
+								<string>inputWidth</string>
+								<key>sourceNode</key>
+								<string>ScreenInfo_1</string>
+								<key>sourcePort</key>
+								<string>outputPixelsWide</string>
+							</dict>
+							<key>connection_3</key>
+							<dict>
+								<key>destinationNode</key>
+								<string>Math_1</string>
+								<key>destinationPort</key>
+								<string>inputValue</string>
+								<key>sourceNode</key>
+								<string>ScreenInfo_1</string>
+								<key>sourcePort</key>
+								<string>outputPixelsHigh</string>
+							</dict>
 							<key>connection_4</key>
 							<dict>
 								<key>destinationNode</key>
@@ -546,12 +800,56 @@ function n_rng(flt) {
 								<key>sourcePort</key>
 								<string>output</string>
 							</dict>
+							<key>connection_5</key>
+							<dict>
+								<key>destinationNode</key>
+								<string>ImageAccumulator_1</string>
+								<key>destinationPort</key>
+								<string>inputHeight</string>
+								<key>sourceNode</key>
+								<string>Math_1</string>
+								<key>sourcePort</key>
+								<string>outputValue</string>
+							</dict>
 							<key>connection_6</key>
 							<dict>
 								<key>destinationNode</key>
 								<string>Patch_1</string>
 								<key>destinationPort</key>
 								<string>Structure</string>
+								<key>sourceNode</key>
+								<string>Splitter_2</string>
+								<key>sourcePort</key>
+								<string>output</string>
+							</dict>
+							<key>connection_7</key>
+							<dict>
+								<key>destinationNode</key>
+								<string>ImageAccumulator_1</string>
+								<key>destinationPort</key>
+								<string>inputDirtyWidth</string>
+								<key>sourceNode</key>
+								<string>ScreenInfo_1</string>
+								<key>sourcePort</key>
+								<string>outputPixelsWide</string>
+							</dict>
+							<key>connection_8</key>
+							<dict>
+								<key>destinationNode</key>
+								<string>ImageAccumulator_1</string>
+								<key>destinationPort</key>
+								<string>inputDirtyHeight</string>
+								<key>sourceNode</key>
+								<string>ScreenInfo_1</string>
+								<key>sourcePort</key>
+								<string>outputPixelsHigh</string>
+							</dict>
+							<key>connection_9</key>
+							<dict>
+								<key>destinationNode</key>
+								<string>StructureMember_key_1</string>
+								<key>destinationPort</key>
+								<string>inputStructure</string>
 								<key>sourceNode</key>
 								<string>Splitter_2</string>
 								<key>sourcePort</key>
@@ -769,7 +1067,7 @@ function n_rng(flt) {
 												<key>colorCorrection</key>
 												<integer>1</integer>
 												<key>height</key>
-												<integer>384</integer>
+												<integer>657</integer>
 												<key>ivarInputPortStates</key>
 												<dict>
 													<key>inputMipmaps</key>
@@ -1814,17 +2112,17 @@ function n_rng(flt) {
 								U09iamVjdACF
 								hAFpA5KEhIQI
 								TlNTdHJpbmcB
-								lYQBKwhwb3Np
-								dGlvboaShISE
-								B05TVmFsdWUA
-								lYQBKoSEDHtD
-								R1BvaW50PWRk
-								fZuB/wGVhpKE
-								l5gJc2Nyb2xs
-								aW5nhpKEmZqa
-								m4MAAAAAALBu
-								QIMAAAAAABBn
-								QIaShJeYCnpv
+								lYQBKwlzY3Jv
+								bGxpbmeGkoSE
+								hAdOU1ZhbHVl
+								AJWEASqEhAx7
+								Q0dQb2ludD1k
+								ZH2bgwAAAAAA
+								sG5AgwAAAAAA
+								EGdAhpKEl5gI
+								cG9zaXRpb26G
+								koSZmpqbgf8B
+								lYaShJeYCnpv
 								b21GYWN0b3KG
 								koSEhAhOU051
 								bWJlcgCZmoSE
@@ -3441,17 +3739,17 @@ function n_rng(flt) {
 								U09iamVjdACF
 								hAFpA5KEhIQI
 								TlNTdHJpbmcB
-								lYQBKwhwb3Np
-								dGlvboaShISE
-								B05TVmFsdWUA
-								lYQBKoSEDHtD
-								R1BvaW50PWRk
-								fZuBVf/phpKE
-								l5gJc2Nyb2xs
-								aW5nhpKEmZqa
-								m4MAAAAAACBc
-								QIMAAAAAAEBA
-								QIaShJeYCnpv
+								lYQBKwlzY3Jv
+								bGxpbmeGkoSE
+								hAdOU1ZhbHVl
+								AJWEASqEhAx7
+								Q0dQb2ludD1k
+								ZH2bgwAAAAAA
+								IFxAgwAAAAAA
+								QEBAhpKEl5gI
+								cG9zaXRpb26G
+								koSZmpqbgVX/
+								6YaShJeYCnpv
 								b21GYWN0b3KG
 								koSEhAhOU051
 								bWJlcgCZmoSE
@@ -3559,7 +3857,7 @@ function n_rng(flt) {
 												<key>version</key>
 												<integer>1</integer>
 												<key>width</key>
-												<integer>512</integer>
+												<integer>876</integer>
 											</dict>
 										</dict>
 										<dict>
@@ -3721,7 +4019,7 @@ function n_rng(flt) {
 													<key>inputKey</key>
 													<dict>
 														<key>value</key>
-														<string>epicentre_distance</string>
+														<string>epicentre_y</string>
 													</dict>
 												</dict>
 												<key>userInfo</key>
@@ -3767,12 +4065,12 @@ function n_rng(flt) {
 													<key>inputTransform_ScaleX</key>
 													<dict>
 														<key>value</key>
-														<real>0.40000000000000002</real>
+														<real>0.33329999999999999</real>
 													</dict>
 													<key>inputTransform_ScaleY</key>
 													<dict>
 														<key>value</key>
-														<real>0.40000000000000002</real>
+														<real>0.33329999999999999</real>
 													</dict>
 												</dict>
 												<key>ivarInputPortStates</key>
@@ -3785,12 +4083,12 @@ function n_rng(flt) {
 													<key>inputTransform_ScaleX</key>
 													<dict>
 														<key>value</key>
-														<real>0.40000000000000002</real>
+														<real>0.33329999999999999</real>
 													</dict>
 													<key>inputTransform_ScaleY</key>
 													<dict>
 														<key>value</key>
-														<real>0.40000000000000002</real>
+														<real>0.33329999999999999</real>
 													</dict>
 												</dict>
 												<key>userInfo</key>
@@ -3829,7 +4127,7 @@ function n_rng(flt) {
 													<key>inputKey</key>
 													<dict>
 														<key>value</key>
-														<string>epicentre_angle</string>
+														<string>epicentre_x</string>
 													</dict>
 												</dict>
 												<key>userInfo</key>
@@ -5002,6 +5300,219 @@ function n_rng(flt) {
 									<integer>1</integer>
 								</dict>
 							</dict>
+							<dict>
+								<key>class</key>
+								<string>QCImageAccumulator</string>
+								<key>key</key>
+								<string>ImageAccumulator_1</string>
+								<key>state</key>
+								<dict>
+									<key>accumulatorContinuous</key>
+									<false/>
+									<key>accumulatorFormat</key>
+									<string>RGBA16</string>
+									<key>height</key>
+									<integer>3285</integer>
+									<key>ivarInputPortStates</key>
+									<dict>
+										<key>inputAccumulate</key>
+										<dict>
+											<key>value</key>
+											<true/>
+										</dict>
+										<key>inputDirtyOriginX</key>
+										<dict>
+											<key>value</key>
+											<real>0.0</real>
+										</dict>
+									</dict>
+									<key>userInfo</key>
+									<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwhwb3Np
+								dGlvboaShISE
+								B05TVmFsdWUA
+								lYQBKoSEDHtD
+								R1BvaW50PWRk
+								fZuBTQGBWf+G
+								hg==
+									</data>
+									<key>version</key>
+									<integer>1</integer>
+									<key>width</key>
+									<integer>876</integer>
+								</dict>
+							</dict>
+							<dict>
+								<key>class</key>
+								<string>QCScreenInfo</string>
+								<key>key</key>
+								<string>ScreenInfo_1</string>
+								<key>state</key>
+								<dict>
+									<key>cleanAperture</key>
+									<true/>
+									<key>userInfo</key>
+									<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwhwb3Np
+								dGlvboaShISE
+								B05TVmFsdWUA
+								lYQBKoSEDHtD
+								R1BvaW50PWRk
+								fZvkgQX/hoY=
+									</data>
+								</dict>
+							</dict>
+							<dict>
+								<key>class</key>
+								<string>QCMath</string>
+								<key>key</key>
+								<string>Math_1</string>
+								<key>state</key>
+								<dict>
+									<key>customInputPortStates</key>
+									<dict>
+										<key>operand_1</key>
+										<dict>
+											<key>value</key>
+											<real>5</real>
+										</dict>
+										<key>operation_1</key>
+										<dict>
+											<key>value</key>
+											<integer>2</integer>
+										</dict>
+									</dict>
+									<key>numberOfOperations</key>
+									<integer>1</integer>
+									<key>operationCount</key>
+									<integer>1</integer>
+									<key>userInfo</key>
+									<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwhwb3Np
+								dGlvboaShISE
+								B05TVmFsdWUA
+								lYQBKoSEDHtD
+								R1BvaW50PWRk
+								fZuB4QCBdv+G
+								hg==
+									</data>
+									<key>version</key>
+									<integer>1</integer>
+								</dict>
+							</dict>
+							<dict>
+								<key>class</key>
+								<string>QCStructureMember</string>
+								<key>identifier</key>
+								<string>key</string>
+								<key>key</key>
+								<string>StructureMember_key_1</string>
+								<key>state</key>
+								<dict>
+									<key>customInputPortStates</key>
+									<dict>
+										<key>inputKey</key>
+										<dict>
+											<key>value</key>
+											<string>voice_num</string>
+										</dict>
+									</dict>
+									<key>userInfo</key>
+									<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpApKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gJdm9p
+								Y2VfbnVthpKE
+								l5gIcG9zaXRp
+								b26GkoSEhAdO
+								U1ZhbHVlAJWE
+								ASqEhAx7Q0dQ
+								b2ludD1kZH2b
+								xZWGhg==
+									</data>
+								</dict>
+							</dict>
+							<dict>
+								<key>class</key>
+								<string>QCMath</string>
+								<key>key</key>
+								<string>Math_2</string>
+								<key>state</key>
+								<dict>
+									<key>customInputPortStates</key>
+									<dict>
+										<key>operation_1</key>
+										<dict>
+											<key>value</key>
+											<integer>2</integer>
+										</dict>
+									</dict>
+									<key>numberOfOperations</key>
+									<integer>1</integer>
+									<key>operationCount</key>
+									<integer>1</integer>
+									<key>userInfo</key>
+									<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwhwb3Np
+								dGlvboaShISE
+								B05TVmFsdWUA
+								lYQBKoSEDHtD
+								R1BvaW50PWRk
+								fZuB4ACmhoY=
+									</data>
+									<key>version</key>
+									<integer>1</integer>
+								</dict>
+							</dict>
 						</array>
 						<key>publishedInputPorts</key>
 						<array>
@@ -5093,6 +5604,33 @@ function n_rng(flt) {
 									</data>
 								</dict>
 							</dict>
+							<dict>
+								<key>key</key>
+								<string>multiimage</string>
+								<key>node</key>
+								<string>ImageAccumulator_1</string>
+								<key>port</key>
+								<string>outputImage</string>
+								<key>state</key>
+								<dict>
+									<key>userInfo</key>
+									<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gKbXVs
+								dGlpbWFnZYaG
+									</data>
+								</dict>
+							</dict>
 						</array>
 						<key>timebase</key>
 						<string>parent</string>
@@ -5107,9 +5645,9 @@ function n_rng(flt) {
 						YWx1ZQCVhAEqhIQBZpwBhpKEl5gE
 						bmFtZYaShJeYC29uZSBjaGFubmVs
 						hpKEl5gIcG9zaXRpb26GkoSam4SE
-						DHtDR1BvaW50PWRkfZ2B/P6Bff+G
+						DHtDR1BvaW50PWRkfZ2BsP6Bif+G
 						koSXmAlzY3JvbGxpbmeGkoSam6Cd
-						gwAAAAAAmHJAgwAAAAAA0GFAhoY=
+						gwAAAAAA8GpAgwAAAAAAoFhAhoY=
 						</data>
 					</dict>
 				</dict>
@@ -6228,10 +6766,458 @@ function n_rng(flt) {
 						YWx1ZQCVhAEqhIQBZpwBhpKEl5gE
 						bmFtZYaShJeYD21hc2sgYW5kIHJl
 						bmRlcoaShJeYCHBvc2l0aW9uhpKE
-						mpuEhAx7Q0dQb2ludD1kZH2dgaQB
+						mpuEhAx7Q0dQb2ludD1kZH2dgdEB
 						uYaShJeYCXNjcm9sbGluZ4aShJqb
 						oJ2DAAAAAADQa0CDAAAAAADwZECG
 						hg==
+						</data>
+					</dict>
+				</dict>
+				<dict>
+					<key>class</key>
+					<string>QCScreenInfo</string>
+					<key>key</key>
+					<string>ScreenInfo_1</string>
+					<key>state</key>
+					<dict>
+						<key>cleanAperture</key>
+						<true/>
+						<key>userInfo</key>
+						<data>
+						BAtzdHJlYW10eXBlZIHoA4QBQISE
+						hBNOU011dGFibGVEaWN0aW9uYXJ5
+						AISEDE5TRGljdGlvbmFyeQCEhAhO
+						U09iamVjdACFhAFpAZKEhIQITlNT
+						dHJpbmcBlYQBKwhwb3NpdGlvboaS
+						hISEB05TVmFsdWUAlYQBKoSEDHtD
+						R1BvaW50PWRkfZuBNP6BnQCGhg==
+						</data>
+					</dict>
+				</dict>
+				<dict>
+					<key>class</key>
+					<string>QCImageFilter</string>
+					<key>identifier</key>
+					<string>CICrop</string>
+					<key>key</key>
+					<string>ImageCrop_1</string>
+					<key>state</key>
+					<dict>
+						<key>customInputPortStates</key>
+						<dict>
+							<key>inputRectangle_X</key>
+							<dict>
+								<key>value</key>
+								<real>0.0</real>
+							</dict>
+							<key>inputRectangle_Y</key>
+							<dict>
+								<key>value</key>
+								<real>0.0</real>
+							</dict>
+						</dict>
+						<key>ivarInputPortStates</key>
+						<dict>
+							<key>inputRectangle_X</key>
+							<dict>
+								<key>value</key>
+								<real>0.0</real>
+							</dict>
+							<key>inputRectangle_Y</key>
+							<dict>
+								<key>value</key>
+								<real>0.0</real>
+							</dict>
+						</dict>
+						<key>userInfo</key>
+						<data>
+						BAtzdHJlYW10eXBlZIHoA4QBQISE
+						hBNOU011dGFibGVEaWN0aW9uYXJ5
+						AISEDE5TRGljdGlvbmFyeQCEhAhO
+						U09iamVjdACFhAFpAZKEhIQITlNT
+						dHJpbmcBlYQBKwhwb3NpdGlvboaS
+						hISEB05TVmFsdWUAlYQBKoSEDHtD
+						R1BvaW50PWRkfZuZYYaG
+						</data>
+					</dict>
+				</dict>
+				<dict>
+					<key>class</key>
+					<string>QCMath</string>
+					<key>key</key>
+					<string>Math_1</string>
+					<key>state</key>
+					<dict>
+						<key>customInputPortStates</key>
+						<dict>
+							<key>operand_1</key>
+							<dict>
+								<key>value</key>
+								<real>1</real>
+							</dict>
+							<key>operation_1</key>
+							<dict>
+								<key>value</key>
+								<integer>2</integer>
+							</dict>
+						</dict>
+						<key>numberOfOperations</key>
+						<integer>1</integer>
+						<key>operationCount</key>
+						<integer>1</integer>
+						<key>userInfo</key>
+						<data>
+						BAtzdHJlYW10eXBlZIHoA4QBQISE
+						hBNOU011dGFibGVEaWN0aW9uYXJ5
+						AISEDE5TRGljdGlvbmFyeQCEhAhO
+						U09iamVjdACFhAFpAZKEhIQITlNT
+						dHJpbmcBlYQBKwhwb3NpdGlvboaS
+						hISEB05TVmFsdWUAlYQBKoSEDHtD
+						R1BvaW50PWRkfZuBI/+BogCGhg==
+						</data>
+						<key>version</key>
+						<integer>1</integer>
+					</dict>
+				</dict>
+				<dict>
+					<key>class</key>
+					<string>QCMath</string>
+					<key>key</key>
+					<string>Math_2</string>
+					<key>state</key>
+					<dict>
+						<key>customInputPortStates</key>
+						<dict>
+							<key>operand_1</key>
+							<dict>
+								<key>value</key>
+								<real>2</real>
+							</dict>
+							<key>operation_1</key>
+							<dict>
+								<key>value</key>
+								<integer>2</integer>
+							</dict>
+						</dict>
+						<key>numberOfOperations</key>
+						<integer>1</integer>
+						<key>operationCount</key>
+						<integer>1</integer>
+						<key>userInfo</key>
+						<data>
+						BAtzdHJlYW10eXBlZIHoA4QBQISE
+						hBNOU011dGFibGVEaWN0aW9uYXJ5
+						AISEDE5TRGljdGlvbmFyeQCEhAhO
+						U09iamVjdACFhAFpAZKEhIQITlNT
+						dHJpbmcBlYQBKwhwb3NpdGlvboaS
+						hISEB05TVmFsdWUAlYQBKoSEDHtD
+						R1BvaW50PWRkfZuBJP+BugCGhg==
+						</data>
+						<key>version</key>
+						<integer>1</integer>
+					</dict>
+				</dict>
+				<dict>
+					<key>class</key>
+					<string>QCMath</string>
+					<key>key</key>
+					<string>Math_3</string>
+					<key>state</key>
+					<dict>
+						<key>customInputPortStates</key>
+						<dict>
+							<key>operand_1</key>
+							<dict>
+								<key>value</key>
+								<real>3</real>
+							</dict>
+							<key>operation_1</key>
+							<dict>
+								<key>value</key>
+								<integer>2</integer>
+							</dict>
+						</dict>
+						<key>numberOfOperations</key>
+						<integer>1</integer>
+						<key>operationCount</key>
+						<integer>1</integer>
+						<key>userInfo</key>
+						<data>
+						BAtzdHJlYW10eXBlZIHoA4QBQISE
+						hBNOU011dGFibGVEaWN0aW9uYXJ5
+						AISEDE5TRGljdGlvbmFyeQCEhAhO
+						U09iamVjdACFhAFpAZKEhIQITlNT
+						dHJpbmcBlYQBKwhwb3NpdGlvboaS
+						hISEB05TVmFsdWUAlYQBKoSEDHtD
+						R1BvaW50PWRkfZuBJf+B0gCGhg==
+						</data>
+						<key>version</key>
+						<integer>1</integer>
+					</dict>
+				</dict>
+				<dict>
+					<key>class</key>
+					<string>QCMath</string>
+					<key>key</key>
+					<string>Math_4</string>
+					<key>state</key>
+					<dict>
+						<key>customInputPortStates</key>
+						<dict>
+							<key>operand_1</key>
+							<dict>
+								<key>value</key>
+								<real>4</real>
+							</dict>
+							<key>operation_1</key>
+							<dict>
+								<key>value</key>
+								<integer>2</integer>
+							</dict>
+						</dict>
+						<key>numberOfOperations</key>
+						<integer>1</integer>
+						<key>operationCount</key>
+						<integer>1</integer>
+						<key>userInfo</key>
+						<data>
+						BAtzdHJlYW10eXBlZIHoA4QBQISE
+						hBNOU011dGFibGVEaWN0aW9uYXJ5
+						AISEDE5TRGljdGlvbmFyeQCEhAhO
+						U09iamVjdACFhAFpAZKEhIQITlNT
+						dHJpbmcBlYQBKwhwb3NpdGlvboaS
+						hISEB05TVmFsdWUAlYQBKoSEDHtD
+						R1BvaW50PWRkfZuBJ/+B6gCGhg==
+						</data>
+						<key>version</key>
+						<integer>1</integer>
+					</dict>
+				</dict>
+				<dict>
+					<key>class</key>
+					<string>QCImageFilter</string>
+					<key>identifier</key>
+					<string>CICrop</string>
+					<key>key</key>
+					<string>ImageCrop_3</string>
+					<key>state</key>
+					<dict>
+						<key>customInputPortStates</key>
+						<dict>
+							<key>inputRectangle_W</key>
+							<dict>
+								<key>value</key>
+								<real>0.0</real>
+							</dict>
+							<key>inputRectangle_X</key>
+							<dict>
+								<key>value</key>
+								<real>0.0</real>
+							</dict>
+							<key>inputRectangle_Z</key>
+							<dict>
+								<key>value</key>
+								<real>0.0</real>
+							</dict>
+						</dict>
+						<key>ivarInputPortStates</key>
+						<dict>
+							<key>inputRectangle_W</key>
+							<dict>
+								<key>value</key>
+								<real>0.0</real>
+							</dict>
+							<key>inputRectangle_X</key>
+							<dict>
+								<key>value</key>
+								<real>0.0</real>
+							</dict>
+							<key>inputRectangle_Z</key>
+							<dict>
+								<key>value</key>
+								<real>0.0</real>
+							</dict>
+						</dict>
+						<key>userInfo</key>
+						<data>
+						BAtzdHJlYW10eXBlZIHoA4QBQISE
+						hBNOU011dGFibGVEaWN0aW9uYXJ5
+						AISEDE5TRGljdGlvbmFyeQCEhAhO
+						U09iamVjdACFhAFpAZKEhIQITlNT
+						dHJpbmcBlYQBKwhwb3NpdGlvboaS
+						hISEB05TVmFsdWUAlYQBKoSEDHtD
+						R1BvaW50PWRkfZubgbUAhoY=
+						</data>
+					</dict>
+				</dict>
+				<dict>
+					<key>class</key>
+					<string>QCImageFilter</string>
+					<key>identifier</key>
+					<string>CICrop</string>
+					<key>key</key>
+					<string>ImageCrop_4</string>
+					<key>state</key>
+					<dict>
+						<key>customInputPortStates</key>
+						<dict>
+							<key>inputRectangle_W</key>
+							<dict>
+								<key>value</key>
+								<real>0.0</real>
+							</dict>
+							<key>inputRectangle_X</key>
+							<dict>
+								<key>value</key>
+								<real>0.0</real>
+							</dict>
+							<key>inputRectangle_Z</key>
+							<dict>
+								<key>value</key>
+								<real>0.0</real>
+							</dict>
+						</dict>
+						<key>ivarInputPortStates</key>
+						<dict>
+							<key>inputRectangle_W</key>
+							<dict>
+								<key>value</key>
+								<real>0.0</real>
+							</dict>
+							<key>inputRectangle_X</key>
+							<dict>
+								<key>value</key>
+								<real>0.0</real>
+							</dict>
+							<key>inputRectangle_Z</key>
+							<dict>
+								<key>value</key>
+								<real>0.0</real>
+							</dict>
+						</dict>
+						<key>userInfo</key>
+						<data>
+						BAtzdHJlYW10eXBlZIHoA4QBQISE
+						hBNOU011dGFibGVEaWN0aW9uYXJ5
+						AISEDE5TRGljdGlvbmFyeQCEhAhO
+						U09iamVjdACFhAFpAZKEhIQITlNT
+						dHJpbmcBlYQBKwhwb3NpdGlvboaS
+						hISEB05TVmFsdWUAlYQBKoSEDHtD
+						R1BvaW50PWRkfZuXgQkBhoY=
+						</data>
+					</dict>
+				</dict>
+				<dict>
+					<key>class</key>
+					<string>QCImageFilter</string>
+					<key>identifier</key>
+					<string>CICrop</string>
+					<key>key</key>
+					<string>ImageCrop_5</string>
+					<key>state</key>
+					<dict>
+						<key>customInputPortStates</key>
+						<dict>
+							<key>inputRectangle_W</key>
+							<dict>
+								<key>value</key>
+								<real>0.0</real>
+							</dict>
+							<key>inputRectangle_X</key>
+							<dict>
+								<key>value</key>
+								<real>0.0</real>
+							</dict>
+							<key>inputRectangle_Z</key>
+							<dict>
+								<key>value</key>
+								<real>0.0</real>
+							</dict>
+						</dict>
+						<key>ivarInputPortStates</key>
+						<dict>
+							<key>inputRectangle_W</key>
+							<dict>
+								<key>value</key>
+								<real>0.0</real>
+							</dict>
+							<key>inputRectangle_X</key>
+							<dict>
+								<key>value</key>
+								<real>0.0</real>
+							</dict>
+							<key>inputRectangle_Z</key>
+							<dict>
+								<key>value</key>
+								<real>0.0</real>
+							</dict>
+						</dict>
+						<key>userInfo</key>
+						<data>
+						BAtzdHJlYW10eXBlZIHoA4QBQISE
+						hBNOU011dGFibGVEaWN0aW9uYXJ5
+						AISEDE5TRGljdGlvbmFyeQCEhAhO
+						U09iamVjdACFhAFpAZKEhIQITlNT
+						dHJpbmcBlYQBKwhwb3NpdGlvboaS
+						hISEB05TVmFsdWUAlYQBKoSEDHtD
+						R1BvaW50PWRkfZuZgV0BhoY=
+						</data>
+					</dict>
+				</dict>
+				<dict>
+					<key>class</key>
+					<string>QCImageFilter</string>
+					<key>identifier</key>
+					<string>CICrop</string>
+					<key>key</key>
+					<string>ImageCrop_6</string>
+					<key>state</key>
+					<dict>
+						<key>customInputPortStates</key>
+						<dict>
+							<key>inputRectangle_W</key>
+							<dict>
+								<key>value</key>
+								<real>0.0</real>
+							</dict>
+							<key>inputRectangle_X</key>
+							<dict>
+								<key>value</key>
+								<real>0.0</real>
+							</dict>
+							<key>inputRectangle_Z</key>
+							<dict>
+								<key>value</key>
+								<real>0.0</real>
+							</dict>
+						</dict>
+						<key>ivarInputPortStates</key>
+						<dict>
+							<key>inputRectangle_W</key>
+							<dict>
+								<key>value</key>
+								<real>0.0</real>
+							</dict>
+							<key>inputRectangle_X</key>
+							<dict>
+								<key>value</key>
+								<real>0.0</real>
+							</dict>
+							<key>inputRectangle_Z</key>
+							<dict>
+								<key>value</key>
+								<real>0.0</real>
+							</dict>
+						</dict>
+						<key>userInfo</key>
+						<data>
+						BAtzdHJlYW10eXBlZIHoA4QBQISE
+						hBNOU011dGFibGVEaWN0aW9uYXJ5
+						AISEDE5TRGljdGlvbmFyeQCEhAhO
+						U09iamVjdACFhAFpAZKEhIQITlNT
+						dHJpbmcBlYQBKwhwb3NpdGlvboaS
+						hISEB05TVmFsdWUAlYQBKoSEDHtD
+						R1BvaW50PWRkfZubgbEBhoY=
 						</data>
 					</dict>
 				</dict>
@@ -6244,8 +7230,8 @@ function n_rng(flt) {
 			YXJ5AISEDE5TRGljdGlvbmFyeQCEhAhOU09iamVjdACFhAFpA5KE
 			hIQITlNTdHJpbmcBlYQBKwhwb3NpdGlvboaShISEB05TVmFsdWUA
 			lYQBKoSEDHtDR1BvaW50PWRkfZsAAYaShJeYCXNjcm9sbGluZ4aS
-			hJmampuDAAAAAACwacCDAAAAAAAwZkCGkoSXmAp6b29tRmFjdG9y
-			hpKEhIQITlNOdW1iZXIAmZqEhAFmnQGGhg==
+			hJmampuDAAAAAABAScCBwACGkoSXmAp6b29tRmFjdG9yhpKEhIQI
+			TlNOdW1iZXIAmZqEhAFmnQGGhg==
 			</data>
 		</dict>
 	</dict>
