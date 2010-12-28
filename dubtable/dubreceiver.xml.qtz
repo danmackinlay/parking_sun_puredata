@@ -216,7 +216,9 @@ function (__structure voice_struct, __string debug) main (__structure inputTuios
 				result.voice_struct[out_voice_num].sub_voices.push(struct);
 			} else { //'fx info' in higher voice #s
 				Log("fx");
-
+				//look out for unknown cids!
+				if (typeof fx_cid_map[to_copy.c_id]!=="number"){continue;}
+				//rock on.
 				out_voice_num = fx_cid_map[to_copy.c_id];
 				Log("ov"+out_voice_num);
 				_debugstring = _debugstring+"--"+out_voice_num;
