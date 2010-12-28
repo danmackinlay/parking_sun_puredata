@@ -5,3 +5,4 @@ check scaling of feedback when screen resized
 clone into the full 5 voices
 kill spaghetti mapping structures
 punch holes in the sides of cubes
+fix peak mapping of param
