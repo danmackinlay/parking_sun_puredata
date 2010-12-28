@@ -207,16 +207,32 @@ function (__structure voice_struct, __string debug) main (__structure inputTuios
 
 function voice_create (voice_num) {
 	var new_voice = new Object();
-	var epicentre_angle = 360.0* voice_num/NUM_VOICES;
-	var epicentre_distance =1;
-	// hack to make the edge bits fit on screen in the 
-	if ((voice_num===1) || (voice_num===4)) {
-		epicentre_distance =0.5;
+	var epicentre_angle = voice_num/NUM_VOICES;
+	var epicentre_distance = 1;
+	switch(voice_num) {
+		case 0:
+  			epicentre_distance = .25;
+  			break;
+		case 1:
+			epicentre_angle = .3;
+	  		epicentre_distance = .35;
+	  		break;
+		case 2:
+			epicentre_angle = .5;
+	  		epicentre_distance = .4;
+	  		break;
+		case 3:
+	  		epicentre_distance = .6;
+	  		break;
+	  	case 4:
+	  		epicentre_distance = .5;
+	  		break;
+		default:
+			break;
 	}
-	epicentre_distance = epicentre_distance*0.5;
-	new_voice.epicentre_x = Math.sin(epicentre_angle)*epicentre_distance;
-	new_voice.epicentre_y = Math.cos(epicentre_angle)*epicentre_distance;
-	new_voice.epicentre_angle = epicentre_angle;
+	new_voice.epicentre_x = Math.sin(epicentre_angle*Math.PI*2)*epicentre_distance;
+	new_voice.epicentre_y = Math.cos(epicentre_angle*Math.PI*2)*epicentre_distance;
+	new_voice.epicentre_angle = epicentre_angle*360;
 	new_voice.epicentre_distance = epicentre_distance;	
 	new_voice.sub_voices = [];
 	new_voice.voice_num = voice_num;
@@ -229,17 +245,21 @@ function subvoice_decorate(v_struct) {
 	var sub_voice_num = v_struct.sub_voice_num;
 	var rand = n_rng(100*voice_num+sub_voice_num);
 	Log(rand);
-	v_struct.base_rot_x = 15*(20*rand-1.0);
+	v_struct.base_rot_x = (2*rand-1.0)*v_struct.angle;
 	rand = n_rng(rand);
-	v_struct.base_rot_y = 15*(20*rand-1.0);
+	v_struct.base_rot_y = (2*rand-1.0)*v_struct.angle;
 	rand = n_rng(rand);
-	v_struct.base_rot_z = 15*(20*rand-1.0);
+	v_struct.base_rot_z = (2*rand-1.0)*v_struct.angle;
 	rand = n_rng(rand);
 	v_struct.x_size = 0.25*(0.5*rand+1.0);
 	rand = n_rng(rand);
 	v_struct.y_size = 0.25*(0.5*rand+1.0);
 	rand = n_rng(rand);
 	v_struct.z_size = 0.25*(0.5*rand+1.0);
+	rand = n_rng(rand);
+	v_struct.x_offset = 0.1*((0.5*rand+1.0)+2*v_struct.xpos);
+	rand = n_rng(rand);
+	v_struct.y_offset = 0.1*((0.5*rand+1.0)+2*v_struct.ypos);
 	return v_struct;
 }
 
@@ -709,6 +729,17 @@ function n_rng(flt) {
 																				<key>sourcePort</key>
 																				<string>outputMember</string>
 																			</dict>
+																			<key>connection_11</key>
+																			<dict>
+																				<key>destinationNode</key>
+																				<string>StructureMember_key_13</string>
+																				<key>destinationPort</key>
+																				<string>inputStructure</string>
+																				<key>sourceNode</key>
+																				<string>StructureMember_index_1</string>
+																				<key>sourcePort</key>
+																				<string>outputMember</string>
+																			</dict>
 																			<key>connection_12</key>
 																			<dict>
 																				<key>destinationNode</key>
@@ -738,7 +769,7 @@ function n_rng(flt) {
 																				<key>destinationPort</key>
 																				<string>inputRotateX</string>
 																				<key>sourceNode</key>
-																				<string>StructureMember_key_3</string>
+																				<string>StructureMember_key_13</string>
 																				<key>sourcePort</key>
 																				<string>outputMember</string>
 																			</dict>
@@ -778,11 +809,11 @@ function n_rng(flt) {
 																			<key>connection_18</key>
 																			<dict>
 																				<key>destinationNode</key>
-																				<string>Camera_1</string>
+																				<string>StructureMember_key_14</string>
 																				<key>destinationPort</key>
-																				<string>inputRotateZ</string>
+																				<string>inputStructure</string>
 																				<key>sourceNode</key>
-																				<string>StructureMember_key_9</string>
+																				<string>StructureMember_index_1</string>
 																				<key>sourcePort</key>
 																				<string>outputMember</string>
 																			</dict>
@@ -811,22 +842,22 @@ function n_rng(flt) {
 																			<key>connection_20</key>
 																			<dict>
 																				<key>destinationNode</key>
-																				<string>Math_1</string>
+																				<string>StructureMember_key_15</string>
 																				<key>destinationPort</key>
-																				<string>inputValue</string>
+																				<string>inputStructure</string>
 																				<key>sourceNode</key>
-																				<string>StructureMember_key_1</string>
+																				<string>StructureMember_index_1</string>
 																				<key>sourcePort</key>
 																				<string>outputMember</string>
 																			</dict>
 																			<key>connection_21</key>
 																			<dict>
 																				<key>destinationNode</key>
-																				<string>Math_2</string>
+																				<string>Math_1</string>
 																				<key>destinationPort</key>
 																				<string>inputValue</string>
 																				<key>sourceNode</key>
-																				<string>StructureMember_key_2</string>
+																				<string>StructureMember_key_14</string>
 																				<key>sourcePort</key>
 																				<string>outputMember</string>
 																			</dict>
@@ -939,6 +970,17 @@ function n_rng(flt) {
 																				<string>IteratorVariables_1</string>
 																				<key>sourcePort</key>
 																				<string>outputIndex</string>
+																			</dict>
+																			<key>connection_31</key>
+																			<dict>
+																				<key>destinationNode</key>
+																				<string>Math_2</string>
+																				<key>destinationPort</key>
+																				<string>inputValue</string>
+																				<key>sourceNode</key>
+																				<string>StructureMember_key_15</string>
+																				<key>sourcePort</key>
+																				<string>outputMember</string>
 																			</dict>
 																			<key>connection_33</key>
 																			<dict>
@@ -1258,6 +1300,11 @@ function n_rng(flt) {
 																						<dict>
 																							<key>value</key>
 																							<real>0.0</real>
+																						</dict>
+																						<key>inputRotateZ</key>
+																						<dict>
+																							<key>value</key>
+																							<real>204.68170626714709</real>
 																						</dict>
 																						<key>inputScaleX</key>
 																						<dict>
@@ -1635,20 +1682,20 @@ function n_rng(flt) {
 								U09iamVjdACF
 								hAFpA5KEhIQI
 								TlNTdHJpbmcB
-								lYQBKwp6b29t
-								RmFjdG9yhpKE
-								hIQITlNOdW1i
-								ZXIAhIQHTlNW
-								YWx1ZQCVhAEq
-								hIQBZpwBhpKE
+								lYQBKwhwb3Np
+								dGlvboaShISE
+								B05TVmFsdWUA
+								lYQBKoSEDHtD
+								R1BvaW50PWRk
+								fZuBTAHRhpKE
 								l5gJc2Nyb2xs
-								aW5nhpKEmpuE
-								hAx7Q0dQb2lu
-								dD1kZH2dgwAA
-								AAAAsG5AgbkA
-								hpKEl5gIcG9z
-								aXRpb26GkoSa
-								m56dgUwB0YaG
+								aW5nhpKEmZqa
+								m4MAAAAAALBu
+								QIG5AIaShJeY
+								Cnpvb21GYWN0
+								b3KGkoSEhAhO
+								U051bWJlcgCZ
+								moSEAWadAYaG
 																					</data>
 																				</dict>
 																			</dict>
@@ -1760,7 +1807,7 @@ function n_rng(flt) {
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZuBp/6BYgGG
+								fZuBwf6BngGG
 								hg==
 																					</data>
 																					<key>version</key>
@@ -1808,7 +1855,7 @@ function n_rng(flt) {
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZuB4v6BYgGG
+								fZuB/P6BngGG
 								hg==
 																					</data>
 																					<key>version</key>
@@ -1994,7 +2041,7 @@ function n_rng(flt) {
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZuBI/+BRQGG
+								fZuBPf+BgQGG
 								hg==
 																					</data>
 																				</dict>
@@ -2036,7 +2083,7 @@ function n_rng(flt) {
 								hIQHTlNWYWx1
 								ZQCVhAEqhIQM
 								e0NHUG9pbnQ9
-								ZGR9m4Ep/+mG
+								ZGR9m4Eq/yWG
 								hg==
 																					</data>
 																				</dict>
@@ -2078,7 +2125,7 @@ function n_rng(flt) {
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZuBNf+B/QCG
+								fZuBNv+BOQGG
 								hg==
 																					</data>
 																				</dict>
@@ -2120,7 +2167,7 @@ function n_rng(flt) {
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZuBNf+BzQCG
+								fZuBNv+BCQGG
 								hg==
 																					</data>
 																				</dict>
@@ -2325,8 +2372,8 @@ function n_rng(flt) {
 								koSEhAdOU1Zh
 								bHVlAJWEASqE
 								hAx7Q0dQb2lu
-								dD1kZH2bgTv/
-								MYaG
+								dD1kZH2bgTz/
+								bYaG
 																					</data>
 																				</dict>
 																			</dict>
@@ -2366,8 +2413,8 @@ function n_rng(flt) {
 								koSEhAdOU1Zh
 								bHVlAJWEASqE
 								hAx7Q0dQb2lu
-								dD1kZH2bgTr/
-								YYaG
+								dD1kZH2bgTv/
+								gZ0AhoY=
 																					</data>
 																				</dict>
 																			</dict>
@@ -2407,8 +2454,8 @@ function n_rng(flt) {
 								koSEhAdOU1Zh
 								bHVlAJWEASqE
 								hAx7Q0dQb2lu
-								dD1kZH2bgTz/
-								gZEAhoY=
+								dD1kZH2bgT3/
+								gc0AhoY=
 																					</data>
 																				</dict>
 																			</dict>
@@ -2494,6 +2541,129 @@ function n_rng(flt) {
 																					</data>
 																					<key>version</key>
 																					<integer>1</integer>
+																				</dict>
+																			</dict>
+																			<dict>
+																				<key>class</key>
+																				<string>QCStructureMember</string>
+																				<key>identifier</key>
+																				<string>key</string>
+																				<key>key</key>
+																				<string>StructureMember_key_13</string>
+																				<key>state</key>
+																				<dict>
+																					<key>customInputPortStates</key>
+																					<dict>
+																						<key>inputKey</key>
+																						<dict>
+																							<key>value</key>
+																							<string>angle</string>
+																						</dict>
+																					</dict>
+																					<key>userInfo</key>
+																					<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpApKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gFYW5n
+								bGWGkoSXmAhw
+								b3NpdGlvboaS
+								hISEB05TVmFs
+								dWUAlYQBKoSE
+								DHtDR1BvaW50
+								PWRkfZuBKf/p
+								hoY=
+																					</data>
+																				</dict>
+																			</dict>
+																			<dict>
+																				<key>class</key>
+																				<string>QCStructureMember</string>
+																				<key>identifier</key>
+																				<string>key</string>
+																				<key>key</key>
+																				<string>StructureMember_key_14</string>
+																				<key>state</key>
+																				<dict>
+																					<key>customInputPortStates</key>
+																					<dict>
+																						<key>inputKey</key>
+																						<dict>
+																							<key>value</key>
+																							<string>x_offset</string>
+																						</dict>
+																					</dict>
+																					<key>userInfo</key>
+																					<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpApKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gIeF9v
+								ZmZzZXSGkoSX
+								mAhwb3NpdGlv
+								boaShISEB05T
+								VmFsdWUAlYQB
+								KoSEDHtDR1Bv
+								aW50PWRkfZum
+								gYn/hoY=
+																					</data>
+																				</dict>
+																			</dict>
+																			<dict>
+																				<key>class</key>
+																				<string>QCStructureMember</string>
+																				<key>identifier</key>
+																				<string>key</string>
+																				<key>key</key>
+																				<string>StructureMember_key_15</string>
+																				<key>state</key>
+																				<dict>
+																					<key>customInputPortStates</key>
+																					<dict>
+																						<key>inputKey</key>
+																						<dict>
+																							<key>value</key>
+																							<string>y_offset</string>
+																						</dict>
+																					</dict>
+																					<key>userInfo</key>
+																					<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpApKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gIeV9v
+								ZmZzZXSGkoSX
+								mAhwb3NpdGlv
+								boaShISEB05T
+								VmFsdWUAlYQB
+								KoSEDHtDR1Bv
+								aW50PWRkfZun
+								uYaG
+																					</data>
 																				</dict>
 																			</dict>
 																		</array>
@@ -2589,7 +2759,7 @@ function n_rng(flt) {
 								bmeGkoSam4SE
 								DHtDR1BvaW50
 								PWRkfZ2DAAAA
-								AADgUUA8hpKE
+								AADgUUBUhpKE
 								l5gIcG9zaXRp
 								b26GkoSam6Cd
 								C4FZ/4aG
