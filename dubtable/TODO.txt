@@ -1,3 +1,5 @@
 make user movement more obvious
 fix peak mapping of param
 why do some blocks vanish some times?
+why does adding and effect move some blocks?
+stop rogue blocks killing my style
