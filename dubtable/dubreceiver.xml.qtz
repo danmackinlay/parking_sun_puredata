@@ -244,9 +244,12 @@ function voice_create(voice_num) {
 }
 function fx_create(voice_num) {
 	var new_fx = new Object();
-	new_fx.xpos = 0;
-	new_fx.ypos = 0;
-	new_fx.angle = 0;
+	new_fx.xpos = -1.0;
+	new_fx.ypos = -1.0;
+	new_fx.angle = 0.;
+	new_fx.blur = 0.;
+	new_fx.wetness = 0.;
+	
 	new_fx.voice_num = voice_num;
 	return new_fx;
 }
@@ -275,6 +278,8 @@ function subvoice_decorate(v_struct) {
 
 
 function fxvoice_decorate(fx_struct) {
+	fx_struct.blur = 0.5*(1+fx_struct.xpos);
+	fx_struct.wetness = 0.5*(1+fx_struct.ypos);
 	return fx_struct;
 }
 
@@ -3853,7 +3858,7 @@ function n_rng(flt) {
 										</dict>
 									</dict>
 									<key>optimizedRendering</key>
-									<true/>
+									<false/>
 									<key>pixelAligned</key>
 									<false/>
 									<key>sizeMode</key>
@@ -3883,7 +3888,7 @@ function n_rng(flt) {
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZuBiQCB2QCG
+								fZuBhQCB/QCG
 								hg==
 									</data>
 									<key>version</key>
@@ -3940,6 +3945,17 @@ function n_rng(flt) {
 											<string>Math_2</string>
 											<key>sourcePort</key>
 											<string>outputValue</string>
+										</dict>
+										<key>connection_10</key>
+										<dict>
+											<key>destinationNode</key>
+											<string>MultiplyCompositing_1</string>
+											<key>destinationPort</key>
+											<string>inputImage</string>
+											<key>sourceNode</key>
+											<string>Crystallize_1</string>
+											<key>sourcePort</key>
+											<string>outputImage</string>
 										</dict>
 										<key>connection_11</key>
 										<dict>
@@ -4017,6 +4033,94 @@ function n_rng(flt) {
 											<string>Math_3</string>
 											<key>sourcePort</key>
 											<string>outputValue</string>
+										</dict>
+										<key>connection_18</key>
+										<dict>
+											<key>destinationNode</key>
+											<string>ConstantColorGenerator_1</string>
+											<key>destinationPort</key>
+											<string>inputColor</string>
+											<key>sourceNode</key>
+											<string>ColorTransform_1</string>
+											<key>sourcePort</key>
+											<string>outputColor</string>
+										</dict>
+										<key>connection_19</key>
+										<dict>
+											<key>destinationNode</key>
+											<string>MultiplyCompositing_1</string>
+											<key>destinationPort</key>
+											<string>inputBackgroundImage</string>
+											<key>sourceNode</key>
+											<string>ConstantColorGenerator_1</string>
+											<key>sourcePort</key>
+											<string>outputImage</string>
+										</dict>
+										<key>connection_2</key>
+										<dict>
+											<key>destinationNode</key>
+											<string>Crystallize_1</string>
+											<key>destinationPort</key>
+											<string>inputImage</string>
+											<key>sourceNode</key>
+											<string>Splitter_2</string>
+											<key>sourcePort</key>
+											<string>output</string>
+										</dict>
+										<key>connection_20</key>
+										<dict>
+											<key>destinationNode</key>
+											<string>StructureMember_key_5</string>
+											<key>destinationPort</key>
+											<string>inputStructure</string>
+											<key>sourceNode</key>
+											<string>StructureMember_key_3</string>
+											<key>sourcePort</key>
+											<string>outputMember</string>
+										</dict>
+										<key>connection_21</key>
+										<dict>
+											<key>destinationNode</key>
+											<string>ColorTransform_1</string>
+											<key>destinationPort</key>
+											<string>inputAlpha</string>
+											<key>sourceNode</key>
+											<string>StructureMember_key_5</string>
+											<key>sourcePort</key>
+											<string>outputMember</string>
+										</dict>
+										<key>connection_3</key>
+										<dict>
+											<key>destinationNode</key>
+											<string>Splitter_3</string>
+											<key>destinationPort</key>
+											<string>input</string>
+											<key>sourceNode</key>
+											<string>AdditionCompositing_1</string>
+											<key>sourcePort</key>
+											<string>outputImage</string>
+										</dict>
+										<key>connection_4</key>
+										<dict>
+											<key>destinationNode</key>
+											<string>AdditionCompositing_1</string>
+											<key>destinationPort</key>
+											<string>inputBackgroundImage</string>
+											<key>sourceNode</key>
+											<string>MultiplyCompositing_1</string>
+											<key>sourcePort</key>
+											<string>outputImage</string>
+										</dict>
+										<key>connection_5</key>
+										<dict>
+											<key>destinationNode</key>
+											<string>AdditionCompositing_1</string>
+											<key>destinationPort</key>
+											<string>inputImage</string>
+											<key>sourceNode</key>
+											<string>Splitter_2</string>
+											<key>sourcePort</key>
+											<string>output</string>
 										</dict>
 										<key>connection_6</key>
 										<dict>
@@ -4102,8 +4206,7 @@ function n_rng(flt) {
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZuBLP+BgQGG
-								hg==
+								fZuB7/4xhoY=
 												</data>
 											</dict>
 										</dict>
@@ -4144,8 +4247,7 @@ function n_rng(flt) {
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZuBKv+BsQGG
-								hg==
+								fZuB7f5hhoY=
 												</data>
 											</dict>
 										</dict>
@@ -4183,7 +4285,7 @@ function n_rng(flt) {
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZvvgQkBhoY=
+								fZvngV0BhoY=
 												</data>
 												<key>version</key>
 												<integer>2</integer>
@@ -4217,7 +4319,7 @@ function n_rng(flt) {
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZuB6v6B7QGG
+								fZuBrf6BnQCG
 								hg==
 												</data>
 											</dict>
@@ -4278,7 +4380,7 @@ function n_rng(flt) {
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZu9gYYBhoY=
+								fZuBgP82hoY=
 												</data>
 												<key>version</key>
 												<integer>1</integer>
@@ -4320,7 +4422,7 @@ function n_rng(flt) {
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZuBof6BRQGG
+								fZuBU/6B1QGG
 								hg==
 												</data>
 											</dict>
@@ -4339,7 +4441,7 @@ function n_rng(flt) {
 													<key>inputKey</key>
 													<dict>
 														<key>value</key>
-														<string>fx</string>
+														<string>blur</string>
 													</dict>
 												</dict>
 												<key>userInfo</key>
@@ -4355,14 +4457,14 @@ function n_rng(flt) {
 								hAFpApKEhIQI
 								TlNTdHJpbmcB
 								lYQBKwRuYW1l
-								hpKEl5gCZniG
-								koSXmAhwb3Np
-								dGlvboaShISE
-								B05TVmFsdWUA
-								lYQBKoSEDHtD
-								R1BvaW50PWRk
-								fZuBLf+BRQGG
-								hg==
+								hpKEl5gEYmx1
+								coaShJeYCHBv
+								c2l0aW9uhpKE
+								hIQHTlNWYWx1
+								ZQCVhAEqhIQM
+								e0NHUG9pbnQ9
+								ZGR9m4Hf/oHV
+								AYaG
 												</data>
 											</dict>
 										</dict>
@@ -4407,7 +4509,8 @@ function n_rng(flt) {
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZuugVYBhoY=
+								fZuBcv+B5gGG
+								hg==
 												</data>
 												<key>version</key>
 												<integer>1</integer>
@@ -4469,7 +4572,7 @@ function n_rng(flt) {
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZu9gbYBhoY=
+								fZuBgP9mhoY=
 												</data>
 												<key>version</key>
 												<integer>1</integer>
@@ -4505,11 +4608,311 @@ function n_rng(flt) {
 								B05TVmFsdWUA
 								lYQBKoSEDHtD
 								R1BvaW50PWRk
-								fZuBAP6BnAGG
+								fZuBo/2BnAGG
 								hg==
 												</data>
 												<key>version</key>
 												<integer>1</integer>
+											</dict>
+										</dict>
+										<dict>
+											<key>class</key>
+											<string>QCImageFilter</string>
+											<key>identifier</key>
+											<string>CIAdditionCompositing</string>
+											<key>key</key>
+											<string>AdditionCompositing_1</string>
+											<key>state</key>
+											<dict>
+												<key>filterVersion</key>
+												<integer>1</integer>
+												<key>filteringMode</key>
+												<string>Bilinear</string>
+												<key>hasBypass</key>
+												<integer>0</integer>
+												<key>normalizeCoordinates</key>
+												<integer>0</integer>
+												<key>userInfo</key>
+												<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwhwb3Np
+								dGlvboaShISE
+								B05TVmFsdWUA
+								lYQBKoSEDHtD
+								R1BvaW50PWRk
+								fZuBNAGB+QGG
+								hg==
+												</data>
+												<key>version</key>
+												<integer>2</integer>
+												<key>wrappingMode</key>
+												<string>Bilinear</string>
+											</dict>
+										</dict>
+										<dict>
+											<key>class</key>
+											<string>QCSplitter</string>
+											<key>key</key>
+											<string>Splitter_2</string>
+											<key>state</key>
+											<dict>
+												<key>portClass</key>
+												<string>QCGLImagePort</string>
+												<key>userInfo</key>
+												<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpApKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gFSW1h
+								Z2WGkoSXmAhw
+								b3NpdGlvboaS
+								hISEB05TVmFs
+								dWUAlYQBKoSE
+								DHtDR1BvaW50
+								PWRkfZuBaf+B
+								CAKGhg==
+												</data>
+												<key>version</key>
+												<integer>1</integer>
+											</dict>
+										</dict>
+										<dict>
+											<key>class</key>
+											<string>QCSplitter</string>
+											<key>key</key>
+											<string>Splitter_3</string>
+											<key>state</key>
+											<dict>
+												<key>portClass</key>
+												<string>QCGLImagePort</string>
+												<key>userInfo</key>
+												<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpApKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gFSW1h
+								Z2WGkoSXmAhw
+								b3NpdGlvboaS
+								hISEB05TVmFs
+								dWUAlYQBKoSE
+								DHtDR1BvaW50
+								PWRkfZuB6gGB
+								CAKGhg==
+												</data>
+												<key>version</key>
+												<integer>1</integer>
+											</dict>
+										</dict>
+										<dict>
+											<key>class</key>
+											<string>QCImageFilter</string>
+											<key>identifier</key>
+											<string>CIMultiplyCompositing</string>
+											<key>key</key>
+											<string>MultiplyCompositing_1</string>
+											<key>state</key>
+											<dict>
+												<key>filterVersion</key>
+												<integer>1</integer>
+												<key>filteringMode</key>
+												<string>Bilinear</string>
+												<key>hasBypass</key>
+												<integer>0</integer>
+												<key>normalizeCoordinates</key>
+												<integer>0</integer>
+												<key>userInfo</key>
+												<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwhwb3Np
+								dGlvboaShISE
+								B05TVmFsdWUA
+								lYQBKoSEDHtD
+								R1BvaW50PWRk
+								fZuBiACByQGG
+								hg==
+												</data>
+												<key>version</key>
+												<integer>2</integer>
+												<key>wrappingMode</key>
+												<string>Bilinear</string>
+											</dict>
+										</dict>
+										<dict>
+											<key>class</key>
+											<string>QCColorTransform</string>
+											<key>key</key>
+											<string>ColorTransform_1</string>
+											<key>state</key>
+											<dict>
+												<key>ivarInputPortStates</key>
+												<dict>
+													<key>inputColor</key>
+													<dict>
+														<key>value</key>
+														<dict>
+															<key>alpha</key>
+															<real>1</real>
+															<key>blue</key>
+															<real>1</real>
+															<key>green</key>
+															<real>1</real>
+															<key>red</key>
+															<real>1</real>
+														</dict>
+													</dict>
+													<key>inputHue</key>
+													<dict>
+														<key>value</key>
+														<real>0.0</real>
+													</dict>
+													<key>inputLuminosity</key>
+													<dict>
+														<key>value</key>
+														<real>1</real>
+													</dict>
+													<key>inputSaturation</key>
+													<dict>
+														<key>value</key>
+														<real>1</real>
+													</dict>
+												</dict>
+												<key>userInfo</key>
+												<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwhwb3Np
+								dGlvboaShISE
+								B05TVmFsdWUA
+								lYQBKoSEDHtD
+								R1BvaW50PWRk
+								fZuBav+BQQKG
+								hg==
+												</data>
+											</dict>
+										</dict>
+										<dict>
+											<key>class</key>
+											<string>QCImageFilter</string>
+											<key>identifier</key>
+											<string>CIConstantColorGenerator</string>
+											<key>key</key>
+											<string>ConstantColorGenerator_1</string>
+											<key>state</key>
+											<dict>
+												<key>filterVersion</key>
+												<integer>1</integer>
+												<key>filteringMode</key>
+												<string>Bilinear</string>
+												<key>hasBypass</key>
+												<integer>0</integer>
+												<key>normalizeCoordinates</key>
+												<integer>0</integer>
+												<key>userInfo</key>
+												<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwhwb3Np
+								dGlvboaShISE
+								B05TVmFsdWUA
+								lYQBKoSEDHtD
+								R1BvaW50PWRk
+								fZsGgeEBhoY=
+												</data>
+												<key>version</key>
+												<integer>2</integer>
+												<key>wrappingMode</key>
+												<string>Bilinear</string>
+											</dict>
+										</dict>
+										<dict>
+											<key>class</key>
+											<string>QCStructureMember</string>
+											<key>identifier</key>
+											<string>key</string>
+											<key>key</key>
+											<string>StructureMember_key_5</string>
+											<key>state</key>
+											<dict>
+												<key>customInputPortStates</key>
+												<dict>
+													<key>inputKey</key>
+													<dict>
+														<key>value</key>
+														<string>wetness</string>
+													</dict>
+												</dict>
+												<key>userInfo</key>
+												<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpApKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gHd2V0
+								bmVzc4aShJeY
+								CHBvc2l0aW9u
+								hpKEhIQHTlNW
+								YWx1ZQCVhAEq
+								hIQMe0NHUG9p
+								bnQ9ZGR9m4Hh
+								/oEFAoaG
+												</data>
 											</dict>
 										</dict>
 									</array>
@@ -4519,9 +4922,28 @@ function n_rng(flt) {
 											<key>key</key>
 											<string>inputImage_proxy_1</string>
 											<key>node</key>
-											<string>Crystallize_1</string>
+											<string>Splitter_2</string>
 											<key>port</key>
-											<string>inputImage</string>
+											<string>input</string>
+											<key>state</key>
+											<dict>
+												<key>userInfo</key>
+												<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gFSW1h
+								Z2WGhg==
+												</data>
+											</dict>
 										</dict>
 										<dict>
 											<key>key</key>
@@ -4538,9 +4960,28 @@ function n_rng(flt) {
 											<key>key</key>
 											<string>outputImage_proxy_1</string>
 											<key>node</key>
-											<string>Crystallize_1</string>
+											<string>Splitter_3</string>
 											<key>port</key>
-											<string>outputImage</string>
+											<string>output</string>
+											<key>state</key>
+											<dict>
+												<key>userInfo</key>
+												<data>
+								BAtzdHJlYW10
+								eXBlZIHoA4QB
+								QISEhBNOU011
+								dGFibGVEaWN0
+								aW9uYXJ5AISE
+								DE5TRGljdGlv
+								bmFyeQCEhAhO
+								U09iamVjdACF
+								hAFpAZKEhIQI
+								TlNTdHJpbmcB
+								lYQBKwRuYW1l
+								hpKEl5gFSW1h
+								Z2WGhg==
+												</data>
+											</dict>
 										</dict>
 									</array>
 									<key>userInfo</key>
@@ -4565,7 +5006,7 @@ function n_rng(flt) {
 								aW5nhpKEmpuE
 								hAx7Q0dQb2lu
 								dD1kZH2dgwAA
-								AAAAwE/AgdMB
+								AAAAwErAgdMB
 								hpKEl5gEbmFt
 								ZYaShJeYAkZY
 								hpKEl5gIcG9z
@@ -4656,7 +5097,7 @@ function n_rng(flt) {
 						CXNjcm9sbGluZ4aShJqbhIQMe0NH
 						UG9pbnQ9ZGR9nYMAAAAAAMBPwIHT
 						AYaShJeYCHBvc2l0aW9uhpKEmpug
-						nU+hhoY=
+						nU6hhoY=
 						</data>
 					</dict>
 				</dict>

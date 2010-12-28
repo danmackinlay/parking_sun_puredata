@@ -1,4 +1,3 @@
-fix the problem with blocks staying around after they shoudl be dead
 make user movement more obvious
 fix peak mapping of param
 why do some blocks vanish some times?
